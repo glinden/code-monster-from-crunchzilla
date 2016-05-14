@@ -1,3 +1,5 @@
+#### Code Monster from Crunchzilla
+
 Code Monster from Crunchzilla is an interactive programming tutorial
 for kids that focuses on action. Code changes immediately yield
 visible results.
@@ -15,7 +17,7 @@ and functions are introduced by example.
 Code Monster is a gentle and fun introduction to programming
 concepts. It is a first step in learning to program.
 
-We decided to make the code for the tutorial itself available for
+We decided to make a version of code for the tutorial itself available for
 others to modify, use, and translate.
 
 If you want to create your own lessons or translate the existing
