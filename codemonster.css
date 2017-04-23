@@ -198,6 +198,7 @@ progress[value]::-moz-progress-bar {
 	right: 100px;
 	width: 22px;
 	height: 13px;
+	border: 1px solid transparent;
 }
 .us-flag {
 	display: block;
@@ -218,6 +219,7 @@ progress[value]::-moz-progress-bar {
 	right: 70px;
 	width: 22px;
 	height: 13px;
+	border: 1px solid transparent;
 }
 .de-flag {
 	display: block;
@@ -225,4 +227,18 @@ progress[value]::-moz-progress-bar {
 	height: 5px;
 	background: black;
 	box-shadow: 0 4px 0 #c00, 0 8px 0 gold;
+}
+
+.jp-flag-holder {
+	position: absolute;
+	right: 130px;
+	width: 22px;
+	height: 13px;
+	border: 1px solid #ccc;
+}
+.jp-flag {
+	display: block;
+	width: 22px;
+	height: 13px;
+    background: radial-gradient(circle at 50% 50%, red 0%,  red 30%, white 30%, white 100%);
 }
