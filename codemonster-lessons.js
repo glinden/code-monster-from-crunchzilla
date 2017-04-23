@@ -26,7 +26,7 @@ var lessons =
     code: "c.fillRect(20, 20, 50, 75);\n",
     lessonSection: {
       en: "Getting Started",
-      de: "Los geht's",
+      de: "Los geht's!",
       jp: "jp section"
     },
     tutorImage: 1,
@@ -53,7 +53,6 @@ var lessons =
       jp: "jp"
     },
     code: "c.fillRect(20, 20, 50, 75);\n",
-    youGotItCheck: "150"
   },
   {
     message: {
@@ -70,9 +69,9 @@ var lessons =
   {
     message: {
       en: "Did you figure it out?  The numbers are how far from the left side to draw the box, how far from the top, how wide to draw the box, and how tall.",
-      de: "Hast verstanden was sie machen? Die Zahlen sagen wie weit von links das Rechteck zu zeichnen ist, wie weit von oben, wie weit das Rechteck ist und wie hoch es gezeichnet werden soll.",
+      de: "Hast du verstanden was sie machen? Die Zahlen sagen wie weit von links das Rechteck zu zeichnen ist, wie weit von oben, wie weit das Rechteck ist und wie hoch es gezeichnet werden soll.",
       jp: "jp"
-    }
+    },
   },
   {
     message: {
@@ -209,14 +208,14 @@ var lessons =
   {
     message: {
       en: "Can you move each of the boxes around by changing some of the numbers?",
-      de: "de",
+      de: "Kannst du die Quadrate herumbewegen indem du einige Zahlen änderst?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Monster want more boxes.  Three boxes!",
-      de: "de",
+      de: "Monster mag mehr Quadrate! 3 Quadrate!",
       jp: "jp"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\nc.fillRect(80, 80, size, size);\nc.fillRect(140, 140, size, size);\n"
@@ -224,14 +223,14 @@ var lessons =
   {
     message: {
       en: "Now what happens when you change what <span class=tutor-code>size</span> is equal to?",
-      de: "de",
+      de: "Was passiert wenn du <span class=tutor-code>size</span> jetzt änderst?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "More boxes!  Try changing size now!",
-      de: "de",
+      en: "More boxes!  Try changing <span class=tutor-code>size</span> now!",
+      de: "Mehr Quadrate! Jetzt versuche <span class=tutor-code>size</span> zu ändern!",
       jp: "jp"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\nc.fillRect(60, 60, size, size);\nc.fillRect(100, 100, size, size);\nc.fillRect(140, 140, size, size);\nc.fillRect(180, 180, size, size);\n"
@@ -239,7 +238,7 @@ var lessons =
   {
     message: {
       en: "Ooo!  Color!  Pretty!",
-      de: "de",
+      de: "Oh! Farben! Schön!",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle = \"blue\";\nc.fillRect(20, 20, size, size);\n",
@@ -252,14 +251,14 @@ var lessons =
   {
     message: {
       en: "Many colors work.  Try \"green\" or \"purple\" or \"gold\".",
-      de: "de",
+      de: "Viele Farben funktionieren: rot (red), grün (green), blau (blue), violett (purple), goldfarben (gold).",
       jp: "jp"
     }
   },
   {
     message: {
       en: "How about two pink boxes?",
-      de: "de",
+      de: "Wie wäre es mit rosa (pink) Quadraten?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"pink\";\nc.fillRect(20, 20, size, size);\nc.fillRect(90, 90, size, size);\n"
@@ -267,7 +266,7 @@ var lessons =
   {
     message: {
       en: "One pink and one silver.",
-      de: "de",
+      de: "Eine rosa (pink), und eine silberfarben (silver).",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"pink\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"silver\";\nc.fillRect(90, 90, size, size);\n"
@@ -275,7 +274,7 @@ var lessons =
   {
     message: {
       en: "Can you make the silver box gold instead?  And the pink one blue instead?",
-      de: "de",
+      de: "Kannst du die silberne gold (gold) machen? Und die rosane blau (blue)?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"pink\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"silver\";\nc.fillRect(90, 90, size, size);\n"
@@ -283,7 +282,7 @@ var lessons =
   {
     message: {
       en: "Here are two boxes that are the same color again.  Now can you make the two boxes be different colors?",
-      de: "de",
+      de: "Hier sind 2 Quadrate mit der gleichen Farbe. Kannst du eine von beiden eine andere Farbe geben?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"green\";\nc.fillRect(20, 20, size, size);\n\nc.fillRect(90, 90, size, size);\n"
@@ -291,7 +290,7 @@ var lessons =
   {
     message: {
       en: "Here is one version.  I like red and blue.",
-      de: "de",
+      de: "Hier ist eine Lösung. Ich mag rot (red) und blau (blue).",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"red\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"blue\";\nc.fillRect(80, 80, size, size);\n"
@@ -299,7 +298,7 @@ var lessons =
   {
     message: {
       en: "Red, green, and blue.  That's nice.",
-      de: "de",
+      de: "Rot, grün und blau. Sooo schön.",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"red\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"lime\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"blue\";\nc.fillRect(140, 140, size, size);\n"
@@ -307,7 +306,7 @@ var lessons =
   {
     message: {
       en: "Wha... This does the same thing!  What could rgb() be?",
-      de: "de",
+      de: "Huch...das macht das gleiche! Was mag wohl rgb() sein?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(255, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgb(0, 255, 0)\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"rgb(0, 0, 255)\";\nc.fillRect(140, 140, size, size);\n"
@@ -315,7 +314,7 @@ var lessons =
   {
     message: {
       en: "Try changing any of the zeroes to 200 or so.  And try changing any of the 255 to 0. What do the numbers seem to do?",
-      de: "de",
+      de: "Versuche die Null in zum Beispiel 200 zu ändern. Und die 255 in 0. Was scheinen die Zahlen zu machen?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(255, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgb(0, 255, 0)\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"rgb(0, 0, 255)\";\nc.fillRect(140, 140, size, size);\n"
@@ -323,21 +322,21 @@ var lessons =
   {
     message: {
       en: "Did you figure it out?  rgb() refers to red, green, and blue.  The numbers go from 0 to 255. So, <span class=tutor-code>rgb(0, 255, 0)</span> means no red or blue, but all the green you got!",
-      de: "de",
+      de: "Hast du es herausgefunden? rgb() kommt von red, green, blue (rot, grün, blau). Die Zahlen gehen von 0 bis 255. <span class=tutor-code>rgb(0, 255, 0)</span> heisst kein rot, viel grün, kein blau.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You can make lots of colors this way if you change some of the numbers.  Try it!",
-      de: "de",
+      de: "Du kannst viele Farben erzeugen indem du die Zahlen änderst. Versuch es!",
       jp: "jp"
-    }
+    },
   },
   {
     message: {
       en: "Here is a fun game.  Can you make these two boxes the same color?",
-      de: "de",
+      de: "Hier kommt ein spassiges Spiel: Kannst du beide Quadrate in der gleichen Farbe einfärben?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"red\";\nc.fillRect(80, 80, size, size);\n",
@@ -345,20 +344,23 @@ var lessons =
       en: "Quiz: Color",
       de: "Quiz: Farben",
       jp: "jp quiz color section"
-    }
+    },
+    youGotItCheck: "rgb\s*(\s*255\s*,\s*0\s*,\s*0\s*)"
   },
   {
     message: {
       en: "Can you make these both blue?",
-      de: "de",
+      de: "Kannst du die Quadtate blau machen?",
       jp: "jp"
     },
-    code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"blue\";\nc.fillRect(80, 80, size, size);\n"
+    code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"blue\";\nc.fillRect(80, 80, size, size);\n",
+    youGotItCheck: "rgb(0, 0, 255)"
   },
+
   {
     message: {
       en: "Can you figure out what the rgb() numbers should be to make these both yellow?",
-      de: "de",
+      de: "Welche Zahlen ergeben gelb?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(255, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"yellow\";\nc.fillRect(80, 80, size, size);\n"
@@ -366,7 +368,7 @@ var lessons =
   {
     message: {
       en: "Can you figure out what the rgb() numbers should be to make these both teal?",
-      de: "de",
+      de: "Welche Zahlen ergeben blaugrün?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 128)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"teal\";\nc.fillRect(80, 80, size, size);\n"
@@ -374,7 +376,7 @@ var lessons =
   {
     message: {
       en: "Okay, this one is really hard.  Can you make these two exactly match?  Can you figure out what the rgb() numbers should be to make these both crimson? Don't worry if you don't get it exactly, just see how close you can get!",
-      de: "de",
+      de: "Okay, das ist jetzt schwer: Kannst du die Farben genau gleich machen? Welche Zahlen für rgb() ergeben karminrot (crimson)? Versuche so genau wie möglich die karminrot zu treffen.",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"crimson\";\nc.fillRect(80, 80, size, size);\n"
@@ -382,7 +384,7 @@ var lessons =
   {
     message: {
       en: "Here it is.  Whew, that's a hard one!  How close did you get?",
-      de: "de",
+      de: "Hier ist die Lösung. Weia, das war schwer! Wie nah warst du dran?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(220, 20, 60)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"crimson\";\nc.fillRect(80, 80, size, size);\n"
@@ -390,14 +392,14 @@ var lessons =
   {
     message: {
       en: "If you want to try others, put \"olive\", \"purple\", \"aqua\", or any other color you can think of as the color for the first box, then try to find the rgb numbers that match it!",
-      de: "de",
+      de: "Wenn du andere Farben probieren willst, probier \"olive\", \"purple\", \"aqua\" oder probier eine andere Farbe (aber in Englisch)",
       jp: "jp"
     }
   },
   {
     message: {
       en: "rgba() is a crazy version of rgb(). See what this does?  It's got one more number at the end that's 0.5.  What is that last number doing? Try changing the 0.5 to 0.1.  Or to 0.8.  What does it do?",
-      de: "de",
+      de: "rgba() ist eine besondere version von rgb(). Siehst Du den Unterschied? Sie hat eine Zahl mehr am Ende und die ist 0.5. Was macht die letzte Zahl? Versuch die 0.5 durch 0.1 or 0.8 zu ersetzen. Was passiert?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(80, 80, size, size);\n",
@@ -410,7 +412,7 @@ var lessons =
   {
     message: {
       en: "The a in rgba means alpha (how transparent the box is) from 0.0 (invisible) to 1.0 (solid)",
-      de: "de",
+      de: "Das a in rgba steht für alpha (Transparenz) und sie reicht von 0.0 (unsichtbar) bis 1.0 (undurchsichtig).",
       jp: "jp"
     }
   },
