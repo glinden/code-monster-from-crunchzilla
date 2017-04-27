@@ -141,7 +141,7 @@ var lessons =
   {
     message: {
       en: "var means variable. What we did is create a variable, called it <span class=tutor-code>size</span>, set it equal to 80, and now we can use <span class=tutor-code>size</span> where we would have used 80. Do you know why we might want that?",
-      de: "var bedeutet Variable. Was wir gemacht haben ist eine Variable <span class=tutor-code>size</span> zu erzeugen, lässt sie 80 sein, und jetzt können wir <span class=tutor-code>size</span> benutzen wo wir früher 80 hatten. Hast du vielleicht eine Idee warum wir das machen>",
+      de: "var bedeutet Variable. Was wir gemacht haben ist das wir eine Variable <span class=tutor-code>size</span> erzeugen, und lassen sie 80 sein, und jetzt können wir <span class=tutor-code>size</span> benutzen wo wir früher 80 hatten. Hast du vielleicht eine Idee warum wir das machen?",
       jp: "jp"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\n"
@@ -266,7 +266,7 @@ var lessons =
   {
     message: {
       en: "One pink and one silver.",
-      de: "Eine rosa (pink), und eine silberfarben (silver).",
+      de: "Eins rosa (pink), und eins silberfarben (silver).",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"pink\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"silver\";\nc.fillRect(90, 90, size, size);\n"
@@ -274,7 +274,7 @@ var lessons =
   {
     message: {
       en: "Can you make the silver box gold instead?  And the pink one blue instead?",
-      de: "Kannst du die silberne gold (gold) machen? Und die rosane blau (blue)?",
+      de: "Kannst du das silberne Quadrat gold (gold) machen? Und die rosane blau (blue)?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"pink\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"silver\";\nc.fillRect(90, 90, size, size);\n"
@@ -419,7 +419,7 @@ var lessons =
   {
     message: {
       en: "You can do pretty cool things with rgba().  Look at this!  Try changing some of the 0.5 alphas to 0.2 or 0.8!",
-      de: "de",
+      de: "Du kannst interessante Sachen mit rgba() machen. Schau mal! Ändere einige der 0.5 transparenz in 0.2 oder 0.8!",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(140, 140, size, size);\n"
@@ -427,14 +427,14 @@ var lessons =
   {
     message: {
       en: "Try changing the size from 80 to 180!  You can get some fun effects when the colors overlap. Play with it!",
-      de: "de",
+      de: "Versuch die Grösse von 80 auf 180 zu ändern! Du kannst spassige Effekte erhalten wenn Farben überlappen. Spiel damit!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's go back to variables. Monster no like to repeat numbers. Can you replace both the 20 numbers with <span class=tutor-code>offset</span>?",
-      de: "de",
+      de: "Lass uns zurück auf Variablen kommen. Monster mögen keine Wiederholungen. Kannst Du beide 20 mit <span class=tutor-code>offset</span> ersetzen?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(20, 20, size, size);\nc.fillRect(90, 90, size, size);\n",
@@ -447,7 +447,7 @@ var lessons =
   {
     message: {
       en: "Now try changing what <span class=tutor-code>offset</span> is equal to from 30 to 50.  See how you can move the first box?",
-      de: "de",
+      de: "Jetzt ändere <span class=tutor-code>offset</span> von 30 nach 50. Siehst du wie sich das erste Quadrat bewegt?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\nc.fillRect(90, 90, size, size);\n"
@@ -455,7 +455,7 @@ var lessons =
   {
     message: {
       en: "Variables can be set to new values.  See how offset is set to 100 before being used by the second box?",
-      de: "de",
+      de: "Variablen können neue Werte erhalten. Siehst du wie sie auf 100 gesetzt wird bevor es vom zweiten Quadrat benutzt wird?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = 100;\nc.fillRect(offset, offset, size, size);\n"
@@ -463,43 +463,43 @@ var lessons =
   {
     message: {
       en: "Try moving the second box.  Change the 100 to 50 or 150.",
-      de: "de",
+      de: "Versuche das zweite Quadrat zu bewegen. Ändere die 100 in 50 oder 150.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try moving the first box too.",
-      de: "de",
+      de: "Versuche das erste Quadrat auch zu bewegen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you put the boxes on top of each other so it looks like just one box?",
-      de: "de",
+      de: "Kannst Du beide Quadrate übereinander zeichnen sodass es wie ein Quadrat aussieht?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "You can also add numbers to a variable. See what this is doing? It changes offset with <span class=tutor-code>offset = offset + 50</span>",
-      de: "de",
+      en: "You can also add numbers to a variable. See what this is doing? It changes <span class=tutor-code>offset</span> with <span class=tutor-code>offset = offset + 50</span>",
+      de: "Du kannst auch Zahlen zu Variablen addieren. Siehst du wie das functioniert? Es ändert <span class=tutor-code>offset</span> mit <span class=tutor-code>offset = offset + 50</span>",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 50;\nc.fillRect(offset, offset, size, size);\n"
   },
   {
     message: {
-      en: "<span class=tutor-code>offset = offset + 50</span> means take offset, add 50 to it, then make offset equal that now.  In other words, make offset 50 more than it used to be.",
-      de: "de",
+      en: "<span class=tutor-code>offset = offset + 50</span> means take <span class=tutor-code>offset</span>, add 50 to it, then make <span class=tutor-code>offset</span> equal that now.  In other words, make <span class=tutor-code>offset</span> 50 more than it used to be.",
+      de: "<span class=tutor-code>offset = offset + 50</span> bedeutet: nehme den Wert von <span class=tutor-code>offset</span>, addiere 50 dazu, und setze <span class=tutor-code>offset</span> auf den neuen Wert. In anderen Worten: mache <span class=tutor-code>offset</span> 50 mehr.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "How about you try it?  Can you replace both the 90 numbers used for the (left, top) of the second box with a variable? Hint: Either create a new variable or change offset and then use offset.",
-      de: "de",
+      en: "How about you try it?  Can you replace both the 90 numbers used for the (left, top) of the second box with a variable? Hint: Either create a new variable or change <span class=tutor-code>offset</span> and then use <span class=tutor-code>offset</span>.",
+      de: "Probier mal! Kannst du beide 90 für (links, oben) des zweiten Quadrates mit einer Variablen ändern? Ein Tip: Entweder zu benutzt eine neue Variable, oder du änderst <span class=tutor-code>offset</span> und benutzt <span class=tutor-code>offset</span> dann.",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\n\nc.fillRect(90, 90, size, size);\n",
@@ -512,42 +512,42 @@ var lessons =
   {
     message: {
       en: "Monsters like adding.  Me add good.  Okay, now try changing <span class=tutor-code>offset</span> from 30 to 80.  See what happens?",
-      de: "de",
+      de: "Monster mag addieren. Ich kann das! Okay, versuch <span class=tutor-code>offset</span> von 30 auf 80 zu ändern. Was passiert?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillRect(offset, offset, size, size);\n"
   },
   {
     message: {
-      en: "Ooo, you can move both boxes together!  Change the offset and move 'em around!",
-      de: "de",
+      en: "Ooo, you can move both boxes together!  Change the <span class=tutor-code>offset</span> and move 'em around!",
+      de: "Oh, du kannst beide Quadrate zusammen bewegen! Ändere <span class=tutor-code>offset</span> und bewege sie herum!",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "This looks the same, but it's a little different.  What's that <span class=tutor-code>*</span> doing?  What happens if you change <span class=tutor-code>* 3</span> to <span class=tutor-code>* 2</span>?  Try changing it to <span class=tutor-code>* 1</span>.  Try changing the offset too.  Did you figure out what <span class=tutor-code>*</span> means?",
-      de: "de",
+      en: "This looks the same, but it's a little different.  What's that <span class=tutor-code>*</span> doing?  What happens if you change <span class=tutor-code>* 3</span> to <span class=tutor-code>* 2</span>?  Try changing it to <span class=tutor-code>* 1</span>.  Try changing the <span class=tutor-code>offset</span> too.  Did you figure out what <span class=tutor-code>*</span> means?",
+      de: "Das sieht ähnlich aus, ist aber etwas anders. Was macht das <span class=tutor-code>*</span>? Was passiert wenn du <span class=tutor-code>* 3</span> in <span class=tutor-code>* 2</span> änderst? Probier auch mal <span class=tutor-code>* 1</span>. Ändere auch <span class=tutor-code>offset</span>. Hast du's herausgefunden was <span class=tutor-code>*</span> macht?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset * 3;\nc.fillRect(offset, offset, size, size);\n",
     lessonSection: {
       en: "More Operators",
-      de: "de section",
+      de: "Mehr Operatoren",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "<span class=tutor-code>*</span> means multiply.  <span class=tutor-code>2 * 2</span> would be 4.  So, <span class=tutor-code>offset = offset * 3</span> means make offset three times bigger.",
-      de: "de",
+      en: "<span class=tutor-code>*</span> means multiply.  <span class=tutor-code>2 * 2</span> would be 4.  So, <span class=tutor-code>offset = offset * 3</span> means make <span class=tutor-code>offset</span> three times bigger.",
+      de: "<span class=tutor-code>*</span> benutzt man zum multiplizieren. <span class=tutor-code>2 * 2</span> ist 4. <span class=tutor-code>offset = offset * 3</span> macht also <span class=tutor-code>offset</span> 3 mal grösser.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "<span class=tutor-code>*</span> means multiply and <span class=tutor-code>/</span> means divide.  So, what we set size equal to below is just a complicated way of saying make size equal to 100.  See?",
-      de: "de",
+      en: "<span class=tutor-code>*</span> means multiply and <span class=tutor-code>/</span> means divide.  So, what we set size equal to below is just a complicated way of saying make <span class=tutor-code>size</span> equal to 100.  See?",
+      de: "<span class=tutor-code>*</span> bedeutet multiplizieren und <span class=tutor-code>/</span> bedeuted dividieren. Was unten steht ist deshalb eine komplizierte Art um <span class=tutor-code>size</span> auf 100 zu setzen. Siehst du?",
       jp: "jp"
     },
     code: "var size = 20 * 6 / 2 + 50 - 10;\nvar offset = 30;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset * 3;\nc.fillRect(offset, offset, size, size);\n"
@@ -555,40 +555,40 @@ var lessons =
   {
     message: {
       en: "We can also compare numbers.  See this code?  We will only draw a second box when <span class=tutor-code>size</span> is less than 80.",
-      de: "de",
+      de: "Wir können auch Nummern vergleichen. Siest du den Code? Wir malen ein zweites Quadrat nur wenn <span class=tutor-code>offset</span> weniger als 80 ist.",
       jp: "jp"
     },
     code: "var size = 50;\n\nc.fillRect(20, 20, size, size);\nif (size < 80) {\n  c.fillRect(100, 100, size, size);\n}\n",
     lessonSection: {
       en: "If and Comparisons",
-      de: "de section",
+      de: "Wenn (If) und Vergleiche",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "Try changing size to 150.  See what happens? Try changing size to 79.  Then change it to 80.",
-      de: "de",
+      en: "Try changing <span class=tutor-code>size</span> to 150.  See what happens? Try changing <span class=tutor-code>size</span> to 79.  Then change it to 80.",
+      de: "Versuche <span class=tutor-code>size</span> in 150 zu ändern. Was passiert? Probiere <span class=tutor-code>size</span> auf 79 zu setzen. Dann auf 80.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Okay, let's see what you know!  Here are two boxes.  Can you add a third box (offset by another 60 from the second box)?",
-      de: "de",
+      de: "Okay, lass uns sehen was du weisst! Hier sind zwei Quadrate. Kannst du ein drittes Quadrat zeichnen was 60 mehr rechts/unten vom zweiten Quadrat ist?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"lime\";\n\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillRect(offset, offset, size, size);\n",
     lessonSection: {
       en: "Quiz: Variables and Color",
-      de: "de section",
+      de: "Quiz: Variablen und Farben",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "Here is one way to do it. Try changing the size or offset!",
-      de: "de",
+      en: "Here is one way to do it. Try changing the <span class=tutor-code>size</span> or <span class=tutor-code>offset</span>!",
+      de: "Hier ist eine Möglichkeit das zu machen. Versuche <span class=tutor-code>size</span> oder <span class=tutor-code>offset</span> zu ändern!",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"lime\";\n\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillRect(offset, offset, size, size);\n"
@@ -596,15 +596,15 @@ var lessons =
   {
     message: {
       en: "Remember rgba()?  Monster like.  Can you make me three boxes with different colors?",
-      de: "de",
+      de: "Erinnerst du dich an rgba()? Monster mag das. Kannst du drei Quadrate mit verschiedenen Farben machen?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\n"
   },
   {
     message: {
-      en: "Here is one way.  Ooo!  Pretty!  Try changing size, offset, or the red, blue, and green numbers!",
-      de: "de",
+      en: "Here is one way.  Ooo!  Pretty!  Try changing <span class=tutor-code>size</span>, <span class=tutor-code>offset</span>, or the red, blue, and green numbers!",
+      de: "So kann man das machen. Oh! Schön! Versuche <span class=tutor-code>size</span>, <span class=tutor-code>offset</span>, oder die rot, grün oder blau Werte zu ändern!",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n"
@@ -612,20 +612,20 @@ var lessons =
   {
     message: {
       en: "Monster no like writing code more than once.  Lots of writing the same code more than once here, me not like.",
-      de: "de",
+      de: "Monster mag Code nicht mehr als einmal schreiben. Hier ist viel gleich. Mag ich nicht.",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\n\nc.fillRect(offset, offset, size, size);\noffset = offset + 40;\nc.fillRect(offset, offset, size, size);\noffset = offset + 40;\nc.fillRect(offset, offset, size, size);\n",
     lessonSection: {
       en: "For Loops",
-      de: "de section",
+      de: "For Schleifen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This is called a <span class=tutor-code>for</span> loop.  It repeats code without writing it more than once.  Me like.  Try changing the 3 to 5!",
-      de: "de",
+      de: "Das hier ist eine <span class=tutor-code>for</span> Schleife. Sie wiederholt Sachen ohne dass man das mehrmals schreiben muss. Ich mag das. Versuche die 3 in 5 zu ändern!",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 3; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 40;\n}\n"
@@ -633,7 +633,7 @@ var lessons =
   {
     message: {
       en: "For loops have three parts, where to start (<span class=tutor-code>i = 0</span>), when to keep going (<span class=tutor-code>i < 5</span>), and how much to change each time (<span class=tutor-code>i = i + 1</span>). Can you make ten boxes?",
-      de: "de",
+      de: "For Schleifen haben 3 Teile: wo man anfängt (<span class=tutor-code>i = 0</span>), wie lange man weitermacht (<span class=tutor-code>i < 5</span>), und wieviel pro Schleife verändert wird (<span class=tutor-code>i = i + 1</span>). Kannst du 10 Quadrate machen?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 5; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 40;\n}\n"
@@ -641,7 +641,7 @@ var lessons =
   {
     message: {
       en: "Argh!  They don't fit?  How can you make ten boxes fit?",
-      de: "de",
+      de: "Weia! Sie passen nicht! Wie kannst du die 10 Quadrate passend machen?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 10; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 40;\n}\n"
@@ -649,15 +649,15 @@ var lessons =
   {
     message: {
       en: "Here is one way!",
-      de: "de",
+      de: "Hier ist eine Möglichkeit.",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 10; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 10;\n}\n"
   },
   {
     message: {
-      en: "Smaller boxes also fit.  Try playing with size, offset, and changing 10!",
-      de: "de",
+      en: "Smaller boxes also fit.  Try playing with <span class=tutor-code>size</span>, <span class=tutor-code>offset</span>, and changing 10!",
+      de: "Kleinere Quadrate passen auch. Versuche auch <span class=tutor-code>size</span>, <span class=tutor-code>offset</span> und auch die 10 zu ändern!",
       jp: "jp"
     },
     code: "var size = 20;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 10; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 10;\n}\n"
@@ -665,27 +665,27 @@ var lessons =
   {
     message: {
       en: "Remember rgba()? What's this doing?  Play with it!",
-      de: "de",
+      de: "Erinnerst du dich an rgba()? Was macht das? Spiel damit!",
       jp: "jp"
     },
     code: "var size = 50;\nvar offset = 20;\n\nfor (var i = 0; i < 10; i = i + 1) {\n  var b = i * 25;\n  var rgba = \"rgba(0, 0, \" + b + \", 0.5)\";\n  c.fillStyle = rgba;\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 20;\n}\n",
     lessonSection: {
       en: "Fun with For Loops",
-      de: "de section",
+      de: "Spass mit For Schleifen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Complicated!  That means use 0 blue light for the first box, 25 for the second, then 50, 75, 100...",
-      de: "de",
+      de: "Kompliziert! Das bedeutet benutze 0 blau für das erste Quadrat, 25 für das zweite, dann 50, 75, 100...",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is another one, this one changing alpha!  Neat-o!",
-      de: "de",
+      de: "Hier ist noch eins. Das ändert die Transparenz (alpha). Cool!",
       jp: "jp"
     },
     code: "var size = 50;\nvar offset = 20;\n\nfor (var i = 0.1; i < 0.5; i = i + 0.05) {\n  var rgba = \"rgba(0, 0, 255, \" + i + \")\";\n  c.fillStyle = rgba;\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 20;\n}\n"
@@ -693,34 +693,34 @@ var lessons =
   {
     message: {
       en: "Can you show me what you learned?  Draw me a square! Hint: Remember <span class=tutor-code>c.fillRect(<i>left, top, width, height</i>);</span> to draw a box.",
-      de: "de",
+      de: "Kannst du mir zeigen was du gelernt hast? Mal mir ein Quadrat! Tip: Erinnere dich an <span class=tutor-code>c.fillRect(<i>left, top, width, height</i>);</span> um ein Rechteck zu zeichnen.",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "Quiz: Write Code Yourself",
-      de: "de section",
+      de: "Quiz: Schreib deinen eigenen Code",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Can you add another square?",
-      de: "de",
+      de: "Kannst du noch ein Quadrat zeichnen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Now can you make the second square red? (Hint: <span class=tutor-code>c.fillStyle = \"blue\";</span> before fillRect() will make the rect blue)",
-      de: "de",
+      de: "Kannst du das zweite Quadrat rot machen Tip: <span class=tutor-code>c.fillStyle = \"blue\";</span> vor fillRect() macht das nächste Recheck blau (blue)",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Great! Did you get something like this? If not, try playing with the numbers a bit to see how it works!",
-      de: "de",
+      de: "Grossartig! Hast du sowas wie das hier geschrieben? Wenn nicht, ändere die Zahlen und sieh wie's functioniert!",
       jp: "jp"
     },
     code: "c.fillRect(10, 10, 20, 20);\nc.fillStyle = \"red\";\nc.fillRect(50, 50, 100, 100);\n"
@@ -728,34 +728,34 @@ var lessons =
   {
     message: {
       en: "Monster draw line. What do you think moveTo() does? lineTo()? Try changing 20 to 50.",
-      de: "de",
+      de: "Monster malt Linien. Was meinst du was moveTo() macht? Und lineTo()? Probier die 20 in 50 zu ändern.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.stroke();\n",
     lessonSection: {
       en: "Lines",
-      de: "de section",
+      de: "Linien",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Try changing the other numbers too.  Can you figure out what moveTo() and lineTo() do?",
-      de: "de",
+      de: "Versuch auch die anderen Zahlen zu ändern. Weisst du was moveTo() und lineTo() tun?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "moveTo(left, top) moves the pen to a spot without drawing.  lineTo(left, top) draws a line from wherever the pen is to a spot.",
-      de: "de",
+      de: "moveTo(links, oben) bewegt den Zeichenstift zu den Punkt (links, oben) ohne etwas zu zeichnen. lineTo(links, open) malt eine Linie von woimmer der Zeichenstift ist zu den Punkt (links, oben).",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is what happens if we do a second lineTo().  The second line starts from where the first ended.",
-      de: "de",
+      de: "Hier siehst du was passiert wenn man ein zweites lineTo() benutzt: die zweite Linie startet dort wo die erste endete.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.lineTo(120, 150);\nc.stroke();\n"
@@ -763,14 +763,14 @@ var lessons =
   {
     message: {
       en: "So, we're drawing a path, a trail of lines all connected together.  We start the path with beginPath() and draw everything with stroke().",
-      de: "de",
+      de: "Wir zeichnen also einen Pfad der aus verbundenen Linien besteht. Wir starten den Pfad mit beginPath() und malen alles auf einmal mit stroke().",
       jp: "jp"
     }
   },
   {
     message: {
       en: "If we put a moveTo() before the second lineTo(), we'll move the pen without drawing.  See?",
-      de: "de",
+      de: "Wenn wir moveTo() vor das zweite lineTo() benutzen, bewegen wir den Zeichenstift ohne zu zeichnen. Siehst du?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.moveTo(120, 60);\nc.lineTo(120, 150);\nc.stroke();\n"
@@ -778,7 +778,7 @@ var lessons =
   {
     message: {
       en: "You try it!  Add another line, put a second c.lineTo() after the first going to (50, 115).",
-      de: "de",
+      de: "Probier du es! Füge eine neue Linue hinzu: mach ein zweites c.lineTo() nach dem ersten um zu (50, 115) zu gehen.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\n\nc.stroke();\n"
@@ -786,7 +786,7 @@ var lessons =
   {
     message: {
       en: "Did that do what you expected?  Try adding a third line!",
-      de: "de",
+      de: "Hat es das gemacht was du gedacht has? Füge eine dritte Linie hinzu!",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\nc.lineTo(50, 115);\n\nc.stroke();\n"
@@ -794,14 +794,14 @@ var lessons =
   {
     message: {
       en: "Can you make a triangle?",
-      de: "de",
+      de: "Kannst du ein Dreieck machen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is one way, a triangle!",
-      de: "de",
+      de: "Hier ist eine Möglichkeit ein Dreieck zu machen.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\nc.lineTo(50, 115);\nc.lineTo(100, 30);\nc.stroke();\n"
@@ -809,7 +809,7 @@ var lessons =
   {
     message: {
       en: "Okay, an orange triangle.  Like blue better.  Can you make it blue?",
-      de: "de",
+      de: "Okay, ein orangenes Dreieck. Ich mal blau lieber. Kannst du es blau (blue) machen?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.strokeStyle = \"orange\";\nc.moveTo(100, 30);\nc.lineTo(150, 115);\nc.lineTo(50, 115);\nc.lineTo(100, 30);\nc.stroke();\n"
@@ -817,7 +817,7 @@ var lessons =
   {
     message: {
       en: "I was trying to make two triangles, but forgot a moveTo().  See what happened?",
-      de: "de",
+      de: "ich wollte zwei Dreiecke machen, aber ich have moveTo() vergessen. Siehst du was passiert ist?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\nc.lineTo(50, 115);\nc.lineTo(100, 30);\n\nc.lineTo(250, 215);\nc.lineTo(150, 215);\nc.lineTo(200, 130);\nc.stroke();\n"
@@ -825,48 +825,48 @@ var lessons =
   {
     message: {
       en: "That's not good.  Can you add <span class=tutor-code>c.moveTo(200, 130);</span> to make it two separate triangles?",
-      de: "de",
+      de: "Das ist nicht gut. Kannst du <span class=tutor-code>c.moveTo(200, 130);</span> irgendwo einfügen damit es zwei Dreiecke werden?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "I want a lot of triangles. We need to use <span class=tutor-code>for</span>!  This for loop draws two triangles.",
-      de: "de",
+      de: "Ich mal viele Dreiecke! Wir brauchen <span class=tutor-code>for</span>! Diese For Schleife zeichnet zwei Dreiecke.",
       jp: "jp"
     },
     code: "c.beginPath();\nfor (var i = 30; i <= 60; i = i + 30) {\n  c.moveTo(70 + i, i);\n  c.lineTo(120 + i, 85 + i);\n  c.lineTo(20 + i, 85 + i);\n  c.lineTo(70 + i, i);\n}\nc.stroke();\n",
     lessonSection: {
       en: "Lines and Loops",
-      de: "de section",
+      de: "Linien und Schleifen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This for loop starts at 30 and increases by 30 every time.  So, until it is told to stop, it counts 30, 60, 90, 120...  Right now, the for loop is told to stop at 60.",
-      de: "de",
+      de: "Diese For Schleife startet mit 30 und erhöht sich um 30 jedes mal. Das heisst es zählt 30, 60, 90, 120... bis es fertig ist. Im Moment hört es auf wenn 60 erreicht ist.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, can you make this for loop draw three triangles? Five?",
-      de: "de",
+      de: "Kannst du diese For Schleife drei Dreiecke zeichnen lassen? Fünf auch?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you make more triangles by changing how the for loop goes up?  What if it counted by 10 each time, so it would count 30, 40, 50, 60... Can you do try that?",
-      de: "de",
+      de: "Kannst du mehr Dreiecke zeichnen indem du die Zahl verringerst um den sich der Schleifenzähler ändert pro Schleife? Was we wenn du 10 pro Schleife addierst? Es würde dann so zählen: 30, 40, 50, 60... Kannst du das probieren?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Aieee!  Look at this!  Forty green triangles!",
-      de: "de",
+      de: "Cooool! Schau mal! Vierzig grüne Dreiecke!",
       jp: "jp"
     },
     code: "c.strokeStyle = \"green\";\nc.beginPath();\nfor (var i = 10; i <= 210; i = i + 5) {\n  c.moveTo(70 + i, i);\n  c.lineTo(120 + i, 85 + i);\n  c.lineTo(20 + i, 85 + i);\n  c.lineTo(70 + i, i);\n}\nc.stroke();\n"
@@ -874,20 +874,20 @@ var lessons =
   {
     message: {
       en: "Play with it more!  Can you change the color?  Can you make even more triangles?",
-      de: "de",
+      de: "Spiel damit! Kannst du die Farbe ändern? Kannst du noch mehr Dreiecke machen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Two boxes, one using strokeRect(), the other using four lines.",
-      de: "de",
+      de: "Zwei Quadrate. Eins mit strokeRect() und eins mit vier Linien",
       jp: "jp"
     },
     code: "var size = 100;\n// First box\nc.strokeRect(30, 30, size, size);\n// Second box\nc.beginPath();\nc.moveTo(80, 80);\nc.lineTo(80 + size, 80);\nc.lineTo(80 + size, 80 + size);\nc.lineTo(80, 80 + size);\nc.lineTo(80, 80);\nc.stroke();\n",
     lessonSection: {
       en: "Coding It Easy",
-      de: "de section",
+      de: "Coding ist einfach",
       jp: "jp section"
     }
   },
