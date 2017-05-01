@@ -21,7 +21,7 @@ var lessons =
     message: {
       en: "I'm Code Monster! (click on my words to see what's next)",
       de: "Ich bin das Code Monster! (Klick auf meine Wörter was danach kommt)",
-      jp: "jp"
+      jp: "私はコードマスターよ！私の文章をクリックして次に進んでね"
     },
     code: "c.fillRect(20, 20, 50, 75);\n",
     lessonSection: {
