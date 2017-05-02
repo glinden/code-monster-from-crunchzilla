@@ -21,7 +21,7 @@ var lessons =
     message: {
       en: "I'm Code Monster! (click on my words to see what's next)",
       de: "Ich bin das Code Monster! (Klick auf meine Wörter was danach kommt)",
-      jp: "jp"
+      jp: "あんまり日本語が出来ないぞ〜"
     },
     code: "c.fillRect(20, 20, 50, 75);\n",
     lessonSection: {
@@ -484,7 +484,7 @@ var lessons =
   {
     message: {
       en: "You can also add numbers to a variable. See what this is doing? It changes <span class=tutor-code>offset</span> with <span class=tutor-code>offset = offset + 50</span>",
-      de: "Du kannst auch Zahlen zu Variablen addieren. Siehst du wie das functioniert? Es ändert <span class=tutor-code>offset</span> mit <span class=tutor-code>offset = offset + 50</span>",
+      de: "Du kannst auch Zahlen zu Variablen addieren. Siehst du wie das funktioniert? Es ändert <span class=tutor-code>offset</span> mit <span class=tutor-code>offset = offset + 50</span>",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 50;\nc.fillRect(offset, offset, size, size);\n"
@@ -720,7 +720,7 @@ var lessons =
   {
     message: {
       en: "Great! Did you get something like this? If not, try playing with the numbers a bit to see how it works!",
-      de: "Grossartig! Hast du sowas wie das hier geschrieben? Wenn nicht, ändere die Zahlen und sieh wie's functioniert!",
+      de: "Grossartig! Hast du sowas wie das hier geschrieben? Wenn nicht, ändere die Zahlen und sieh wie's funktioniert!",
       jp: "jp"
     },
     code: "c.fillRect(10, 10, 20, 20);\nc.fillStyle = \"red\";\nc.fillRect(50, 50, 100, 100);\n"
@@ -894,7 +894,7 @@ var lessons =
   {
     message: {
       en: "Sure takes a lot more code to draw it with lines. Can you add a third box?",
-      de: "de",
+      de: "Es braucht deutlich mehr Code um mit Linien zu zeichnen. Kannst du ein drittes Quadrat hinzufügen?",
       jp: "jp"
     },
     code: "var size = 100;\n// First box\nc.strokeRect(30, 30, size, size);\n// Second box\nc.beginPath();\nc.moveTo(80, 80);\nc.lineTo(80 + size, 80);\nc.lineTo(80 + size, 80 + size);\nc.lineTo(80, 80 + size);\nc.lineTo(80, 80);\nc.stroke();\n// Third box?\n"
@@ -902,7 +902,7 @@ var lessons =
   {
     message: {
       en: "strokeRect() is easier, isn't it?  Here are three boxes all using strokeRect(). Can you add a fourth?",
-      de: "de",
+      de: "strokeRect() ist einfacher, gell? Hier sind drei Quadrate mit strokeRect(). Kannst du ein viertes hinzufügen?",
       jp: "jp"
     },
     code: "var size = 100;\n\nc.strokeRect(30, 30, size, size);\nc.strokeRect(80, 80, size, size);\nc.strokeRect(130, 130, size, size);\n"
@@ -910,19 +910,19 @@ var lessons =
   {
     message: {
       en: "What if we want even more boxes?  Lots of copying.  Yuck-o.",
-      de: "de",
+      de: "Was wenn wir mehr Quadrate möchten? Viel Code zu kopieren. Bäh...",
       jp: "jp"
     },
     lessonSection: {
       en: "Avoid Repeating Code",
-      de: "de section",
+      de: "Vermeidung von Wiederholungen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "I know!  Use for loop!  Can you make more boxes for Code Monster?",
-      de: "de",
+      de: "Ich weiss! For Schleifen! Kannst du mehr Quadrate für mich machen?",
       jp: "jp"
     },
     code: "var size = 100;\n\nfor (var x = 30; x <= 80; x = x + 50) {\n  c.strokeRect(x, x, size, size);\n}\n"
@@ -930,61 +930,61 @@ var lessons =
   {
     message: {
       en: "Can you make more than ten boxes?  And still fit all of them on the screen?",
-      de: "de",
+      de: "Kannst du mehr als 10 Quadrate machen? Und passen die noch auf den Bildschirm?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Is it easier now to make more boxes? Why is that?",
-      de: "de",
+      de: "Ist es jetzt einfacher mehr Quadrate zu machen? Warum ist das so?",
       jp: "jp"
     },
     code: "var size = 100;\nvar num = 3;\nvar offset = 30;\n\nfor (var i = 1; i <= num; i = i + 1) {\n  c.strokeRect(i * offset, i * offset, size, size);\n}\n",
     lessonSection: {
       en: "Variables Make It Easy Too",
-      de: "de section",
+      de: "Variable machen es leichter",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "This works by having <span class=tutor-code>i</span> count up 1, 2, 3... then putting each box's (left, top) at <span class=tutor-code>i * offset</span>, so, since offset is 30, the top left of the first box is (30, 30), the second is at (60, 60), then (90, 90) ...",
-      de: "de",
+      en: "This works by having <span class=tutor-code>i</span> count up 1, 2, 3... then putting each box's (left, top) at <span class=tutor-code>i * offset</span>, so, since <span class=tutor-code>offset</span> is 30, the top left of the first box is (30, 30), the second is at (60, 60), then (90, 90) ...",
+      de: "Das funktioniert indem wir <span class=tutor-code>i</span> von 1, 2, 3... zählen lassen, und jedes Quadrat (links, oben) <span class=tutor-code>i * offset</span> sein lassen, und weil <span class=tutor-code>offset</span> 30 ist, ist (left, top) vom ersten Quadrat (30, 30), vom zweiten ist es (60, 60), dann (90, 90)...",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Try changing size, num, and offset.  See what happens?  Play with it!",
-      de: "de",
+      en: "Try changing <span class=tutor-code>size</span>, <span class=tutor-code>num</span>, and <span class=tutor-code>offset</span>.  See what happens?  Play with it!",
+      de: "Ändere <span class=tutor-code>size</span>, <span class=tutor-code>num</span>, und <span class=tutor-code>offset</span> und sieh was passiert.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "It's often good to have variables that control things (like size, num, and offset) together so they are easy to change.  Like it?",
-      de: "de",
+      de: "Es ist oft sinnvoll Variablen Sachen zusammen kontrollieren zu lassen (wie size, num und offset) damit sie einfacher zu ändern sind. Magst du das auch?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you show me some of what you know? Draw a box. <br>Hint: <span class=tutor-code>c.strokeRect(<i>left, top, width, height</i>);</span> draws a box.",
-      de: "de",
+      de: "Kannst du mir zeigen was du weisst? Zeichne ein Quadrat. <br>Tip: <span class=tutor-code>c.strokeRect(<i>links, oben, weite, höhe</i>);</span> zeichnet ein Rechteck.",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "Quiz: For Loops",
-      de: "de section",
+      de: "Quiz: For Schleifen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Now draw four boxes. Hint: Making four boxes is easy using for. Remember, for loop look like this: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "de",
+      de: "Jetzt zeichne 4 Quadrate. Tip: Es ist einfach mit der For Schleife. For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     },
     code: ""
@@ -992,14 +992,14 @@ var lessons =
   {
     message: {
       en: "Can you make it so you can change the size of all your boxes all at once? Hint: To make a variable named size set to 50, you use <span class=tutor-code>var size = 50;</span>",
-      de: "de",
+      de: "Kannst du es ändern dass du die Grösse aller Quadrate auf einmal ändern kannst? Tip: Damit du eine Variable mit dem Namen size mit dem Wert 50 bekommst, schreib <span class=tutor-code>var size = 50;</span>",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Wow, you're learning to program!  Lots of ways you could do this, but did you get something like this? If not, try changing some stuff, figure out how it works!",
-      de: "de",
+      de: "Super! Wir lernen programmieren! Es gibt viele Möglichkeiten das zu machen. Hier ist eine Lösung.",
       jp: "jp"
     },
     code: "var size = 50;\n\nfor (var i = 0; i < 4; i += 1) {\n  var x = 80 + 30 * i;\n  var y = 80 + 10 * i;\n  c.strokeRect(x, y, size, size);\n}\n"
@@ -1007,20 +1007,20 @@ var lessons =
   {
     message: {
       en: "Code Monster no like repeating self.  No like.  No like.  For loops avoid repeating.  Me now show you functions too. Functions also avoid repeating.",
-      de: "de",
+      de: "Code Monster mag keine Wiederholungen. Schlecht! Schlecht! For Schleifen vermeiden Wiederholungen. Ich zeig jetzt Funktionen. Funktionen vermeiden auch Wiederholungen.",
       jp: "jp"
     },
     code: "// All work and no play\n// make monster a dull boy\n// All work and no play\n// make monster a dull boy\n// All work and no play\n// make monster a dull boy\n",
     lessonSection: {
       en: "Your Own Functions",
-      de: "de section",
+      de: "Deine eigenen Funktionen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This is a new function, strokeSquare().  It is just like strokeRect(), but draws squares.",
-      de: "de",
+      de: "Das ist eine neue Funktion: strokeSquare(). Es ist wie strokeRect(), aber es zeichnet Quadrate.",
       jp: "jp"
     },
     code: "function strokeSquare(left, top, size) {\n  c.strokeRect(left, top, size, size);\n}\n\nstrokeSquare(30, 100, 50);\nstrokeSquare(10, 10, 200);\nstrokeSquare(50, 50, 10);\n"
@@ -1028,28 +1028,28 @@ var lessons =
   {
     message: {
       en: "strokeSquare() uses strokeRect() to draw a rectangle with the same width and height. See how it works?",
-      de: "de",
+      de: "strokeSquare() benutzt strokeRect() um Rechtecke mit der gleichen Höhe wie Breite zu zeichnen. Siehst du wie das funktioniert?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, the first square starts at (30, 100) and then has a height and width of 50. See?",
-      de: "de",
+      de: "Das erste Quadrat startet bei (30, 100) und hat eine Höhe als auch Breite von 50. Siehst du?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you add a fourth square below the others using strokeSquare()?",
-      de: "de",
+      de: "Kannst du ein 4. Quadrat mit strokeSquare() unter den anderen zeichnen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Ooo! A star! Pretty! Change some of the numbers!  Mess it up!",
-      de: "de",
+      de: "Oh! Ein Stern! Schön! Ändere die Zahlen um zu sehen was passiert!",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(50, 100);\nc.lineTo(150, 100);\nc.lineTo(65, 150);\nc.lineTo(100, 60);\nc.lineTo(135, 150);\nc.lineTo(50, 100);\nc.stroke();\n",
@@ -1062,7 +1062,7 @@ var lessons =
   {
     message: {
       en: "Wait, stars aren't green.  Can you make it yellow or gold?",
-      de: "de",
+      de: "Moment mal...Sterne sind nicht grün. Kannst du ihn geld (yellow) oder goldfarben (gold) machen?",
       jp: "jp"
     },
     code: "c.strokeStyle = \"green\";\nc.beginPath();\nc.moveTo(50, 100);\nc.lineTo(150, 100);\nc.lineTo(65, 150);\nc.lineTo(100, 60);\nc.lineTo(135, 150);\nc.lineTo(50, 100);\nc.stroke();\n"
@@ -1070,15 +1070,15 @@ var lessons =
   {
     message: {
       en: "Ooo! A solid gold star! Did you know you can do that? Change some of the numbers!  Mess it up!",
-      de: "de",
+      de: "Oh! Ein goldener Stern! Hast du gewusst dass man das machen kann? Ändere die Zahlen wieder!",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nc.beginPath();\nc.moveTo(50, 100);\nc.lineTo(150, 100);\nc.lineTo(65, 150);\nc.lineTo(100, 60);\nc.lineTo(135, 150);\nc.lineTo(50, 100);\nc.fill();\n"
   },
   {
     message: {
-      en: "Variables make it easy to change and add more stars. Try changing x, y, and size (or anything else)!",
-      de: "de",
+      en: "Variables make it easy to change and add more stars. Try changing <span class=tutor-code>x</span>, <span class=tutor-code>y</span>, and <span class=tutor-code>size</span> (or anything else)!",
+      de: "Variablen machen es einfach den Stern zu ändern oder mehr zu machen. Versuche <span class=tutor-code>x</span>, <span class=tutor-code>y</span>, und <span class=tutor-code>size</span> zu ändern!",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\n\nvar x = 50;\nvar y = 100;\nvar size = 100;\n\nc.beginPath();\nc.moveTo(x, y);\nc.lineTo(x + size, y);\nc.lineTo(x + size * 0.15, y + size * 0.5);\nc.lineTo(x + size / 2, y - size * 0.4);\nc.lineTo(x + size * 0.85, y + size * 0.5);\nc.lineTo(x, y);\nc.fill();\n"
