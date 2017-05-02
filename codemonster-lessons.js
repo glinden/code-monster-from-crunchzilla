@@ -1055,14 +1055,14 @@ var lessons =
     code: "c.beginPath();\nc.moveTo(50, 100);\nc.lineTo(150, 100);\nc.lineTo(65, 150);\nc.lineTo(100, 60);\nc.lineTo(135, 150);\nc.lineTo(50, 100);\nc.stroke();\n",
     lessonSection: {
       en: "More Lines",
-      de: "de section",
+      de: "Mehr Linien",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Wait, stars aren't green.  Can you make it yellow or gold?",
-      de: "Moment mal...Sterne sind nicht grün. Kannst du ihn geld (yellow) oder goldfarben (gold) machen?",
+      de: "Moment mal...Sterne sind nicht grün. Kannst du ihn gelb (yellow) oder goldfarben (gold) machen?",
       jp: "jp"
     },
     code: "c.strokeStyle = \"green\";\nc.beginPath();\nc.moveTo(50, 100);\nc.lineTo(150, 100);\nc.lineTo(65, 150);\nc.lineTo(100, 60);\nc.lineTo(135, 150);\nc.lineTo(50, 100);\nc.stroke();\n"
@@ -1086,7 +1086,7 @@ var lessons =
   {
     message: {
       en: "Here are two stars, but all that repeating myself hurts. No like. What we do?",
-      de: "de",
+      de: "Hier sind zwei Sterne, aber all die Wiederholungen tun weg. Mag ich nicht. Was können wir da machen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\n\nvar x = 50;\nvar y = 100;\nvar size = 100;\n\nc.beginPath();\nc.moveTo(x, y);\nc.lineTo(x + size, y);\nc.lineTo(x + size * 0.15, y + size * 0.5);\nc.lineTo(x + size / 2, y - size * 0.4);\nc.lineTo(x + size * 0.85, y + size * 0.5);\nc.lineTo(x, y);\nc.fill();\nx += 100;\ny += 50;\nc.beginPath();\nc.moveTo(x, y);\nc.lineTo(x + size, y);\nc.lineTo(x + size * 0.15, y + size * 0.5);\nc.lineTo(x + size / 2, y - size * 0.4);\nc.lineTo(x + size * 0.85, y + size * 0.5);\nc.lineTo(x, y);\nc.fill();\n"
@@ -1094,20 +1094,20 @@ var lessons =
   {
     message: {
       en: "Functions! It's fillStar()! Can you add a third star?",
-      de: "de",
+      de: "Funktionen! Sie hisst fillStar()! Kannst Du einen dritten Stern malen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 100;\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y);\n  c.lineTo(x + s, y);\n  c.lineTo(x + s * 0.15, y + s * 0.5);\n  c.lineTo(x + s / 2, y - s * 0.4);\n  c.lineTo(x + s * 0.85, y + s * 0.5);\n  c.lineTo(x, y);\n  c.fill();\n}\n\nfillStar(50, 100, size);\nfillStar(150, 150, size);",
     lessonSection: {
       en: "More Functions",
-      de: "de section",
+      de: "Mehr Funktionen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Four stars in a row!  Can you make it eight?",
-      de: "de",
+      de: "Vier Sterne in einer Reihe! Kannst du acht machen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 40;\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y);\n  c.lineTo(x + s, y);\n  c.lineTo(x + s * 0.15, y + s * 0.5);\n  c.lineTo(x + s / 2, y - s * 0.4);\n  c.lineTo(x + s * 0.85, y + s * 0.5);\n  c.lineTo(x, y);\n  c.fill();\n}\n\nfor (var i = 0; i < 4; i = i + 1) {\n  fillStar(i * size, 50, size);\n}\n"
@@ -1115,34 +1115,34 @@ var lessons =
   {
     message: {
       en: "Two loops!  Try changing size or the number of stars!",
-      de: "de",
+      de: "Zwei Schleifen! Versuch die Grösse oder die Anzahl der Sterne zu ändern!",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 40;\n\nfor (var i = 0; i < 5; i = i + 1) {\n  for (var j = 0; j < 3; j = j + 1) {\n    fillStar(i * size, j * size, size);\n  }\n}\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y + s * 0.4);\n  c.lineTo(x + s, y + s * 0.4);\n  c.lineTo(x + s * 0.15, y + s * 0.9);\n  c.lineTo(x + s / 2, y);\n  c.lineTo(x + s * 0.85, y + s * 0.9);\n  c.lineTo(x, y + s * 0.4);\n  c.fill();\n}\n",
     lessonSection: {
       en: "Nested Loops",
-      de: "de section",
+      de: "Verschachtelte Schleifen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Did you know you could do two loops like that, one inside the other?",
-      de: "de",
+      de: "Hast du gewusst dass du zwei Schleifen so machen kannst? Eine Schleife innerhalb einer anderen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Do you know how it works?",
-      de: "de",
+      de: "Verstehst du wie das funktioniert?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>j</span> will count 0, 1, 2.  The first time <span class=tutor-code>j</span> counts 0, 1, 2, <span class=tutor-code>i</span> will be 0.  The next time j counts 0, 1, 2, i will be 1.",
-      de: "de",
+      de: "<span class=tutor-code>j</span> zählt 0, 1, 2. Das erste mal zählt <span class=tutor-code>j</span> 0, 1, 2 und <span class=tutor-code>i</span> ist 0. Das nächste mal zählt <span class=tutor-code>j</span> 0, 1, 2, <span class=tutor-code>i</span> ist dann 1.",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 40;\n\nfor (var i = 0; i < 5; i = i + 1) {\n  for (var j = 0; j < 3; j = j + 1) {\n    fillStar(i * size, j * size, size);\n  }\n}\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y + s * 0.4);\n  c.lineTo(x + s, y + s * 0.4);\n  c.lineTo(x + s * 0.15, y + s * 0.9);\n  c.lineTo(x + s / 2, y);\n  c.lineTo(x + s * 0.85, y + s * 0.9);\n  c.lineTo(x, y + s * 0.4);\n  c.fill();\n}\n"
@@ -1150,41 +1150,41 @@ var lessons =
   {
     message: {
       en: "So, for the first star, i = 0 and j = 0.  On the second star, i = 0 and j = 1.  Third, i = 0 and j = 2. Then, i = 1 and j = 0, i = 1 and j = 1, i = 1 and j = 2, and so on.",
-      de: "de",
+      de: "So, für den ersten Stern ist i = 0 und j = 0. Der zweite Stern hat i = 0 und j = 1. Der dritte: i = 0 und j = 2. Dann i = 1 und j = 0, dann i = 1, j = 1, dann i = 1 und j = 2 und so weiter.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you figure out what order it draws the stars?  Which star is drawn first?  Which star is the second star drawn?",
-      de: "de",
+      de: "Weisst du in welcher Reihenfolge die Sterne gezeichnet werden? Welcher ist der erste? Welcher der zweite?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "The first star will be the one at the top left.  The second drawn is the one below it.  Do you see why?",
-      de: "de",
+      de: "Der erste Stern ist oben links. Der zweite ist darunter. Weisst du warum?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Wow!  Full of stars! Try changing size!",
-      de: "de",
+      de: "Super! Voll viele Sterne! Versuche die Grösse zu ändern!",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 40;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar maxI = Math.floor(w / size);\nvar maxJ = Math.floor(h / size);\n\nfor (var i = 0; i < maxI; i = i + 1) {\n  for (var j = 0; j < maxJ; j = j + 1) {\n    fillStar(i * size, j * size, size);\n  }\n}\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y + s * 0.4);\n  c.lineTo(x + s, y + s * 0.4);\n  c.lineTo(x + s * 0.15, y + s * 0.9);\n  c.lineTo(x + s / 2, y);\n  c.lineTo(x + s * 0.85, y + s * 0.9);\n  c.lineTo(x, y + s * 0.4);\n  c.fill();\n}\n",
     lessonSection: {
       en: "Fun with Stars",
-      de: "de section",
+      de: "Spass mit Sternen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Wow!  Five stars, randomly placed, changing every time. Can you have it draw fifty stars? A hundred?  How about bigger stars or smaller stars?",
-      de: "de",
+      de: "Wow! Fünf Sterne, zu fällig plaziert und jedesmal anders. Kannst du 50 Sterne zeichnen? 100? Wie wäre es mit grösseren oder kleineren Sternen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar n = 5;\nvar size = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < n; i = i + 1) {\n  var x = (w - size) * Math.random();\n  var y = (h - size) * Math.random();\n  fillStar(x, y, size);\n}\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y + s * 0.4);\n  c.lineTo(x + s, y + s * 0.4);\n  c.lineTo(x + s * 0.15, y + s * 0.9);\n  c.lineTo(x + s / 2, y);\n  c.lineTo(x + s * 0.85, y + s * 0.9);\n  c.lineTo(x, y + s * 0.4);\n  c.fill();\n}\n"
@@ -1192,20 +1192,20 @@ var lessons =
   {
     message: {
       en: "Ugh, me tired of seeing stars.  Lines where it's at.  Here two separate lines. See how much is repeated? No like. What can we do?",
-      de: "de",
+      de: "Hmm...will keine Sterne mehr sehen. Linien jetzt! Hier sind 2 Linien. Siehst du wie sich das wiederholt? Ich mag das nicht. Was können wir da tun?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(20, 20);\nc.lineTo(200, 20);\nc.stroke();\nc.beginPath();\nc.moveTo(20, 50);\nc.lineTo(200, 50);\nc.stroke();\n",
     lessonSection: {
       en: "Even More Functions",
-      de: "de section",
+      de: "Noch mehr Funktionen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Need drawLine() function.  Here it is.  Now draw one line from (20, 20) to (200, 20) and another from (20, 50) to (200, 50).",
-      de: "de",
+      de: "Wir brauchen die drawLine() Funktion. Hier ist sie. Nun zeichne eine Linie von (20, 20) nach (200, 20) und eine andere von (20, 50) nach (200, 50).",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\n"
@@ -1213,7 +1213,7 @@ var lessons =
   {
     message: {
       en: "Did you get it? Here is one version.  Can you add a third line below the other two?",
-      de: "de",
+      de: "Verstanden? Hier ist eine Version. Kannst du eine dritte Linie unter den beiden zeichnen?",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\ndrawLine(20, 20, 200, 20);\ndrawLine(20, 50, 200, 50);\n"
@@ -1221,20 +1221,20 @@ var lessons =
   {
     message: {
       en: "Three vertical lines using for loop.  Can you make it ten lines?",
-      de: "de",
+      de: "Drei vertikale Linien mit einer Schleife gemacht. Kannst du 10 machen?",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\nfor (var i = 0; i < 3; i = i + 1) {\n  var x = 20 + i * 30;\n  drawLine(x, 20, x, 200);\n}\n",
     lessonSection: {
       en: "Fun with Lines",
-      de: "de section",
+      de: "Spass mit Linien",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Ten lines coming to a point.  Try moving the point!",
-      de: "de",
+      de: "Zehn Linien die sich in einem Punkt treffen. Bewege den Punkt!",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\nvar px = 200;\nvar py = 150;\nfor (var i = 0; i < 10; i = i + 1) {\n  var y = i * 30;\n  drawLine(0, y, px, py);\n}\n"
@@ -1242,7 +1242,7 @@ var lessons =
   {
     message: {
       en: "Ready for something harder?  Now the lines fan to the right.  Can you also add in the ones we saw last, going to the left?",
-      de: "de",
+      de: "Fertig für etwas schwereres? Jetzt gehen alle Linien zur rechten Seite. Kannst du die dazu zeichnen die von links kommen wie vorher?",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\nvar px = 200;\nvar py = 150;\nfor (var i = 0; i < 10; i = i + 1) {\n  var y = i * 30;\n  drawLine(400, y, px, py);\n}\n"
@@ -1250,7 +1250,7 @@ var lessons =
   {
     message: {
       en: "Did you get it?  This is one way to do it.  Try moving the point now!",
-      de: "de",
+      de: "Hast du's geschafft? Hier ist eine Versich wie's geht. Versuch jetzt den Punkt zu bewegen!",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\nvar px = 200;\nvar py = 150;\nfor (var i = 0; i < 10; i = i + 1) {\n  var y = i * 30;\n  drawLine(0, y, px, py);\n  drawLine(400, y, px, py);\n}\n"
@@ -1258,7 +1258,7 @@ var lessons =
   {
     message: {
       en: "Ooo!  Me like!  Try changing num, px, or py!",
-      de: "de",
+      de: "Oh! Schön! Versuche num, px oder py zu ändern!",
       jp: "jp"
     },
     code: "var num = 20;\nvar px = 200;\nvar py = 150;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var y = i * h / (num - 1);\n  drawLine(400, y, px, py);\n  var x = y * w / h;\n  drawLine(x, 300, px, py);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1266,7 +1266,7 @@ var lessons =
   {
     message: {
       en: "Can you make lines from all sides?  You will need four drawLine() and your two new ones will use 0 instead of w and h.  Can you do it?",
-      de: "de",
+      de: "Kannst Du Linien von allen vier Seiten zeichnen? Du brauchst vier drawLine() und die zwei neuen brauchen 0 anstelle von w und h. Schaffst du das?",
       jp: "jp"
     },
     code: "var num = 20;\nvar px = 200;\nvar py = 150;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var y = i * h / (num - 1);\n  drawLine(w, y, px, py);\n  var x = y * w / h;\n  drawLine(x, h, px, py);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1274,7 +1274,7 @@ var lessons =
   {
     message: {
       en: "I like mine blue.  Play with it!",
-      de: "de",
+      de: "Ich mag meine blau. Spiel damit!",
       jp: "jp"
     },
     code: "var num = 10;\nvar px = 200;\nvar py = 150;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.strokeStyle = \"blue\";\nfor (var i = 0; i < num; i = i + 1) {\n  var y = i * h / (num - 1);\n  drawLine(0, y, px, py);\n  drawLine(w, y, px, py);\n  var x = y * w / h;\n  drawLine(x, 0, px, py);\n  drawLine(x, h, px, py);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1282,20 +1282,20 @@ var lessons =
   {
     message: {
       en: "When me little monster, me draw these.  You like too?  Change number of lines!",
-      de: "de",
+      de: "Als ich ein kleines Monster war, habe ich sowas gemalt. Magst Du es auch? Versuche die Anzahl der Linien zu ändern!",
       jp: "jp"
     },
     code: "var num = 10;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  drawLine(0, y, x, h);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n",
     lessonSection: {
       en: "More Fun with Lines",
-      de: "de section",
+      de: "Mehr Spass mit Linien",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Can you add another curve at top right? You will need another drawLine() but use x, 0, w, y.",
-      de: "de",
+      de: "Kannst du eine neue Kurve oben rechts zeichnen? Du brauchst noch ein drawLine(), aber diesmal benutze x, 0, w, y.",
       jp: "jp"
     },
     code: "var num = 10;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  drawLine(0, y, x, h);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1303,7 +1303,7 @@ var lessons =
   {
     message: {
       en: "Pretty!  Try other colors and changing the number of lines!",
-      de: "de",
+      de: "Hübsch! Probier auch andere Farben oder ändere die Anzahl der Linien.",
       jp: "jp"
     },
     code: "var num = 30;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.strokeStyle = \"gold\";\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  drawLine(0, y, x, h);\n  drawLine(x, 0, w, y);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1311,14 +1311,14 @@ var lessons =
   {
     message: {
       en: "Can you make it so the two curves are two different colors?",
-      de: "de",
+      de: "Kannst du die zwei Kurven in untersciedlichen Farben zeichnen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is one version.  Try changing the colors!",
-      de: "de",
+      de: "Hier ist eine Version. Ändere die Farben!",
       jp: "jp"
     },
     code: "var num = 30;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  c.strokeStyle = \"gold\";\n  drawLine(0, y, x, h);\n  c.strokeStyle = \"red\";\n  drawLine(x, 0, w, y);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1326,7 +1326,7 @@ var lessons =
   {
     message: {
       en: "Here is a crazy fun random colors changing version.  It's complicated, but take a look.  Can you guess how it works? And try changing num!",
-      de: "de",
+      de: "Hier ist eine verrückt bunte Version. Es ist etwas kompliziert, aber schau mal. Verstehst du wie's funktioniert? Probier mal num zu ändern!",
       jp: "jp"
     },
     code: "var num = 30;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  c.strokeStyle = randomRGBA();\n  drawLine(0, y, x, h);\n  c.strokeStyle = randomRGBA();\n  drawLine(x, 0, w, y);\n}\n\nfunction randomRGBA() {\n  var r = randInt(255);\n  var g = randInt(255);\n  var b = randInt(255);\n  var a = Math.random();\n  var rgba = [r,g,b,a].join(\",\");\n  return \"rgba(\" + rgba + \")\";\n}\nfunction randInt(limit) {\n  var x = Math.random() * limit;\n  return Math.floor(x);\n}\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1334,20 +1334,20 @@ var lessons =
   {
     message: {
       en: "You know programming?  Show me!  Can make a function called fillSquare() and then use that to draw a second bigger square? Hint: You'll need something like <span class=tutor-code>function fillSquare(left, top, size) {</span>",
-      de: "de",
+      de: "Kannst du programmieren? Zeig's mir! Kannst du eine Funktion fillSquare() schreiben die ein grösseres zweites Quadrat zeichnet. Tip: Du brauchst sowas wie <span class=tutor-code>function fillSquare(left, top, size) {</span>",
       jp: "jp"
     },
     code: "c.fillRect(20, 30, 100, 100);\n",
     lessonSection: {
       en: "Quiz: Functions",
-      de: "de section",
+      de: "Quiz: Funktionen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Did you get it?  Something like this? Now can you make the first square also use fillSquare() instead of calling fillRect()?",
-      de: "de",
+      de: "Hast du's geschafft? Sowas wie das hier? Kannst du das erste Quadrat auch mit fillSquare() anstelle von fillRect() machen?",
       jp: "jp"
     },
     code: "c.fillRect(20, 30, 100, 100);\n\nfillSquare(200, 70, 150);\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, s, s);\n}\n"
@@ -1355,7 +1355,7 @@ var lessons =
   {
     message: {
       en: "Look, one line. Huh. Want more. It would be easier to add more lines if we had that drawLine() function again.  Can you write that and then make this line use it? Hint: Create a function with <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
-      de: "de",
+      de: "Guck mal, eine Linie. Ich will mehr! Es wäre einfacher wenn wir wieder die drawLine() Funktion hätten. Kannst du die schreiben und dann die Linie unten damit zeichnen? Tip: <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(200, 50);\nc.stroke();\n"
@@ -1363,7 +1363,7 @@ var lessons =
   {
     message: {
       en: "Ahh, isn't that better?  Add another line below this one.  Wasn't that easy now?",
-      de: "de",
+      de: "Ah, ist das nicht besser? Mach noch eine Linie darunter dazu. Das ist einfach, gell?",
       jp: "jp"
     },
     code: "drawLine(30, 20, 200, 50);\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1371,14 +1371,14 @@ var lessons =
   {
     message: {
       en: "So easy to add more lines, I want lots more.  Give me ten lines total, one on top of the other, separated by 10! Hint: Easier with for loop. For loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "de",
+      de: "So einfach mehr Linien zu machen. Mehr! Gib mir 10 Linien! Eine über der anderen. Abstand 10. Tip: Einfacher mit for Schleifen. For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You get something like this?  You getting good!  Try playing with the numbers! I like n of 40 and dy of 5!",
-      de: "de",
+      de: "Hast du das geschafft? So wie das hier? Du wirst gut! Probier andere Zahlen. n = 40 oder dy = 5!",
       jp: "jp"
     },
     code: "var n = 10;\nvar dy = 10;\nfor (var i = 0; i < n; i = i + 1) {\n  var y = 20 + i * dy;\n  drawLine(30, y, 200, y + 30);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1386,7 +1386,7 @@ var lessons =
   {
     message: {
       en: "Me miss boxes.  Hey, look, boxes, can erase!  Try moving the white box from (50, 50) to (20, 20)!",
-      de: "de",
+      de: "Ich vermisse Quadrate! Schau mal, Quadrate kann ich löschen! Versuch das Quadrat von (50, 50) nach (20, 20) zu bewegen!",
       jp: "jp"
     },
     code: "function fillSquare(w, h, s) {\n  c.fillRect(w, h, s, s);\n}\n\nc.fillStyle = \"blue\";\nfillSquare(10, 10, 100);\nfillSquare(100, 100, 100);\nc.fillStyle = \"white\";\nfillSquare(50, 50, 100);\n",
@@ -1399,7 +1399,7 @@ var lessons =
   {
     message: {
       en: "Order matters.  Last one to draw gets to stay!  Try moving the white box now!",
-      de: "de",
+      de: "Die Reihenfolge ist wichtig. Das letzte gemalte Quadrat bleibt! Versuch jetzt das weisse Quadrat zu bewegen!",
       jp: "jp"
     },
     code: "function fillSquare(w, h, s) {\n  c.fillRect(w, h, s, s);\n}\n\nc.fillStyle = \"blue\";\nfillSquare(10, 10, 100);\nc.fillStyle = \"white\";\nfillSquare(50, 50, 100);\nc.fillStyle = \"blue\";\nfillSquare(100, 100, 100);\n"
@@ -1407,7 +1407,7 @@ var lessons =
   {
     message: {
       en: "Another way to erase is with clearRect().  Can you make a little blue smiley face using these?  It is almost done.  You just need to move them.",
-      de: "de",
+      de: "Eine andere Möglichkeit Sachen zu löschen ist mittels clearRect(). Kannst du ein kleines blaues Smiley Gesicht damit machen? Es ist fast fertig. Du musst sie nur bewegen.",
       jp: "jp"
     },
     code: "c.fillStyle = \"blue\";\nc.fillRect(50, 20, 200, 200);\n// Eyes\nc.clearRect(80, 150, 20, 20);\nc.clearRect(120, 150, 20, 20);\n// Mouth\nc.clearRect(70, 50, 100, 10);\n"
@@ -1415,7 +1415,7 @@ var lessons =
   {
     message: {
       en: "Me like this guy.  Ooo, friend.",
-      de: "de",
+      de: "Ich man den Kerl. Freund!",
       jp: "jp"
     },
     code: "c.fillStyle = \"blue\";\nc.fillRect(50, 20, 200, 200);\n// Eyes\nc.clearRect(80, 50, 20, 20);\nc.clearRect(150, 50, 20, 20);\n// Mouth\nc.clearRect(70, 150, 100, 10);\n"
@@ -1423,7 +1423,7 @@ var lessons =
   {
     message: {
       en: "A big clearRect() erases everything.  Uncomment the big clearRect() (remove the <span class=tutor-code>//</span>) and see what happens.",
-      de: "de",
+      de: "Ein grosses clearRect() löscht alles. Lösche die Kommentarzeichen (das <span class=tutor-code>//</span> sind Kommentarzeichen) und sieh was passiert.",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n// c.clearRect(0, 0, w, h);\noffset = offset + 60;\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n"
@@ -1431,47 +1431,47 @@ var lessons =
   {
     message: {
       en: "<span class=tutor-code>//</span> at the beginning of a line makes the line get ignored.  That's called commenting out.  Try adding <span class=tutor-code>//</span> before some of the other lines and see what happens!",
-      de: "de",
+      de: "<span class=tutor-code>//</span> am Anfang einer Zeile macht dass der Rest ignoriert wirds. Einfügen von <span class=tutor-code>//</span> heisst 'auskommentieren'. Füge mal <span class=tutor-code>//</span> vor einer anderen Zeile und sieh was passiert!",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n// c.clearRect(0, 0, w, h);\noffset = offset + 60;\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n",
     lessonSection: {
       en: "Comments",
-      de: "de section",
+      de: "Kommentare",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "A box.  But how did it get that far away from the edge?  Try changing x and y.",
-      de: "de",
+      de: "Ein Quadrat. Aber wieso ist es so weit vom Rand entfernt? Versuche x und y zu ändern.",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\n\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n",
     lessonSection: {
       en: "Rotation and Translation",
-      de: "de section",
+      de: "Rotation und Verschiebung",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "The fillRect() says to make the (left, top) at (0, 0), so wouldn't you think the box would be at the upper left corner? But, wait, what is translate()?",
-      de: "de",
+      de: "Das fillRect() sagt dass (links, oben) (0, 0) sein soll, deshalb sollte es in der oberen linken Ecke sein. Aber was ist das: translate()?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "translate() changes where (0, 0) is. After translate(50, 50), for example, anything that tries to draw at (0, 0) will draw at (50, 50).  Drawing at (20, 20) would draw at (70, 70), since 50 + 20 = 70.  See?",
-      de: "de",
+      de: "translate() verändert wo (0, 0) ist. Nach translate(50, 50) zum Beispiel ist alles was bei (0, 0) zeichnen will, bei (50, 50). Zeichnen bei (20, 20) zeichnet worklich bei (70, 70), weil 50 + 20 = 70. Siehst du?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Why does this do what it does?  What will happen if you uncomment save() and restore()? Try it. Was it what you expected?",
-      de: "de",
+      de: "Warum macht es das? Was passiert wenn man save() auskommentiert? Probier mal! Hast du das erwartet?",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\n\n// c.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n// c.restore();\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n"
@@ -1479,22 +1479,22 @@ var lessons =
   {
     message: {
       en: "The second box becomes black and gets drawn right on top of the first box!  Why?",
-      de: "de",
+      de: "Das zweite Quadrat wurde schwarz und wir auf dem ersen Quadrat gemalt! Warum?",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\nc.restore();\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n"
   },
   {
     message: {
-      en: "restore() eliminates all the changes since the last save().  So, if you save, then change the fillStyle color or do translate(), then restore, everything goes back to what it was right before the save.",
-      de: "de",
+      en: "restore() eliminates all the changes since the last save().  So, if you save(), then change the fillStyle = color or do translate(), then restore(), everything goes back to what it was right before the save().",
+      de: "restore() entfernt alle Änderungen seit dem letzten save(). Also wenn du save() macht, dann die Füllfarbe oder translate() machst, und dann restore() benutzt, sind die Einstellungen wie vor dem save(),",
       jp: "jp"
     }
   },
   {
     message: {
       en: "We can rotate stuff too.  Try changing angle!",
-      de: "de",
+      de: "Wir können auch Sachen rotieren! Versuch den Winkel zu ändern!",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(0, 0, 100, 100);\n"
@@ -1502,7 +1502,7 @@ var lessons =
   {
     message: {
       en: "You might be used to degrees?  Angles in Javascript are in radians.  45 degrees is about 0.8 in radians.  Try changing angle from 0.1 to 0.8!",
-      de: "de",
+      de: "Denkst du das der Winkel in Grad ist? Winkel in Javascript sind in Radianten geschrieben. 45 Grad subd etwa 0.8 Radianten. Probier den Winkel von 0.1 bis 0.8 zu ändern!",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(0, 0, 100, 100);\n"
@@ -1510,21 +1510,21 @@ var lessons =
   {
     message: {
       en: "Spinning all the way around is 360 degrees, right?  In radians, it is about 6.28.",
-      de: "de",
+      de: "Einmal ganz rumherum sind 360 Grad, richtig? In Radianten sind das etwa 6.28.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Did you notice that this box is pivoting through its top left corner when you rotate it?  That's the same spot we said to go with translate(), right?",
-      de: "de",
+      de: "Hast du bemerkt dass das Quadrat sich um seine linke obere Ecke dreht? Das ist der gleiche Punkt den wir mit translate() gesetzt haben, richtig?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try changing angle now.  How is this different?",
-      de: "de",
+      de: "Probier jetzt den Winkel zu ändern. Was hat sich geändert?",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(-50, -50, 100, 100);\n"
@@ -1532,21 +1532,21 @@ var lessons =
   {
     message: {
       en: "Kind of weird that the strokeRect() uses -50 for the left and top, isn't it?  But the top left of the box is still at (50, 50), because we translated to (100, 100), and 100 - 50 = 50.",
-      de: "de",
+      de: "Schon seltsam dass strokeRect() -50 für links und oben benutzt, gell? Aber oben lniks vom Quadrat ist immernoch bei (50, 50) weil wir alles nach (100, 100) verschoben haben (mit translate(100, 100)) und 100 - 50 = 50.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "When we rotate, we rotate around (100, 100) because of the translate().  Oh, and (100, 100) is the center of the box!  So, this box is rotating around its center!",
-      de: "de",
+      de: "wenn wir rotieren, rotieren wir um (100, 100) wegen translate(100, 100). Oh, (100, 100) ist auch die Mitte vom Quadrat! Deshalb rotiert das Quadrat um seine Mitte!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "translate() and rotate() add to any earlier translate() and rotate(), unless you restore() the old state.  Try changing angle or uncommenting save() and restore()!",
-      de: "de",
+      de: "translate() und rotate() addieren sich zu vorherigen translate() und rotate() Funktionen, ausser wenn man restore() benutzt. Versuch den Winkel zu ändern und save() und restore() auszukommentieren!",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\n// c.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n// c.restore();\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n"
@@ -1554,14 +1554,14 @@ var lessons =
   {
     message: {
       en: "Did that do what you expected?  You see why it did what it did?  With the save() and restore(), the second box is black and gets drawn right on top of the first purple box.",
-      de: "de",
+      de: "Macht es was du erwartest hast? Siehst du wie's funktioniert? Mit save() und restore() ist das zweite Quadrat schwarz und wird direkt über das vorherige violette Quadrat gemalt.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you move the black box off the purple box?  So you can see both?",
-      de: "de",
+      de: "Kannst du das schwarze Quadrat verschieben so dass du beise sehen kannst?",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\nc.restore();\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n"
@@ -1569,7 +1569,7 @@ var lessons =
   {
     message: {
       en: "Here is one way. See how the translate() is to a different spot?  Try changing angle now!  Did you try a negative number of angle like -0.2?",
-      de: "de",
+      de: "Hier ist eine Möglichkeit. Siehst du wie translate() alles u einem neuen Punkt verschiebt? Ändere den Winkel jetzt! Probier auch mal einen negativen Winkel wie -0.2.",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\nc.restore();\nc.translate(x * 2, y * 2);\nc.rotate(angle*2);\nc.fillRect(-50, -50, 100, 100);\n"
