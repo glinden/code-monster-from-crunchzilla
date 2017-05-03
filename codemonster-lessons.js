@@ -1094,7 +1094,7 @@ var lessons =
   {
     message: {
       en: "Functions! It's fillStar()! Can you add a third star?",
-      de: "Funktionen! Sie hisst fillStar()! Kannst Du einen dritten Stern malen?",
+      de: "Funktionen! Sie heisst fillStar()! Kannst Du einen dritten Stern malen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 100;\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y);\n  c.lineTo(x + s, y);\n  c.lineTo(x + s * 0.15, y + s * 0.5);\n  c.lineTo(x + s / 2, y - s * 0.4);\n  c.lineTo(x + s * 0.85, y + s * 0.5);\n  c.lineTo(x, y);\n  c.fill();\n}\n\nfillStar(50, 100, size);\nfillStar(150, 150, size);",
@@ -1311,7 +1311,7 @@ var lessons =
   {
     message: {
       en: "Can you make it so the two curves are two different colors?",
-      de: "Kannst du die zwei Kurven in untersciedlichen Farben zeichnen?",
+      de: "Kannst du die zwei Kurven in unterschiedlichen Farben zeichnen?",
       jp: "jp"
     }
   },
@@ -1431,7 +1431,7 @@ var lessons =
   {
     message: {
       en: "<span class=tutor-code>//</span> at the beginning of a line makes the line get ignored.  That's called commenting out.  Try adding <span class=tutor-code>//</span> before some of the other lines and see what happens!",
-      de: "<span class=tutor-code>//</span> am Anfang einer Zeile macht dass der Rest ignoriert wirds. Einfügen von <span class=tutor-code>//</span> heisst 'auskommentieren'. Füge mal <span class=tutor-code>//</span> vor einer anderen Zeile und sieh was passiert!",
+      de: "<span class=tutor-code>//</span> am Anfang einer Zeile macht dass der Rest ignoriert wird. Einfügen von <span class=tutor-code>//</span> heisst 'auskommentieren'. Füge mal <span class=tutor-code>//</span> vor einer anderen Zeile und sieh was passiert!",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n// c.clearRect(0, 0, w, h);\noffset = offset + 60;\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n",
@@ -1464,7 +1464,7 @@ var lessons =
   {
     message: {
       en: "translate() changes where (0, 0) is. After translate(50, 50), for example, anything that tries to draw at (0, 0) will draw at (50, 50).  Drawing at (20, 20) would draw at (70, 70), since 50 + 20 = 70.  See?",
-      de: "translate() verändert wo (0, 0) ist. Nach translate(50, 50) zum Beispiel ist alles was bei (0, 0) zeichnen will, bei (50, 50). Zeichnen bei (20, 20) zeichnet worklich bei (70, 70), weil 50 + 20 = 70. Siehst du?",
+      de: "translate() verändert wo (0, 0) ist. Nach translate(50, 50) zum Beispiel ist alles was bei (0, 0) zeichnen will, bei (50, 50). Zeichnen bei (20, 20) zeichnet wirklich bei (70, 70), weil 50 + 20 = 70. Siehst du?",
       jp: "jp"
     }
   },
@@ -1532,14 +1532,14 @@ var lessons =
   {
     message: {
       en: "Kind of weird that the strokeRect() uses -50 for the left and top, isn't it?  But the top left of the box is still at (50, 50), because we translated to (100, 100), and 100 - 50 = 50.",
-      de: "Schon seltsam dass strokeRect() -50 für links und oben benutzt, gell? Aber oben lniks vom Quadrat ist immernoch bei (50, 50) weil wir alles nach (100, 100) verschoben haben (mit translate(100, 100)) und 100 - 50 = 50.",
+      de: "Schon seltsam dass strokeRect() -50 für links und oben benutzt, gell? Aber oben links vom Quadrat ist immernoch bei (50, 50) weil wir alles nach (100, 100) verschoben haben (mit translate(100, 100)) und 100 - 50 = 50.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "When we rotate, we rotate around (100, 100) because of the translate().  Oh, and (100, 100) is the center of the box!  So, this box is rotating around its center!",
-      de: "wenn wir rotieren, rotieren wir um (100, 100) wegen translate(100, 100). Oh, (100, 100) ist auch die Mitte vom Quadrat! Deshalb rotiert das Quadrat um seine Mitte!",
+      de: "Wenn wir rotieren, rotieren wir um (100, 100) wegen translate(100, 100). Oh, (100, 100) ist auch die Mitte vom Quadrat! Deshalb rotiert das Quadrat um seine Mitte!",
       jp: "jp"
     }
   },
@@ -1561,7 +1561,7 @@ var lessons =
   {
     message: {
       en: "Can you move the black box off the purple box?  So you can see both?",
-      de: "Kannst du das schwarze Quadrat verschieben so dass du beise sehen kannst?",
+      de: "Kannst du das schwarze Quadrat verschieben so dass du beide sehen kannst?",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\nc.restore();\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n"
@@ -1569,7 +1569,7 @@ var lessons =
   {
     message: {
       en: "Here is one way. See how the translate() is to a different spot?  Try changing angle now!  Did you try a negative number of angle like -0.2?",
-      de: "Hier ist eine Möglichkeit. Siehst du wie translate() alles u einem neuen Punkt verschiebt? Ändere den Winkel jetzt! Probier auch mal einen negativen Winkel wie -0.2.",
+      de: "Hier ist eine Möglichkeit. Siehst du wie translate() alles zu einem neuen Punkt verschiebt? Ändere den Winkel jetzt! Probier auch mal einen negativen Winkel wie -0.2.",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\nc.restore();\nc.translate(x * 2, y * 2);\nc.rotate(angle*2);\nc.fillRect(-50, -50, 100, 100);\n"
@@ -1577,7 +1577,7 @@ var lessons =
   {
     message: {
       en: "Boxes rotated relative to their center are usually what you want.  Look, a function that makes boxes rotated to different angles!  Can you add a few more boxes?",
-      de: "de",
+      de: "Normalerweise erwartet man Quadrate die sich um ihren Mittelpunkt drehen. Schau, eine Funktion die Quadrate um verschiedene Winkel dreht! Kannst du mehr Quadrate hinzufügen?",
       jp: "jp"
     },
     code: "function strokeSquare(x, y, size, angle) {\n  c.save();\n  c.translate(x + size / 2, y + size / 2);\n  c.rotate(angle);\n  c.strokeRect(-size / 2, -size / 2,\n                size, size);\n  c.restore();\n}\n\nstrokeSquare(50, 50, 100, 0.2);\nstrokeSquare(180, 100, 50, -0.1);\n"
@@ -1585,7 +1585,7 @@ var lessons =
   {
     message: {
       en: "You coder now? Show me! Draw a box rotated by -0.5.  Hint: Use c.rotate(); and c.strokeRect();",
-      de: "de",
+      de: "Bist du ein Programmierer oder eine Programmiererin? Zeig's mir! Zeichne ein Quadrat das um -0.5 rotiert ist? Tip: Benutze c.rotate() und c.strokeRect()",
       jp: "jp"
     },
     code: "",
@@ -1598,14 +1598,14 @@ var lessons =
   {
     message: {
       en: "Oh, that too easy? You want harder problems? Draw five boxes on top of each other, each rotated by 0.3 more than the last.<br>Hint: c.translate() might be useful<br>Hint: For loops look like <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
-      de: "de",
+      de: "Oh, war das zu leicht? Möchtest du ein schwereres Problem? Zeichne fünf Quadrate, eine über dem anderen, jedes um 0.3 mehr verdreht als das vorherige.<br>Tip: c.translate() ist praktisch hier.<br>Noch ein Tip: For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Did you get something like this? See how this works?  It first moves a spot with translate(), then repeatedly draws squares around that spot and rotates around that spot.",
-      de: "de",
+      de: "Hast du sowas wie das hier herausbekommen? Siehst du wie das funktioniert? Zuerst bewegt es einen Punkt mit translate(), dann zeichnet es ein Quadrat um diesen Punkt herum und rotiert um den gleichen Punkt.",
       jp: "jp"
     },
     code: "var angle = 0.2;\nvar num = 5;\nc.translate(150, 150);\nfor (var i = 0; i < num; i = i + 1) {\n  c.strokeRect(-75, -75, 150, 150);\n  c.rotate(angle);\n}\n"
@@ -1613,27 +1613,27 @@ var lessons =
   {
     message: {
       en: "Play with it a bit!  Try changing num and angle!",
-      de: "de",
+      de: "Spiel damit etwas! Versuche num und angle zu ändern!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's say we want to try to draw a tree.  How might you do that?",
-      de: "de",
+      de: "Lass uns überlegen einen Baum zu zeichnen. Wie könnten wir das machen?",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "A Hard Problem",
-      de: "de section",
+      de: "Ein schweres Problem",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Trees have branches.  Here is a start. Can you add more branches?",
-      de: "de",
+      de: "Bäume haben Zweige. Hier ist ein Start. Kannst du mehr Zweige machen?",
       jp: "jp"
     },
     code: "drawLine(200, 300, 200, 200);\ndrawLine(200, 200, 160, 130);\ndrawLine(200, 200, 240, 130);\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1641,14 +1641,14 @@ var lessons =
   {
     message: {
       en: "Oog, that a lot of work.",
-      de: "de",
+      de: "Hmm...das ist eine Mange Arbeit.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Me try using variables.  Does that make it easier?  Not sure it does. What do you think?",
-      de: "de",
+      de: "Versuch Variablen zu benutzen? Wird das einfacher? Hmm...ich weiss nicht. Was denkst du?",
       jp: "jp"
     },
     code: "var w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawLine(w * 0.5, h, w * 0.5, h * 0.7);\ndrawLine(w * 0.5, h * 0.7, w * 0.4, h * 0.5);\ndrawLine(w * 0.5, h * 0.7, w * 0.6, h * 0.5);\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1656,28 +1656,28 @@ var lessons =
   {
     message: {
       en: "Bleah, that still too much work. For loop maybe?  How might that work? I don't know.  How would we draw two branches from every branch? I'm not sure.  What do you think?",
-      de: "de",
+      de: "Näh, viel zu viel Arbeit! Vielleicht mit einer Schleife? Wie könnte das funktionieren? Ich weiss nicht. Wie kann man zwei Zweige von jedem Zweig aus zeichnen? Ich bin mir nicht sicher. Was denkst du?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "No, I can't see a way to draw trees easily using a for loop.  What else we got?  Can we use functions?",
-      de: "de",
+      de: "Nein, ich sehe keinen Weg mit einer for Schleife einen Baum zu zeichnen. Was können wir noch benutzen? Funktionen vielleicht?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Maybe a function could draw a branch.  But how could every branch draw two more branches?",
-      de: "de",
+      de: "Vielleicht kann eine Funktion einen Zweig zeichnen. Aber wie kann jeder Zweig 2 weitere Zweige zeichnen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's start with a function that draws a branch.  Here's one.  It takes four numbers, where to start (x,y), the length <span class=tutor-code>l</span>, and the <span class=tutor-code>direction</span> which says whether to draw left, right, or straight.",
-      de: "de",
+      de: "Lass und mit einer Funktion starten die einen Zweig zeichnet. Hier ist eine. Sie nimmt 4 Zahlen als Argumente: Wo man startet (x, y), die Länge <span class=tutor-code>l</span>, und die Richtung <span class=tutor-code>direction</span> die anzeigt ob man nach links, rechts oder geradeaus zeichnen soll.",
       jp: "jp"
     },
     code: "var w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w / 2, h, 100, 0);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1685,7 +1685,7 @@ var lessons =
   {
     message: {
       en: "<span class=tutor-code>direction</span> works by slanting the branch left (for negative numbers) or right (for positive).  See?  Try changing it!",
-      de: "de",
+      de: "<span class=tutor-code>direction</span> funktioniert mittels kippen vom Zweig nach links (negative Zahlen) oder rechts (positive Zahlen). Siehst du? Versuch sie zu ändern!",
       jp: "jp"
     },
     code: "var w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w / 2, h, 100, -0.1);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1693,27 +1693,27 @@ var lessons =
   {
     message: {
       en: "How can we make this draw two more branches now?",
-      de: "de",
+      de: "Wie können wir diesen Zweig mehr Zweige zeichnen lassen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Ah, me know, make function use itself! Can you see what this is doing?",
-      de: "de",
+      de: "Ah, ich weiss: wir lassen die Funktion sich selber aufrufen! Siehst du wie das funktioniert?",
       jp: "jp"
     },
     code: "var w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w/2, h, 100, 0);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n  if (l > 20) {\n    // Call drawBranch twice more\n    drawBranch(x2, y2, l / 2, -0.8);\n    drawBranch(x2, y2, l / 2, 0.8);\n  }\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n",
     lessonSection: {
       en: "Recursion",
-      de: "de section",
+      de: "Rekursion",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "That crazy! Here's a version that's easier to twiddle.  Try playing with it!  Change <span class=tutor-code>xScale</span>, <span class=tutor-code>yScale</span>, or <span class=tutor-code>minLength</span>!  Cool, huh?",
-      de: "de",
+      de: "Das ist der Wahnsinn! Hier ist eine Version die einfacher zu ändern ist. Spiel damit. Ändere <span class=tutor-code>xScale</span>, <span class=tutor-code>yScale</span>, oder <span class=tutor-code>minLength</span>! Coolm gell?",
       jp: "jp"
     },
     code: "var minLength = 20;\nvar yScale = 0.5;\nvar xScale = 0.8;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w/2, h, 100, 0);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n  if (l > minLength) {\n    // Call drawBranch twice more\n    drawBranch(x2, y2, l * yScale, -xScale);\n    drawBranch(x2, y2, l * yScale, xScale);\n  }\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1721,28 +1721,28 @@ var lessons =
   {
     message: {
       en: "There are a couple new things here.  Monster stop to explain.",
-      de: "de",
+      de: "Hier sind ein paar neue Sachen. Monster erklärt wie's funktioniert.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "drawBranch() is a <i>recursive</i> function.  That means it calls itself.",
-      de: "de",
+      de: "drawBranch() ist eine <i>rekursive</i> Funktion. Das heisst sie ruft sich selber auf.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "drawBranch() only calls itself if <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> gets smaller and smaller every time drawBranch() calls itself, so drawBranch() stops calling itself eventually when the length of a branch gets small enough.",
-      de: "de",
+      de: "drawBranch() ruft sich aber nur selber auf wenn <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> wird kleiner und kleine jedes mal wenn sich drawBranch() selber aufruft. Am Ende, wenn die Länge des Zweiges zu klein wird, hört sie auch sich selber aufzurufen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Recursive functions are neat, but tricky! Let's do a bit more. Change this to call <span class=tutor-code>nSquareRecursive(4);</span> instead of <span class=tutor-code>nSquare(4);</span>",
-      de: "de",
+      de: "Rekursive Funktionen sind nett, aber trickreich! Lass und ein bisschen mehr damit machen. Ändere <span class=tutor-code>nSquare(4);</span> nach <span class=tutor-code>nSquareRecursive(4);</span>.",
       jp: "jp"
     },
     code: "nSquare(4);\n\nfunction nSquare(n) {\n  c.strokeStyle = \"blue\";\n  for (var i = n; i > 0; i = i - 1) {\n    c.strokeRect(i * 30, i * 30, 100, 100);\n  }\n}\nfunction nSquareRecursive(n) {\n  if (n > 1) {\n    nSquareRecursive(n - 1);\n  }\n  c.strokeRect(n * 30, n * 30, 100, 100);\n}\n"
@@ -1750,28 +1750,28 @@ var lessons =
   {
     message: {
       en: "Other than not being blue, it's the same, right?  Do you see how they both work?",
-      de: "de",
+      de: "Ausser der Farbe die anders ist, ist es das gleiche, oder? Siehst du wie beide funktionieren?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "nSquare() uses a for loop, starts at 4, and counts down: 4, 3, 2, 1.",
-      de: "de",
+      de: "nSquare() benutzt eine for Schleife die mit 4 started und dann runterzählt: 4, 3, 2, 1.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "nSquareRecursive() calls itself with one less each time.  So, when called with 4, it calls itself with 3, and that call calls itself with 2, and that call calls itself with 1.  At one, it says, stop calling yourself, so it stops.  And, on each call, it draws a box located at (n * 30, n * 30).  See?",
-      de: "de",
+      de: "nSquareRecursive() ruft sich selber auf aber verringert ihr Argument n. Wenn man es mit 4 aufruft, ruft es sich selber auf mit 3, danach ruft es sich selber auf mir 2 und dann mit 1. Jetzt stopps es sich selber aufzurufen. Und jedes mal zeichnet es ein Quadrat bei (n * 30, n * 30). Siehst du?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "This little piece of code draws a shrinking pile of boxes. See how it works?",
-      de: "de",
+      de: "Dieses kleine Stück Code zeichnet schrumpfende Quadrate. Siehst du wie's funktioniert?",
       jp: "jp"
     },
     code: "branchBox(100);\n\nfunction branchBox(size) {\n  c.translate(size, size);\n  c.strokeRect(-size, -size, size, size);\n  if (size > 5) {\n    branchBox(size * 0.65);\n  }\n}\n"
@@ -1779,14 +1779,14 @@ var lessons =
   {
     message: {
       en: "The way it works is it does a translate() to the bottom right corner of the box, then draws the box back up behind it. So the box will be <span class=tutor-code>size</span> big starting at (-size, -size).  Then, as long as the boxes haven't gotten too small, it does that again by calling itself, but shrinking the size of the box the next time.",
-      de: "de",
+      de: "Es funktioniert so: Es macht eine Verschiebung mit translate() zur unteren rechten Ecke vom Quadrat, dann malt es eine Quadrat. Das Quadrat wird <span class=tutor-code>size</span> gross und startet bei (-size, -size). Dann, solange die Quadrate noch nicht zu klein sind, macht es das wieder, aber die Grösse zerringert sich jedes mal.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is the same thing using a for loop instead. Compare the two. See how they both work?",
-      de: "de",
+      de: "Hier das gleiche mit einer For Schleife. Vergleiche die beiden. Verstehst du wie beide funktionieren?",
       jp: "jp"
     },
     code: "branchBoxForLoop(100);\n\nfunction branchBoxForLoop(size) {\n  c.strokeStyle = \"blue\";\n  for (var i = size; i > 4; i = i * 0.65) {\n    c.translate(i, i);\n    c.strokeRect(-i, -i, i, i);\n  }\n}\nfunction branchBox(size) {\n  c.translate(size, size);\n  c.strokeRect(-size, -size, size, size);\n  if (size > 5) {\n    branchBox(size * 0.65);\n  }\n}\n"
@@ -1794,55 +1794,55 @@ var lessons =
   {
     message: {
       en: "The for loop starts by drawing a box of size 100, then one of 65, and so on.  So does the recursive version, but the recursive version does it by calling itself.",
-      de: "de",
+      de: "Die For Schleife beninnt ein Quadrat mit der Grösse 100 zu zeichnen, dann 65 und so weiter. Genauso wie die rekursive Funktion, aber letztere ruft sich selber auf.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You can change them if you want!  Go experiment!",
-      de: "de",
+      de: "Du kannst sie ändern wenn du möchtest! Experimentiere!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Back to trees.  Ooo!  An even better tree!",
-      de: "de",
+      de: "Zurück zu den Bäumen. Oh! Ein ganz schöner Baum!",
       jp: "jp"
     },
     code: "var angle = 0.35;\nvar branchScale = 0.75;\nvar l = 75;\nvar minL = 5;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.translate(w/2, h);\ndrawBranch(l, 0);\n\nfunction drawBranch(l, direction) {\n  c.save();\n  c.rotate(angle * direction);\n  c.fillRect(-l / 20, 0, l / 10, -l);\n  if (l > minL) {\n    c.translate(0, -l);\n    drawBranch(l * branchScale, -1);\n    drawBranch(l * branchScale, 1);\n  }\n  c.restore();\n}\n",
     lessonSection: {
       en: "Rotation, Translation, and Recursion",
-      de: "de section",
+      de: "Rotation, Verschiebung und Rekursion",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "See how this works? It uses translate() to move to the end of a branch, then rotate() to tilt the branches off to one side or the other.",
-      de: "de",
+      de: "Siehst du wie das funktioniert? Es benutzt translate() um das Ende vom Zweig zu verschieben, dann rotate() zum drehen oder kippen vom Zweig zur einen oder anderen Seite.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try changing <span class=tutor-code>angle</span>, <span class=tutor-code>branchScale</span>, <span class=tutor-code>l</span>, and <span class=tutor-code>minL</span>!  If you experiment a bit, you can get some really cool drawings.  Play with it!",
-      de: "de",
+      de: "ändere <span class=tutor-code>angle</span>, <span class=tutor-code>branchScale</span>, <span class=tutor-code>l</span>, und <span class=tutor-code>minL</span>! Wenn du die Zahlen änderst kannst vielleicht echt tolle Zeichnungen machen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "I think it would look even more like a tree if <span class=tutor-code>angle</span> was a little more random.  Can you make angle bigger and then make rotate() use a number between 0 and angle? (Hint: <span class=tutor-code>Math.random()</span> makes a number from 0.0 to 1.0)",
-      de: "de",
+      de: "Ich glaube der Baum sähe besser aus mit etwas Zufall für <span class=tutor-code>angle</span>. Kannst du <span class=tutor-code>angle</span> grösser machen und rorate() eine Zahl zwischen 0 und <span class=tutor-code>angle</span> benutzen lassen? Tip: <span class=tutor-code>Math.random()</span> ergibt eine Zahl von 0.0 bis 1.0",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is one version.  Can you make the <span class=tutor-code>branchScale</span> more random too?",
-      de: "de",
+      de: "Hier ist eine Möglichkeit. Kannst du <span class=tutor-code>branchScale</span> auch etwas zufälliger machen?",
       jp: "jp"
     },
     code: "var angle = 0.5;\nvar branchScale = 0.75;\nvar l = 75;\nvar minL = 5;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.translate(w/2, h);\ndrawBranch(l, 0);\n\nfunction drawBranch(l, direction) {\n  c.save();\n  // Make a number between 0 and angle\n  var a = angle * Math.random();\n  c.rotate(a * direction);\n  c.fillRect(-l / 20, 0, l / 10, -l);\n  if (l > minL) {\n    c.translate(0, -l);\n    drawBranch(l * branchScale, -1);\n    drawBranch(l * branchScale, 1);\n  }\n  c.restore();\n}\n"
@@ -1850,7 +1850,7 @@ var lessons =
   {
     message: {
       en: "Ooo!  That's very tree-like!",
-      de: "de",
+      de: "Oh! Sieht schon wirklich wie ein Baum aus!",
       jp: "jp"
     },
     code: "var angle = 0.5;\nvar branchScale = 0.75;\nvar l = 60;\nvar minL = 5;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.translate(w/2, h);\ndrawBranch(l, 0);\n\nfunction drawBranch(l, direction) {\n  c.save();\n  var a = angle * Math.random();\n  c.rotate(a * direction);\n  c.fillRect(-l / 20, 0, l / 10, -l);\n  if (l > minL) {\n    c.translate(0, -l);\n    // Make a number between -0.1 and 0.1\n    var b = 0.2 * (Math.random() - 0.5);\n    // Now make it between 0.9 and 1.1\n    b = b + 1;\n    // And use it to change branchScale\n    drawBranch(l * b * branchScale, -1);\n    b = 1 + 0.2 * (Math.random() - 0.5);\n    drawBranch(l * b * branchScale, 1);\n  }\n  c.restore();\n}\n"
@@ -1858,34 +1858,34 @@ var lessons =
   {
     message: {
       en: "Try changing <span class=tutor-code>angle</span>, <span class=tutor-code>branchScale</span>, <span class=tutor-code>l</span>, and <span class=tutor-code>minL</span>!  If you experiment a bit, you can get some pretty wild stuff!",
-      de: "de",
+      de: "Ändere <span class=tutor-code>angle</span>, <span class=tutor-code>branchScale</span>, <span class=tutor-code>l</span>, und <span class=tutor-code>minL</span>! Du kannst ganz interessante Sachen erzeugen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "I bet you can draw your own trees now!  Want to try?  I'll help you!",
-      de: "de",
+      de: "Ich wette du kannst jetzt selber Bäume zeichnen! Sollen wir es versuchen? Ich helfe dir!",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "Drawing Your Own Tree",
-      de: "de section",
+      de: "Den eigenen Baum zeichnen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Let's draw different trees than we did before.  Let's make this plant alternate between splitting off branches right and left.  Some plants do that.  Ready to start?  I'll guide you through it!",
-      de: "de",
+      de: "Lass und andere Bäume als vorher zeichnen. Dieser Baum wechselt Zweige links und rechts. Einige Pflanzen machen das. Sollen wir starten? Ich leite dich an!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, first we need a branch.  Let's make a function drawBranch() that takes two values, a length called <span class=tutor-code>l</span> and a <span class=tutor-code>direction</span>.",
-      de: "de",
+      de: "So, zuerst brauchen wir einen Zweig. Lass uns eine Funktion drawBranch() machen die 2 Argumente hat: Länge <span class=tutor-code>l</span> und Richtung <span class=tutor-code>direction</span>.",
       jp: "jp"
     },
     code: ""
@@ -1893,14 +1893,14 @@ var lessons =
   {
     message: {
       en: "Do you remember how to write a function like that?  You don't need to make it do anything yet, just declare a function called drawBranch().",
-      de: "de",
+      de: "Weisst du noch wie man so eine Funktion schreibt? Versuche erstmal nur eine Funktion zu definieren die drawBranch() heisst.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Were you thinking something like this?",
-      de: "de",
+      de: "Hast du an sowas gedacht?",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  \n}\n"
@@ -1908,7 +1908,7 @@ var lessons =
   {
     message: {
       en: "I've added some comments about what to do next.  We need to start drawing our tree.  Can you write the code beneath each of the comments?",
-      de: "de",
+      de: "Ich habe einige Kommentare geschrieben was jetzt zu machen ist. Wir fangen jetzt an den Baum zu zeichnen. Kannst du den Code unter den Kommentaren schreiben?<br>Etwas Übersetzungshilfe:<br>Benutze c.translate() um nach (200, 250) zu verschieben<br>Rufe drawBranch() mit 50 für Länge und 1 als Richtung auf",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  \n}\n\n// Use c.translate() to move to (200, 250).\n\n// Call drawBranch() with 50 as the length\n// and 1 as the direction\n"
@@ -1916,7 +1916,7 @@ var lessons =
   {
     message: {
       en: "Okay, so you translate() so you start at the right spot and then you try to draw a branch.  Now we need to make drawBranch() do something!  Can you do what the comments say to do?  You should get a single branch (which will look like the trunk of the tree) when you are done.",
-      de: "de",
+      de: "Ok, jetzt musst du mit translate() am richtigen Punkt starten und dann einen Zweig zeichnen. Jetzt musst du drawBranch() etwas machen lassen! Kannst du machen was die Kommentare sagen? Du solltest am ende einen einzelnen Zweig haben der die der Stamm aussieht.<br>Übersetzungshilfe:<br>c.fillRect(links, oben, weite, höhe) zeichnet ein Rechteck<br>Benutze es um ein Rechteck zu zeichnen das<br>bei (-1, 0) startet und 2 weit ist<br> mit der Höhe -l (l wie in Länge)",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  // c.fillRect(left, top, width, height);\n  // will draw a rectangle.\n  // Use it do draw a rectangle that\n  // starts at (-1, 0) and is 2 wide\n  // and -l (that's l as in length) tall.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1924,7 +1924,7 @@ var lessons =
   {
     message: {
       en: "You should have something like this now.  Let's keep going!  Look for the comments to tell you what to do next!",
-      de: "de",
+      de: "Jetzt solltest du das hier haben. Weiter geht's! Schau die Kommentare an um zu wissen wie's weitergeht.<br>Übersetzungshilfe:<br>Benutze c.translate() um an das Ende<br>vom Zweig zu gehen<br>Tip: Das Ende ist bei (0, -l)",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  // Use c.translate() to move to the end\n  // of the branch.\n  // Hint: The end is at (0, -l), that's l\n  // as in length.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1932,7 +1932,7 @@ var lessons =
   {
     message: {
       en: "Great!  Now you have drawn your first branch, moved to the end of that branch, and you're ready to draw more branches!",
-      de: "de",
+      de: "Grossartig! Du hast jetzt deinen ersten Zweig gezeichnet, bist zum Ende des Zweiges gegangen und bist jetzt bereit mehr Zweige zu zeichnen!",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1940,28 +1940,28 @@ var lessons =
   {
     message: {
       en: "Let's stop for a second and think about what we're going to want to do next.",
-      de: "de",
+      de: "Lass uns hier eine Sekunde bleiben und überlegen was wir als nächstes machen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "This plant is going to split off two branches, one going up, one going off to the side.  We want the ones going off to the side to alternate, first right, then left, then right, then left.",
-      de: "de",
+      de: "Diese Pflanze hat zwei Zweige: einen nach oben, dann einen zur Seite. Die zur Seite sind abwechselnd links und dann rechts.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "We'll keep splitting and drawing and splitting and drawing until the branches get very short.",
-      de: "de",
+      de: "Wir teilen und zeichnen und teilen und zeichnen bis die Zweige ganz klein werden.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's add that next.  We should only draw more branches if the length <span class=tutor-code>l</span> is more than 5.  Can you add that?",
-      de: "de",
+      de: "Lass und das jetzt machen. Wie zeichnen nur neue Zweige wenn die Länge <span class=tutor-code>l</span>  grösser als 5 ist. Kannst du das hinzufügen?<br>Übersetzungshilfe:<br>Ersetze true in der nächsten Zeile mit etwas was überprüft ob l gross genug ist<br>Weiter unten brauchst du noch nichts zu ändern. Das kommt später.",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  // Replace true below with something that\n  // checks if l is big enough\n  if ( true ) {\n    // Don't do anything here yet.\n    // We'll add more branches later.\n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
