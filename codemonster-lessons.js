@@ -1713,7 +1713,7 @@ var lessons =
   {
     message: {
       en: "That crazy! Here's a version that's easier to twiddle.  Try playing with it!  Change <span class=tutor-code>xScale</span>, <span class=tutor-code>yScale</span>, or <span class=tutor-code>minLength</span>!  Cool, huh?",
-      de: "Das ist der Wahnsinn! Hier ist eine Version die einfacher zu ändern ist. Spiel damit. Ändere <span class=tutor-code>xScale</span>, <span class=tutor-code>yScale</span>, oder <span class=tutor-code>minLength</span>! Coolm gell?",
+      de: "Das ist der Wahnsinn! Hier ist eine Version die einfacher zu ändern ist. Spiel damit. Ändere <span class=tutor-code>xScale</span>, <span class=tutor-code>yScale</span>, oder <span class=tutor-code>minLength</span>! Cool, gell?",
       jp: "jp"
     },
     code: "var minLength = 20;\nvar yScale = 0.5;\nvar xScale = 0.8;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w/2, h, 100, 0);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n  if (l > minLength) {\n    // Call drawBranch twice more\n    drawBranch(x2, y2, l * yScale, -xScale);\n    drawBranch(x2, y2, l * yScale, xScale);\n  }\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1721,7 +1721,7 @@ var lessons =
   {
     message: {
       en: "There are a couple new things here.  Monster stop to explain.",
-      de: "Hier sind ein paar neue Sachen. Monster erklärt wie's funktioniert.",
+      de: "Hier sind einige neue Sachen die du noch nicht kennst. Monster erklärt wie's funktioniert.",
       jp: "jp"
     }
   },
@@ -1735,7 +1735,7 @@ var lessons =
   {
     message: {
       en: "drawBranch() only calls itself if <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> gets smaller and smaller every time drawBranch() calls itself, so drawBranch() stops calling itself eventually when the length of a branch gets small enough.",
-      de: "drawBranch() ruft sich aber nur selber auf wenn <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> wird kleiner und kleine jedes mal wenn sich drawBranch() selber aufruft. Am Ende, wenn die Länge des Zweiges zu klein wird, hört sie auch sich selber aufzurufen.",
+      de: "drawBranch() ruft sich aber nur selber auf wenn <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> wird jedes mal kleiner wenn sich drawBranch() selber aufruft. Am Ende, wenn die Länge des Zweiges zu klein wird, hört sie auf sich selber aufzurufen.",
       jp: "jp"
     }
   },
@@ -1779,7 +1779,7 @@ var lessons =
   {
     message: {
       en: "The way it works is it does a translate() to the bottom right corner of the box, then draws the box back up behind it. So the box will be <span class=tutor-code>size</span> big starting at (-size, -size).  Then, as long as the boxes haven't gotten too small, it does that again by calling itself, but shrinking the size of the box the next time.",
-      de: "Es funktioniert so: Es macht eine Verschiebung mit translate() zur unteren rechten Ecke vom Quadrat, dann malt es eine Quadrat. Das Quadrat wird <span class=tutor-code>size</span> gross und startet bei (-size, -size). Dann, solange die Quadrate noch nicht zu klein sind, macht es das wieder, aber die Grösse zerringert sich jedes mal.",
+      de: "Es funktioniert so: Es macht eine Verschiebung mit translate() zur unteren rechten Ecke vom Quadrat, dann malt es eine Quadrat. Das Quadrat wird <span class=tutor-code>size</span> gross und startet bei (-size, -size). Dann, solange die Quadrate noch nicht zu klein sind, macht es das wieder, aber die Grösse verringert sich jedes mal.",
       jp: "jp"
     }
   },
@@ -1794,7 +1794,7 @@ var lessons =
   {
     message: {
       en: "The for loop starts by drawing a box of size 100, then one of 65, and so on.  So does the recursive version, but the recursive version does it by calling itself.",
-      de: "Die For Schleife beninnt ein Quadrat mit der Grösse 100 zu zeichnen, dann 65 und so weiter. Genauso wie die rekursive Funktion, aber letztere ruft sich selber auf.",
+      de: "Die For Schleife beginnt ein Quadrat mit der Grösse 100 zu zeichnen, dann 65 und so weiter. Genauso wie die rekursive Funktion, aber letztere ruft sich selber auf.",
       jp: "jp"
     }
   },
@@ -1821,7 +1821,7 @@ var lessons =
   {
     message: {
       en: "See how this works? It uses translate() to move to the end of a branch, then rotate() to tilt the branches off to one side or the other.",
-      de: "Siehst du wie das funktioniert? Es benutzt translate() um das Ende vom Zweig zu verschieben, dann rotate() zum drehen oder kippen vom Zweig zur einen oder anderen Seite.",
+      de: "Siehst du wie das funktioniert? Es benutzt translate() um das Ende vom Zweig zu verschieben, dann rotate() zum drehen/kippen vom Zweig zur einen oder anderen Seite.",
       jp: "jp"
     }
   },
@@ -1908,7 +1908,7 @@ var lessons =
   {
     message: {
       en: "I've added some comments about what to do next.  We need to start drawing our tree.  Can you write the code beneath each of the comments?",
-      de: "Ich habe einige Kommentare geschrieben was jetzt zu machen ist. Wir fangen jetzt an den Baum zu zeichnen. Kannst du den Code unter den Kommentaren schreiben?<br>Etwas Übersetzungshilfe:<br>Benutze c.translate() um nach (200, 250) zu verschieben<br>Rufe drawBranch() mit 50 für Länge und 1 als Richtung auf",
+      de: "Ich habe einige Kommentare geschrieben was jetzt zu machen ist. Wir fangen jetzt an den Baum zu zeichnen. Kannst du den Code unter den Kommentaren schreiben?<br>Etwas Übersetzungshilfe:<br>// Benutze c.translate() um nach (200, 250) zu verschieben<br>// Rufe drawBranch() mit 50 für Länge<br>// und 1 als Richtung auf",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  \n}\n\n// Use c.translate() to move to (200, 250).\n\n// Call drawBranch() with 50 as the length\n// and 1 as the direction\n"
@@ -1916,7 +1916,7 @@ var lessons =
   {
     message: {
       en: "Okay, so you translate() so you start at the right spot and then you try to draw a branch.  Now we need to make drawBranch() do something!  Can you do what the comments say to do?  You should get a single branch (which will look like the trunk of the tree) when you are done.",
-      de: "Ok, jetzt musst du mit translate() am richtigen Punkt starten und dann einen Zweig zeichnen. Jetzt musst du drawBranch() etwas machen lassen! Kannst du machen was die Kommentare sagen? Du solltest am ende einen einzelnen Zweig haben der die der Stamm aussieht.<br>Übersetzungshilfe:<br>c.fillRect(links, oben, weite, höhe) zeichnet ein Rechteck<br>Benutze es um ein Rechteck zu zeichnen das<br>bei (-1, 0) startet und 2 weit ist<br> mit der Höhe -l (l wie in Länge)",
+      de: "Ok, jetzt musst du mit translate() am richtigen Punkt starten und dann einen Zweig zeichnen. Jetzt musst du drawBranch() etwas machen lassen! Kannst du machen was die Kommentare sagen? Du solltest am Ende einen einzelnen Zweig haben der die der Stamm aussieht.<br>// c.fillRect(links, oben, weite, höhe) zeichnet ein Rechteck<br>// Benutze es um ein Rechteck zu zeichnen das bei (-1, 0) startet und 2 weit ist mit der Höhe -l (l wie in Länge)",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  // c.fillRect(left, top, width, height);\n  // will draw a rectangle.\n  // Use it do draw a rectangle that\n  // starts at (-1, 0) and is 2 wide\n  // and -l (that's l as in length) tall.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1924,7 +1924,7 @@ var lessons =
   {
     message: {
       en: "You should have something like this now.  Let's keep going!  Look for the comments to tell you what to do next!",
-      de: "Jetzt solltest du das hier haben. Weiter geht's! Schau die Kommentare an um zu wissen wie's weitergeht.<br>Übersetzungshilfe:<br>Benutze c.translate() um an das Ende<br>vom Zweig zu gehen<br>Tip: Das Ende ist bei (0, -l)",
+      de: "Jetzt solltest du das hier haben. Weiter geht's! Schau die Kommentare an um zu wissen wie's weitergeht.<br>// Benutze c.translate() um an das Ende<br>// vom Zweig zu gehen<br>// Tip: Das Ende ist bei (0, -l)",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  // Use c.translate() to move to the end\n  // of the branch.\n  // Hint: The end is at (0, -l), that's l\n  // as in length.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
