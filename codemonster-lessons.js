@@ -1961,7 +1961,7 @@ var lessons =
   {
     message: {
       en: "Let's add that next.  We should only draw more branches if the length <span class=tutor-code>l</span> is more than 5.  Can you add that?",
-      de: "Lass und das jetzt machen. Wie zeichnen nur neue Zweige wenn die Länge <span class=tutor-code>l</span>  grösser als 5 ist. Kannst du das hinzufügen?<br>Übersetzungshilfe:<br>Ersetze true in der nächsten Zeile mit etwas was überprüft ob l gross genug ist<br>Weiter unten brauchst du noch nichts zu ändern. Das kommt später.",
+      de: "Lass und das jetzt machen. Wie zeichnen nur neue Zweige wenn die Länge <span class=tutor-code>l</span>  grösser als 5 ist. Kannst du das hinzufügen?<br>// Ersetze true in der nächsten Zeile mit etwas was<br>// überprüft ob l gross genug ist<br>// Weiter unten brauchst du noch nichts zu ändern. Das kommt später.",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  // Replace true below with something that\n  // checks if l is big enough\n  if ( true ) {\n    // Don't do anything here yet.\n    // We'll add more branches later.\n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1969,7 +1969,7 @@ var lessons =
   {
     message: {
       en: "You should have this now.",
-      de: "de",
+      de: "Du solltest jetzt das hier haben.",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    // Don't do anything here yet.\n    // We'll add more branches later.\n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1977,7 +1977,7 @@ var lessons =
   {
     message: {
       en: "Let's add just the branch going straight up.  Let's make it a little shorter that the last branch we drew.  Follow the instructions in the comments.",
-      de: "de",
+      de: "Lass uns nur einen Zweig nach oben machen. Wir machen ihn etwas kürzer als den vorherigen. Folge den Anweisungen in den Kommentaren.<br>// Rufe drawBranch() mit l * 0.8 und Richtung direction",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    // Call drawBranch() with l * 0.8 and direction\n    \n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1985,7 +1985,7 @@ var lessons =
   {
     message: {
       en: "Do you have this now?  See what it does?  It repeatedly draws a branch straight up, making the branch a little shorter each time.  It looks like a line, but it's really a bunch of branches piled on top of each other.",
-      de: "de",
+      de: "Hast du das jetzt? Versteht du was es macht? Es zeichnet einen Zweig nach oben der jedesmal etwas kürzer wird. Es sieht aus wie eine Linie, aber es sind in Wirklichkeit aneinandergereihte Zweige.",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, direction);\n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1993,21 +1993,21 @@ var lessons =
   {
     message: {
       en: "Pretty boring so far?",
-      de: "de",
+      de: "Etwas langweilig, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "It's about to get a lot more exciting!",
-      de: "de",
+      de: "Jetzt wird es interessanter!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's add the second branch!  For that branch, we are going to rotate to the side indicated by direction, then draw a shorter branch.  Follow the instructions in the comments.",
-      de: "de",
+      de: "Lass und einen zweiten Zweig machen! Dafür drehen wir uns zur Seite mittels direction, und zeichnen einen kurzen Zweig. Folge den Anweisungen in den Kommentaren.<br>// Benutze c.rotate() mit Richtung 0.5 * direction<br>// Rufe callBranch mit l * 0.7 und Richtung direction",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, direction);\n    \n    // Use c.rotate() with an angle of\n    // 0.5 * direction\n    \n    \n    // Call drawBranch with l * 0.7 and direction\n    \n  }\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2015,49 +2015,49 @@ var lessons =
   {
     message: {
       en: "Aieeee!  What did you do?",
-      de: "de",
+      de: "Oh meine Güte! Was hast du gemacht!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Just kidding!  It's all fine!",
-      de: "de",
+      de: "War nur Spass. Ist alles ok!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "This is just part of what is called debugging, getting the bugs (the problems) out.",
-      de: "de",
+      de: "Das ist Teil was Fehlersuche heisst: Fehler suchen und korrigieren",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, that didn't do what you expected it to do, did it?",
-      de: "de",
+      de: "So, das war nicht das was wir gedacht haben.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Any idea what's wrong?",
-      de: "de",
+      de: "Hast du eine Idee was falsch ist?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "What's happening is that all those translate() and rotate() calls are piled on top of each other.  We didn't really want that.  When it's time to draw the second branch, we really want everything to be the way it was when we did the first branch, but it's not, we've translated and rotated all over the place.",
-      de: "de",
+      de: "Was passiert ist das all die translate() (verschieben) und rotate() (drehen) Aufrufe sich aufeinanderstapeln. Das wollen wir nicht. Wenn wir den 2. Zweig zeichnen wollen wir alles so haben wie es beim 1. Zweig war, aber im Moment ist alles verschoben und gedreht.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Save and restore to the rescue!  Can you add <span class=tutor-code>c.save();</span> and <span class=tutor-code>c.restore();</span> where the comments say to add them?",
-      de: "de",
+      de: "save() und restore() kommen zur Rettung! Kannst du <span class=tutor-code>c.save();</span> und <span class=tutor-code>c.restore();</span> da einfügen wo die Kommentare es anzeigen?",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  // Save here!\n  \n  \n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, direction);\n    \n    c.rotate(0.5 * direction);\n    drawBranch(l * 0.7, direction);\n  }\n  \n  // Restore here!\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2065,7 +2065,7 @@ var lessons =
   {
     message: {
       en: "That's mostly better.  But it's only drawing one side of the tree!  Why is that?",
-      de: "de",
+      de: "Das ist ziemlich gut schon. Aber Zweige gehen nur zu einer Seite! Warum?",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.save();\n  \n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, direction);\n    \n    c.rotate(0.5 * direction);\n    drawBranch(l * 0.7, direction);\n  }\n  \n  c.restore();\n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2073,28 +2073,28 @@ var lessons =
   {
     message: {
       en: "Figure it out?",
-      de: "de",
+      de: "Weisst du es?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "It's because we didn't switch direction.  Direction is always the same as what it was at the start, it is always 1.  It should alternate, 1, -1, 1, -1 ...",
-      de: "de",
+      de: "Das ist so weil wir die Richtung nicht wechseln. Richtung direction ist immer 1. Es sollte 1, dann -1, dann wieder 1, dann -1 usw. sein.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you make it so both of the drawBranch() calls inside of drawBranch() use -direction instead of direction?",
-      de: "de",
+      de: "Kannst du den Code ändern dass drawBranch() Aufrufe innerhalb der drawBranch() Funktion -direction anstelle von direction benutzen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Do you now have this?  Wow, nice work!",
-      de: "de",
+      de: "Hast du das hier? Klasse!",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.save();\n  \n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, -direction);\n    \n    c.rotate(0.5 * direction);\n    drawBranch(l * 0.7, -direction);\n  }\n  \n  c.restore();\n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2102,19 +2102,19 @@ var lessons =
   {
     message: {
       en: "Try playing with it more! Try changing the 0.8, 0.7, and 0.5 to see what happens!",
-      de: "de",
+      de: "Spiel damit! Ändere 0.8, 0.7 und 0.5 und sieh was passiert!",
       jp: "jp"
     },
     lessonSection: {
       en: "Play with Your Tree",
-      de: "de section",
+      de: "Mit dem Baum Spielen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Look! Green leaves on the ends of the branches!",
-      de: "de",
+      de: "Schau! Grüne Blätter am Ende der Zweige!",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.save();\n  c.fillRect(-1, 0, 2, -l);\n  c.translate(0, -l);\n  if (l > 5) {\n    drawBranch(l * 0.8, -direction);\n    c.rotate(0.5 * direction);\n    drawBranch(l * 0.7, -direction);\n  } else {\n    c.fillStyle = \"green\";\n    c.fillRect(-2, -2, 4, 4);\n  }\n  c.restore();\n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2122,60 +2122,60 @@ var lessons =
   {
     message: {
       en: "See how that works? The little size 4 green squares are the leaves! They are only added when we get to the end of the branch.",
-      de: "de",
+      de: "Sieht du wie das funktioniert? Die kleinen Quadrate der Grösse 4 sind die Blätter! Sie werden nur gezeichnet wenn das Ende vom Zweig erreicht wird.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you make the branches brown?",
-      de: "de",
+      de: "Kannst du die Zweige braun (brown) machen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let me show you something really cool that is only a minor change from what you just did!",
-      de: "de",
+      de: "Lass mich dir was echt cooles zeigen und es braucht nur eine kleine Änderung vom dem was du gemacht hast!",
       jp: "jp"
     },
     code: "function drawBranch(l) {\n  // Make longer branches wider\n  var w = 0.5 + l / 30;\n  c.fillRect(w / 2, 0, w, -l);\n  c.save();\n  c.translate(0, -l);\n  if (l > 1) {\n    // Start at -80 degrees\n    var a = -Math.PI * 4 / 9;\n    // Draw three branches\n    for (var i = 0; i < 3; i = i + 1) {\n      // The length of our new branches\n      var l2 = l * 0.5;\n      // Make the middle branch bigger\n      if (i == 1) { l2 = l2 + 0.3 * l; }\n      \n      c.save();\n      c.rotate(a);\n      drawBranch(l2);\n      c.restore();\n      \n      // Add 90 degrees for the next branch\n      a = a + Math.PI / 2;\n    }\n  }\n  c.restore();\n}\n\nc.fillStyle = \"green\";\nc.translate(170, 270);\ndrawBranch(60);\n",
     lessonSection: {
       en: "Fun with Ferns",
-      de: "de section",
+      de: "Spass mit Farn",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This fern is drawn just by doing three branches from each branch, each rotated at -80, 10, and 100 degrees.  See how it works?",
-      de: "de",
+      de: "Dieser Farn hat nur 3 Abzweigungen, um -80, 10 und 100 Grad gedreht. Sieht du wie's funktioniert?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Every time it draws a branch, it draws three more branches from the end of that branch.  It keeps doing that and doing that, smaller and smaller, and you get what looks like a fern!",
-      de: "de",
+      de: "Jedes mal wenn ein Zweig gemalt wird, werden 3 neue Zweige gezeichnet, bis die Zweige ganz klein sind. Was herauskommt ist etwas was wie ein Farn aussieht!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "All this stuff with trees and ferns are a type of pattern called a <i>fractal</i>. Fractals are crazy cool fun with math.",
-      de: "de",
+      de: "All diese Sachen mir Bäumen und Farnen sind Teile von Muster die man <i>Fraktale</i> nennt. Fraktale sind Spass mit Mathematik.",
       jp: "jp"
     },
     lessonSection: {
       en: "Fractals",
-      de: "de section",
+      de: "Fraktale",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This fractal is called the Terdragon.",
-      de: "de",
+      de: "Diese Fraktale heissen Drachenkurven",
       jp: "jp"
     },
     code: "var n = 8;\nvar l = 5;\nvar angle = 120 * Math.PI / 180;\n\nc.translate(300, 200);\nterdragon(n);\nfunction terdragon(n) {\n  if (n <= 1) {\n    drawLine(l);\n  } else {\n    terdragon(n-1);\n    c.rotate(angle);\n    terdragon(n-1);\n    c.rotate(-angle);\n    terdragon(n-1);\n  }\n}\nfunction drawLine(l) {\n  c.beginPath();\n  c.moveTo(0, 0);\n  c.lineTo(l, 0);\n  c.stroke();\n  // Finish at the end of the line we drew\n  c.translate(l, 0);\n}\n"
@@ -2183,34 +2183,34 @@ var lessons =
   {
     message: {
       en: "If you make l bigger, you can zoom in and see it's made of little triangles!",
-      de: "de",
+      de: "Wenn du l grösser machst, kannst du das vergrössern und dann siehst du dass das aus kleinen Dreiecken gemacht ist!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you figure out how it works? Take a look at the code.",
-      de: "de",
+      de: "Verstehst du wie das funktioniert? Schau dir den Code an.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try making <span class=tutor-code>l=10</span> and then <span class=tutor-code>n=1</span> and then <span class=tutor-code>n=2</span> then <span class=tutor-code>n=3</span>, and you'll see how it grows.",
-      de: "de",
+      de: "Versuche <span class=tutor-code>l=10</span> und dann <span class=tutor-code>n=1</span> und dann <span class=tutor-code>n=2</span>, dann <span class=tutor-code>n=3</span>, und due siehst wie es wächst.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Okay, it's time for the last quiz.  This one is hard, so don't worry if you can't finish it.  There is a lot of good stuff coming after this.  Whatever you do, don't quit here, make sure to keep going so you can see all the fun stuff!",
-      de: "de",
+      de: "Ok, es ist Zeit für das letzte Quiz. Das ist schwer, deshalb keine Sorgen wenn du es nicht ganz fertig bekommst. Danach kommt noch mehr! Was auch immer passiert, höre hier nicht auf weil nachher neue interessante Sachen kommen!",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "Quiz: Challenge Problem",
-      de: "de section",
+      de: "Quiz: Ein etwas schweres Problem",
       jp: "jp section"
     }
   },
@@ -2218,55 +2218,55 @@ var lessons =
     message: {
       en: "For the quiz, I want you to write something entirely yourself.  Make a checkerboard pattern, a black square, then a white, then a black, and so on, at least four rows of them (like a 6 x 4 grid).  Can you do it?",
       de: "de",
-      jp: "jp"
+      jp: "Für das Quiz möchte ich dass Du etwas ganz selber schreibst. Mache ein Schachbrettmuster: ein schwarzes, dann ein weisses, dann wieder ein schwarzes Quadrat. Mindestend 6 in einer Reihe und 4 Reihen (wie ein 6x4 Muster)."
     },
     code: ""
   },
   {
     message: {
       en: "If you did it, good job, this is really hard, I'm impressed!  If you didn't get it, no worries, here's a hint, you might need two for loops, one inside the other, you'll use at least one c.fillRect(), and don't forget a for loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "de",
+      de: "Wenn du's geschafft hast: Super! Das ist nicht einfach gewesen. Falls du es nicht geschafft hast, hier ist ein Tip: Du brauchst vielleicht zwei for Schleifen: eine innerhalb der anderen, und du brauchst c.fillRect(). Vergiss nicht: For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Ready to see different ways to solve it?",
-      de: "de",
+      de: "Bist du bereit zu sehen wie man das zum Beispiel löst?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is one way.  See how this works?",
-      de: "de",
+      de: "Hier ist eine Möglichkeit. Siehst du wie es funktioniert?",
       jp: "jp"
     },
     code: "var size = 50;\n\nfor (var i = 0; i < 300; i = i + 100) {\n  for (var j = 0; j < 200; j = j + 100) {\n    fillSquare(i, j, size);\n  }\n}\nfor (var i = 50; i < 300; i = i + 100) {\n  for (var j = 50; j < 200; j = j + 100) {\n    fillSquare(i, j, size);\n  }\n}\n\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, size, size);\n}\n",
     lessonSection: {
       en: "Many Ways to Code",
-      de: "de section",
+      de: "Viele Wege führen zum Ziel",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "If not, try commenting out one of the fillSquare() lines (using <span class=tutor-code>//</span>) so you can see what the other is drawing.",
-      de: "de",
+      de: "Probier eine nach der anderen fillSquare() Zeilen auszukommentieren (mit <span class=tutor-code>//</span>) damit du sehen kannst was die anderen zeichnen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "It draws the first and third rows, starting at (0, 0), then doing (0, 100), then doing (100, 0), then (100, 100), and so on.  Then it draws the second and fourth rows, starting at (50, 50), then (50, 150), and so on.  Make sense?",
-      de: "de",
+      de: "Zuerst zeichnet es die erste und dritte Reihe, angefangen mit (0, 0), dann (0, 100), dann (100, 0), dann (100, 100) und so weiter. Dann zeichnet es die zweite und vierte Reihe, angefangen mit (50, 50), dann (50, 150) und so weiter. Gibt Sinn?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's look at a few more ways of doing a checkerboard.  Here is another version. See how this works?",
-      de: "de",
+      de: "Lass uns andere Möglichkeiten ein Schachbrettmuster zu zeichnen. Hier ist einen andere Version. Siehst du wie es funktioniert?",
       jp: "jp"
     },
     code: "var size = 50;\n\nfor (var i = 0; i < 3; i = i + 1) {\n  for (var j = 0; j < 2; j = j + 1) {\n    var x = i * 2 * size;\n    var y = j * 2 * size;\n    fillSquare(x, y, size);\n    x = x + size;\n    y = y + size;\n    fillSquare(x, y, size);\n  }\n}\n\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, size, size);\n}\n"
@@ -2274,82 +2274,83 @@ var lessons =
   {
     message: {
       en: "Every time through the loop, it draws two squares, below and to the right of the other.",
-      de: "de",
+      de: "In jeder Schleife zeichnet es zwei Quadrate: unterhalb und rechts.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Then, it does that three times across and twice down, skipping over the white squares.  Cool, huh?",
-      de: "de",
+      de: "Dann wiederholt es das drei mal nach rechts und zweimal runter und es überspringt die weissen Felder. Schlau, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here is yet another way of doing a checkerboard.  Any idea how this works?  What's that <span class=tutor-code>i % 2</span> doing?",
-      de: "de",
+      de: "Hier ist noch eine andere Möglichkeit: Hast du eine idee wie das funktioniert? Was ist das <span class=tutor-code>i % 2</span>?",
       jp: "jp"
     },
     code: "var size = 50;\n\nfor (var i = 0; i < 6; i = i + 1) {\n  for (var j = 0; j < 4; j = j + 1) {\n    if ((i % 2 + j % 2) % 2) {\n      var x = i * size;\n      var y = j * size;\n      fillSquare(x, y, size);\n\n    }\n  }\n}\n\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, size, size);\n}\n",
     lessonSection: {
       en: "Modulo",
-      de: "de section",
+      de: "Modulus",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>%</span> mean modulo, it gives the remainder after dividing.",
-      de: "de",
+      de: "<span class=tutor-code>%</span> ist der Modulus. Es gibt den Rest nach einer Division zurück.",
+
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, <span class=tutor-code>1 % 2</span> is 1, <span class=tutor-code>2 % 2</span> is 0 (because 2 divides 2 evenly with no remainder), <span class=tutor-code>3 % 2</span> is 1 again, <span class=tutor-code>4 % 2</span> is 0.",
-      de: "de",
+      de: "<span class=tutor-code>1 % 2</span> ist 1, <span class=tutor-code>2 % 2</span> ist 0 (weil 2 dividiert durch 2 keinen Rest hat), <span class=tutor-code>3 % 2</span> ist wieder 1, <span class=tutor-code>4 % 2</span> ist 0.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, how does that complicated expression -- <span class=tutor-code>(i % 2 + j % 2) % 2</span> -- work? When i is even, <span class=tutor-code>i % 2</span> will be 0.  Same for j.  If both are odd, then you get (1 + 1) % 2, which is 0. So, that expression will be 0 if both i and j are even or both i and j are odd.",
-      de: "de",
+      de: "Was macht das kompliziert aussehende <span class=tutor-code>(i % 2 + j % 2) % 2</span>? Wenn i gerade ist, ist <span class=tutor-code>i % 2</span> 0. Für j ist es genauso. Wenn beide ungerade sind, ist (1 + 1) % 2, was 0 ist. Also ist <span class=tutor-code>(i % 2 + j % 2) % 2</span> 0 wenn beide Zahlen gerade oder beide ungerade sind.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "For if statements, 0 means false and anything else is true.  So, we'll do what's inside the if statement only when only one of i or j is odd.",
-      de: "de",
+      de: "Für die if Bedingung, 0 bedeuted falsch und alles andere ist richtig. Also machen wir das in der if Befehlen nur wenn entweder i oder j unregade sind.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, what this does is visit all the squares in the 6 x 4 grid, but only draw a black square in the ones where either the column number or row number is odd but not both.  Make sense now?",
-      de: "de",
+      de: "Deshalb ist in dem 6x4 Schachbrettmuster nur dort schwarze Quadrate wenn entweder die Spalte oder die Reihe ungerade ist.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "See how many ways there are to solve a problem like this?  There is usually not just one solution to something you want to do, lots of strategies might work.  Isn't that neat?",
-      de: "de",
+      de: "Hast du gesehen wie viele verschiedene Möglichkeiten es gibt dieses kleine Problem zu lösen? Es gibt oft nicht nur eine einzige Möglichkeit. Praktisch, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Okay, time for some fun! Let's do animation!",
-      de: "de",
+      de: "Okay, Zeit für Spass! Lass uns Animationen machen!",
       jp: "jp"
     },
     code: "",
     lessonSection: {
       en: "Animation",
-      de: "de section",
+      de: "Animationen",
       jp: "jp section"
     }
   },
