@@ -2894,8 +2894,8 @@ var lessons =
   },
   {
     message: {
-      en: "Cool simulation, and adds some realism.  Play with it a bit!  Change the friction, add more balls, increase gravity, change timeStep.  Try messing around with it!",
-      de: "Tolle Simulation und sieht sehr echt aus. Spiel damit ein bisschen. Ändere die Reibung (friction), mach mehr Bällem, erhöhe die Schwerkraft (gravity), oder ändere die Zeitschritte (timeStep). Spiel mit den Zahlen!",
+      en: "Cool simulation, and adds some realism.  Play with it a bit!  Change the <span class=tutor-code>friction</span>, add more balls, increase <span class=tutor-code>gravity</span>, change <span class=tutor-code>timeStep</span>.  Try messing around with it!",
+      de: "Tolle Simulation und sieht sehr echt aus. Spiel damit ein bisschen. Ändere die Reibung <span class=tutor-code>friction</span>, mach mehr Bällem, erhöhe die Schwerkraft <span class=tutor-code>gravity</span>, oder ändere die Zeitschritte <span class=tutor-code>timeStep</span>. Spiel mit den Zahlen!",
       jp: "jp"
     }
   },
