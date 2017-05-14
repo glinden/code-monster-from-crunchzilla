@@ -2217,8 +2217,8 @@ var lessons =
   {
     message: {
       en: "For the quiz, I want you to write something entirely yourself.  Make a checkerboard pattern, a black square, then a white, then a black, and so on, at least four rows of them (like a 6 x 4 grid).  Can you do it?",
-      de: "de",
-      jp: "Für das Quiz möchte ich dass Du etwas ganz selber schreibst. Mache ein Schachbrettmuster: ein schwarzes, dann ein weisses, dann wieder ein schwarzes Quadrat. Mindestend 6 in einer Reihe und 4 Reihen (wie ein 6x4 Muster)."
+      de: "Für das Quiz möchte ich dass Du etwas ganz selber schreibst. Mache ein Schachbrettmuster: ein schwarzes, dann ein weisses, dann wieder ein schwarzes Quadrat. Mindestend 6 in einer Reihe und 4 Reihen (wie ein 6x4 Muster).",
+      jp: "jp"
     },
     code: ""
   },
@@ -2357,7 +2357,7 @@ var lessons =
   {
     message: {
       en: "Moving stuff is fun but a little weird.  You need to make something happen every 1/20th of a second or so. What is this doing?",
-      de: "de",
+      de: "Sachen zu bewegen ist interessant, aber etwas seltsam. Du musst etwas ungefähr jede 20-tel Sekunde zeichnen. Was macht der Code?",
       jp: "jp"
     },
     code: "var vx = 4;\nvar vy = 1;\nvar step = 50;  // In milliseconds\n\nvar x = 0;\nvar y = 0;\nvar size = 50;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\ndrawStep();\nfunction drawStep() {\n  // Clear the screen\n  c.clearRect(0, 0, w, h);\n  // Draw the box\n  c.strokeRect(x, y, size, size);\n  // Move the box unless at edge\n  if (x + vx + size < w &&\n      y + vy + size < h) {\n    x += vx;\n    y += vy;\n    clearTimeout(cmTID);\n    // Do it again in a little bit\n    cmTID = setTimeout(drawStep, step);\n  }\n}\n",
@@ -2366,55 +2366,55 @@ var lessons =
   {
     message: {
       en: "The way this works is that, every time we are told to do drawStep(), we erase the screen, move the box, draw the box, and, unless we hit the edge, we say to do drawStep() again a little while later.",
-      de: "de",
+      de: "Was passiert ist folgendes: jedesmal wenn wir etwas zeichnen sollen mit drawStep(), löschen wir den Bildschirm, bewegen das Quadrat, zeichnen das Quadrat und wir sagen dass wir, ausser wir haben den Rand erreicht, drawStep() nochmal bald aufrufen wollen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try changing <span class=tutor-code>vx</span>, <span class=tutor-code>vy</span>, and <span class=tutor-code>step</span>. You can change the speed of the box and make it move different directions!",
-      de: "de",
+      de: "Versuche <span class=tutor-code>vx</span>, <span class=tutor-code>vy</span>, und <span class=tutor-code>step</span> zu ändern. Du kannst die Geschwindigkeit und die Richtung verändern!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try commenting out the clearRect().  That's kind of cool, isn't it?",
-      de: "de",
+      de: "Kommentier auch mal das clearRect() aus (mit //). Cool, oder?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Spinning a box is fun.  Can you make it go faster?",
-      de: "de",
+      de: "Drehende Quadrate sind spassig. Kannst du es sich schneller drehen lassen?",
       jp: "jp"
     },
     code: "var step = 100;\nvar angle = 0.01;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nc.translate(w / 2, h / 2);\ndrawStep();\nfunction drawStep() {\n  c.clearRect(-w / 2, -h / 2, w, h);\n  c.strokeRect(-50, -50, 100, 100);\n  c.rotate(angle);\n  clearTimeout(cmTID);\n  cmTID = setTimeout(drawStep, step);\n}\n",
     lessonSection: {
       en: "Rotating Movement",
-      de: "de section",
+      de: "Rotationen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "This works the same way as the moving box.  Every time it is told to do drawStep(), it clears the screen, rotates, draws the box, and then says to do drawStep() again in a little while later.",
-      de: "de",
+      de: "Das funktioniert genauso wie das sich bewegende Quadrat. Jedesmal wenn drawStep() aufgerufen wird, löscht es den Bildschirm, rotiert, zeichnet und sagt nochmal drawStep() etwas später aufzurufen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "What happens if you comment out the clearRect()?",
-      de: "de",
+      de: "Was passiert wenn du clearRect() auskommentierst?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try adding more boxes. Did it do what you expected?",
-      de: "de",
+      de: "Versuche mehr Quadrate hinzuzufügen. Funktioniert es?",
       jp: "jp"
     },
     code: "var step = 100;\nvar angle = 0.01;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nc.translate(w / 2, h / 2);\ndrawStep();\nfunction drawStep() {\n  c.clearRect(-w / 2, -h / 2, w, h);\n  c.strokeRect(-50, -50, 100, 100);\n  c.rotate(angle);\n  clearTimeout(cmTID);\n  cmTID = setTimeout(drawStep, step);\n}\n"
@@ -2422,7 +2422,7 @@ var lessons =
   {
     message: {
       en: "I like this version.  It's like a solar system!  Try changing the speed now!",
-      de: "de",
+      de: "Ich mag diese Version! Es ist wie ein kleiner Sonnensystem! Versuche jetzt die Geschwindigkeiten zu ändern!",
       jp: "jp"
     },
     code: "var step = 100;\nvar angle = 0.01;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nc.translate(w / 2, h / 2);\ndrawStep();\nfunction drawStep() {\n  c.clearRect(-w / 2, -h / 2, w, h);\n  c.strokeRect(-20, -20, 40, 40);\n  c.fillRect(10, 100, 5, 5);\n  c.fillRect(-50, -70, 5, 5);\n  c.fillRect(50, 30, 5, 5);\n  c.rotate(angle);\n  clearTimeout(cmTID);\n  cmTID = setTimeout(drawStep, step);\n}\n"
@@ -2430,35 +2430,35 @@ var lessons =
   {
     message: {
       en: "Stop for a sec.  Sit back and think about how you might create three moving boxes.",
-      de: "de",
+      de: "Lass und mal überlegen und nachdenken wie wir 3 bewegende Quadrate machen können.",
       jp: "jp"
     },
     code: "",
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n",
     lessonSection: {
       en: "Objects",
-      de: "de section",
+      de: "Objekte",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Well, you'd need the x and y position of each, right?  And the size of each.  And maybe the dx and dy velocity of each?  And the angle?",
-      de: "de",
+      de: "Zuerst brauchen die die x und y Koordinaten von jedem, richtig? Und die Grösse. Und die Geschwindigkeit (dx, dy). Und der Winkel (angle).",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You could create variables x1, x2, x3, y1, y2, y3, dx1 ... ugh.  That's getting painful, isn't it?",
-      de: "de",
+      de: "Man kann jetzt Variablen x1, x2, x3, y1, y2, y3, dx1 ... hmm ... das wird schnell unpraktisch.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "There's another way to do this, we can make objects!  Objects are little bundles of variables and code. Here's a box object.  Take a look at it.  See how it works?",
-      de: "de",
+      de: "Hier ist eine andere Möglichkeit: wir machen Objekte! Objekte sind kleine Pakete mit Variablen und Code. Hier ist ein Quadrat Objekt. Schau es dir an. Siehst du wie's funtioniert?",
       jp: "jp"
     },
     code: "// Box object\nfunction Box(x, y, size) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = 0;\n  this.dx = 0;\n  this.dy = 0;\n}\n// Create a new box\nvar b = new Box(10, 10, 100);\nc.strokeRect(b.x, b.y, b.size, b.size);\n"
@@ -2466,28 +2466,28 @@ var lessons =
   {
     message: {
       en: "What is going on is <span class=tutor-code>new Box(10, 10, 100)</span> creates an object, then immediately calls the Box() function to set it up.  Box() then uses <span class=tutor-code>this.x</span> to set a variable named x in the object to the x that was passed into the function.",
-      de: "de",
+      de: "<span class=tutor-code>new Box(10, 10, 100)</span> macht ein neues Objekt und ruft Box() auf. Box() benutzt dann <span class=tutor-code>this.x</span> für das x vom Objekt.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "It does the same thing to set up all the other variables in our new Box object.  Once the object is created and set up, we set our variable <span class=tutor-code>b</span> to that.  Later, we can get at the x and y and other variables of our box using <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span>, and so forth.",
-      de: "de",
+      de: "Es macht das gleiche mit den anderen Variablen underes Box Objekts. Wenn es erstmal erzeugt und initialisiert ist, weisen wir dieses Objekt unserer Variablen <span class=tutor-code>b</span> zu. Jetzt können wir x und y von unserem Box Objekt b mit <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span> usw. benutzen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Our box object is just a little bundle of variables that describe our box.  It says where the box is, its velocity (dx and dy), how big it is, everything that it means to be a box.",
-      de: "de",
+      de: "Unser Box Objekt ist einfach ein kleines Paket mit Variablen die unser Quadrat beschreibt. Es sagt wo das Quadrat ist (x, y), wie schnell es ist (dx, dy), wie gross es ist, und alles andere was ein Quadrat ausmacht.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "We can even have box objects know how to draw themselves.",
-      de: "de",
+      de: "Wir können sogar Quadrate machen die wissen wie man sich selber zeichnet!",
       jp: "jp"
     },
     code: "function Box(x, y, size) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = 0;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.strokeRect(this.x, this.y,\n                 this.size, this.size);\n  };\n}\nvar b1 = new Box(30, 30, 120);\nb1.stroke();\n"
@@ -2495,40 +2495,40 @@ var lessons =
   {
     message: {
       en: "See how <span class=tutor-code>this.stroke</span> is set equal to a function?  And that function calls strokeRect() to draw this box?  Then, later, we create a box called b1 and tell it to draw itself with <span class=tutor-code>b1.stroke()</span>. That's pretty cool, isn't it?",
-      de: "de",
+      de: "Siehst du wie <span class=tutor-code>this.stroke</span> eine Funktion ist? Und diese Funktion ruft strokeRect() auf um das Quadrat zu zeichnen. Dann, später, machen wir ein neues Quadrat und nennen es b1 und lasses es sich selber zeichnen mittels <span class=tutor-code>b1.stroke()</span>. Schlau, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You know, monster has a secret.  Monster been hiding something from you.",
-      de: "de",
+      de: "Weisst du das das Monster ein Geheimnis hat? Monster hat etwas vor dir versteckt.",
       jp: "jp"
     },
     lessonSection: {
       en: "Canvas Object",
-      de: "de section",
+      de: "Leinwand Objekt",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "Have you been wondering why we use c.strokeRect() to draw a box?  What's the deal with that <span class=tutor-code>c.</span>?  Why is that there?",
-      de: "de",
+      en: "Have you been wondering why we use <span class=tutor-code>c.strokeRect()</span> to draw a box?  What's the deal with that <span class=tutor-code>c.</span>?  Why is that there?",
+      de: "Hast du dich gewundert warum wir <span class=tutor-code>c.strokeRect()</span> benutzt haben? Was heisst das <span class=tutor-code>c.</span>? Warum ist es hier?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Turns out all this time you have been using an object to draw, an object called the canvas object.",
-      de: "de",
+      de: "Wir haben die ganze Zeit schon ein Objekt benutzt: Das Leinwand (canvas) Objekt.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Monster added some code for you to get that object from the web page and put it in a variable named <span class=tutor-code>c</span>, so you could use it.  Let me show you what that hidden code looks like.",
-      de: "de",
+      de: "Monster hat etwas Code für dich gemacht für die Webseite und es einer Variablen <span class=tutor-code>c</span> zugewiesen damit du es benutzen kannst. Lass mich zeigen wie der Code aussieht.",
       jp: "jp"
     },
     code: "// This code was hidden before\nvar pane = document.getElementById('pane');\nvar c = pane.getContext('2d');\n\nfunction Box(x, y, size) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = 0;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.strokeRect(this.x, this.y,\n                 this.size, this.size);\n  };\n}\nvar b1 = new Box(30, 30, 120);\nb1.stroke();\n"
@@ -2536,108 +2536,108 @@ var lessons =
   {
     message: {
       en: "That code asks the document object (which is the web page) to give us the element in the web page called 'pane' (which is the id in the web page of the canvas where we draw), and then gets the 2d drawing canvas from that element.  We name that canvas object <span class=tutor-code>c</span> and use all its drawing functions, which is why we use <span class=tutor-code>c.</span> in front of every use of strokeRect().",
-      de: "de",
+      de: "Dieser Code fragt das Dokument Objekt (das ist die Webseite) für das 'pane' Element (das ist der Teil der Webseite wo wir hinzeichnen wollen), und holt dann das 2D Leinwand (canvas) von diesem Element. Das Objekt nennen wir <span class=tutor-code>c</span> und von dem benutzen wir die Zeichenfunktionen wie <span class=tutor-code>strokeRect()</span> mittels <span class=tutor-code>c.strokerect()</span>.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "That's useful to know if you write your own Javascript for your own drawing in web pages later!  But, for now, let me hide it again, so we can focus on Box objects.",
-      de: "de",
+      de: "Das ist gut zu wissen wenn du dein eigenes Javascript für eigene Zeichenfunktionen auf deinen eigenen Webseiten machst. Aber für heute lass es mich wieder verstecken damit wir uns auf die Quadrate konzentrieren können.",
       jp: "jp"
     },
     code: "function Box(x, y, size) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = 0;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.strokeRect(this.x, this.y,\n                 this.size, this.size);\n  };\n}\nvar b1 = new Box(30, 30, 120);\nb1.stroke();\n",
     lessonSection: {
       en: "Using Objects",
-      de: "de section",
+      de: "Objekte benutzen",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "Can you create a couple more boxes and have them draw themselves? For each one, you'll have to use new and stroke(), like we did for the box we called b1.",
-      de: "de",
+      en: "Can you create a couple more boxes and have them draw themselves? For each one, you'll have to use new and stroke(), like we did for the box we called <span class=tutor-code>b1</span>.",
+      de: "Kannst du ein paar mehr Quadrate machen die sich selber zeichnen? Für jedes brauchst du ein new und stroke() wie wir es mit <span class=tutor-code>b1</span> gemacht haben.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "That's pretty nice, but calling each box b1, b2, b3, or whatever is painful. What if I want ten boxes?  Or a hundred?",
-      de: "de",
+      de: "Das ist schon ganz gut, aber jedes Quadrat b1, b2, b3 usw. zu nennen ist unpraktisch wenn ich 10 oder 100 Quadrate mag.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "What I need is a list of boxes, like this!",
-      de: "de",
+      de: "Wir brauchen ein Feld von Quadraten, so wie hier!",
       jp: "jp"
     },
     code: "function Box(x, y, size) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = 0;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.strokeRect(this.x, this.y,\n                 this.size, this.size);\n  };\n}\n// Create an empty list of boxes\nvar boxes = [];\n// Create new boxes and add them to our list\nfor (var i = 0; i < 3; i = i + 1) {\n  boxes.push(new Box(i * 30, i * 20, 100));\n}\n// Tell all the boxes to draw themselves\nfor (var i = 0; i < boxes.length; i = i + 1) {\n  boxes[i].stroke();\n}\n",
     lessonSection: {
       en: "Lists (Arrays)",
-      de: "de section",
+      de: "Felder (Arrays)",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "A big new thing here.  Monster explain.",
-      de: "de",
+      de: "Das ist ganz wichtig. Monster erklärt.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>[]</span> creates what is called an <i>array</i>, which basically is a list that holds stuff.  These lists can hold objects, numbers, whatever we want.",
-      de: "de",
+      de: "<span class=tutor-code>[]</span> erzeugt ein <i>Feld</i> oder <i>Array</i> in Englisch. Dieses Feld kann viele Sachen enthalten: Zahlen, Objekte oder alles andere was Variablen haben können.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So, <span class=tutor-code>var boxes = []</span> means create an empty list and call it boxes.",
-      de: "de",
+      de: "Deshalb bedeutet <span class=tutor-code>var boxes = []</span> dass boxes ein neues leered Feld sein soll.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>boxes.push()</span> adds something to the end of the list.  Here, we use it to add a new box.  Because it is in a for loop that counts 0, 1, 2 and then stops, we will add three boxes to the end of the list.",
-      de: "de",
+      de: "<span class=tutor-code>boxes.push()</span> hängt etwas neues an das Ende vom Feld boxes. Das benutzen wir für neue Quadrate. Weil es in einer For Schleife ist die nur 0, 1 und 2 zählt, machen wir 3 neue Quadratobjekte und tun die in das boxes Feld.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Take a look at the second for loop.  <span class=tutor-code>boxes.length</span> is the length of the list.  <span class=tutor-code>boxes[0]</span> is the first box in the list, <span class=tutor-code>boxes[1]</span> the second, and so forth.  So, that second for loop goes through every box in the list and tells it to draw itself by calling <span class=tutor-code>boxes[i].stroke();</span>",
-      de: "de",
+      de: "Schau dir die zweite For Schleife an. <span class=tutor-code>boxes.length</span> ist die Grösse des Feldes. <span class=tutor-code>boxes[0]</span> ist das erste Element in dem Feld, also das erste Quadratobjekt. <span class=tutor-code>boxes[1]</span> ist das zweite usw. Die zweite For Schleife ruft also jedes Quadratobjekt im Feld auf und lässt es sich mittels <span class=tutor-code>boxes[i].stroke();</span> zeichnen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you add some more boxes?",
-      de: "de",
+      de: "Kannst du mehr Quadrate machen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "So far, we haven't really done that much that requires Box objects.  But let's go a step further.  Let's make boxes that are animated and move!",
-      de: "de",
+      de: "Bisher haben wir nichts gemacht was wirklich Objekte braucht. Aber jetzt geht's weiter mit Animationen!",
       jp: "jp"
     },
     lessonSection: {
       en: "Methods on Objects",
-      de: "de section",
+      de: "Methoden von Objekten",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Let's start by making all our boxes draw to whatever angle they are supposed to be at.  See how this new version of stroke() works?",
-      de: "de",
+      de: "Zuerst wollen wir alle Quadrate mit ihrem Winkel zeichnen. Siehst du wie stroke() funktioniert?",
       jp: "jp"
     },
     code: "function Box(x, y, size, a) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.save();\n    // Find the center of the box\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    // Move to the center of the box\n    c.translate(x, y);\n    // Rotate the box around the center\n    c.rotate(this.angle);\n    // Draw the box around its center\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n\nvar boxes = [];\nfor (var i = 1; i < 6; i = i + 1) {\n  var a = Math.random() * 2 - 1;\n  boxes.push(new Box(i * 50, i * 30, 100, a));\n}\nfor (var i = 0; i < boxes.length; i = i + 1) {\n  boxes[i].stroke();\n}\n"
@@ -2645,14 +2645,14 @@ var lessons =
   {
     message: {
       en: "Whenever a box is told to draw itself, we do that by moving to the center of the box, rotating around that center to match the angle of the box, and then draw the box around its center.  Kind of like what we did before for rotated boxes, right?",
-      de: "de",
+      de: "Wenn das Quadratobjekt sich zeichnen soll, drehen wir es um seine Mitte um den richtigen Winkel (angle) und zeichnen es dann. Genauso wie vorher mit den sich drehenden Quadraten, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Now let's make the boxes spin!  Look at the new function updateAll().  See what it is doing?",
-      de: "de",
+      de: "So, lassen wir jetzt die Quadrate sich drehen! Schau dir die Funktion updateAll() an. Siehst du was sie macht?",
       jp: "jp"
     },
     code: "var rotateSpeed = 0.02;\nvar timeStep = 50; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < boxes.length; i = i + 1) {\n    boxes[i].angle += rotateSpeed;\n    boxes[i].stroke();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the boxes\nvar boxes = [];\nfor (var i = 1; i < 6; i = i + 1) {\n  var a = Math.random() * 2 - 1;\n  boxes.push(new Box(i * 50, i * 30, 100, a));\n}\n// Do the first update\nupdateAll();\n\nfunction Box(x, y, size, a) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.save();\n    // Find the center of the box\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    // Move to the center of the box\n    c.translate(x, y);\n    // Rotate the box around the center\n    c.rotate(this.angle);\n    // Draw the box around its center\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n",
@@ -2661,35 +2661,35 @@ var lessons =
   {
     message: {
       en: "updateAll() starts by clearing the screen, then rotates each box a little more before drawing it.  Finally, it says, call me again in 1/20th of a second.  So, 20 times a second, we rotate each box a little and redraw it.  Cool, huh?",
-      de: "de",
+      de: "updateAll() löscht zuerst den Bildschirm, dann dreht es jedes Quadrat etwas bevor es gezeichnet wird. Und am ende sagt es sich nochmal aufzurufen in einer 20-tel Sekunde. Damit wiederholen wir das 20 mal pro Sekunde: Bildschirm löschen, drehen, zeichnen. Einfach, oder?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you make the boxes spin faster?",
-      de: "de",
+      de: "Kannst du die Quadrater schneller drehen?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you make them spin the other direction (counter-clockwise instead of clockwise)?",
-      de: "de",
+      de: "Kannst du sie in die andere Richtung drehen lassen (gegen den Uhrzeigersinn anstelle mit dem Uhrzeigersinn)?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Can you add more boxes?  You'll have to change three things to fit them all on the canvas, but I bet you can figure it out.  I liked it with 60 of them, looks really weird!",
-      de: "de",
+      de: "Kannst du mehr Quadrate machen? Du musst drei Sachen ändern damit die alle in die Leinwand (canvas) passen, aber ich bin mir sicher dass du sie herausfindest. 60 Stück hätte ich gerne!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "All those fast spinning boxes make Monster dizzy.  Let's slow it down again and let me show you something else.  We can move the update into each Box object.  That will be handy when we make the update do more.  See what this does now?",
-      de: "de",
+      de: "Monster wird schwindelig! Lass uns was neues machen! Die Änderung von jedem Quadratobjekt können wir im Objekt selber machen. Das ist praktisch wenn wir mehr Änderungen machen wollen. Verstehst du wie es funktioniert?",
       jp: "jp"
     },
     code: "var rotateSpeed = 0.01;\nvar timeStep = 50; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < boxes.length; i = i + 1) {\n    boxes[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the boxes\nvar boxes = [];\nfor (var i = 1; i < 6; i = i + 1) {\n  var a = Math.random() * 2 - 1;\n  boxes.push(new Box(i * 50, i * 30, 100, a));\n}\n// Do the first update\nupdateAll();\n\nfunction Box(x, y, size, a) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.update = function() {\n    this.angle += rotateSpeed;\n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.save();\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    c.translate(x, y);\n    c.rotate(this.angle);\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n"
@@ -2697,107 +2697,107 @@ var lessons =
   {
     message: {
       en: "updateAll() just calls the update() of the box.  update() on the box changes the angle and then draws the box.  Each box knows how to update and draw itself now.",
-      de: "de",
+      de: "updateAll() ruft jetzt nur update() von jedem Quadratobjekt auf. update() verändert den Winkel und zeichnet dann sich selber. Jedes Quadratobjekt weiss wie es sich selber ändern muss und wie es sich selber zeichnet.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let's make the boxes move too!  All we have to do is have update use <span class=tutor-code>dx</span> and <span class=tutor-code>dy</span>.  Take a look at <span class=tutor-code>Box</span> and how it is updated now!",
-      de: "de",
+      de: "Lass uns jetzt die Quadrate bewegen! Wir brauchen nur <span class=tutor-code>dx</span> und <span class=tutor-code>dy</span> zu ändern. Schau dir an wie ich das gemacht habe.",
       jp: "jp"
     },
     code: "function Box(x, y, size, a, dx, dy, da) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = dx;\n  this.dy = dy;\n  this.da = da;\n\n  this.update = function() {\n    this.angle += this.da;\n    this.x = this.x + this.dx;\n    this.y = this.y + this.dy;\n    // Bounce off the edges\n    if (this.x < 0 ||\n        this.x + this.size > w) {\n      this.dx = -this.dx;\n      this.da = -this.da;\n    }\n    if (this.y < 0 ||\n        this.y + this.size > h) {\n      this.dy = -this.dy;\n      this.da = -this.da;\n    }\n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.save();\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    c.translate(x, y);\n    c.rotate(this.angle);\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n\nvar timeStep = 50; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < boxes.length; i = i + 1) {\n    boxes[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the boxes\nvar boxes = [];\nvar s = 80;\nfor (var i = 0; i < 3; i = i + 1) {\n  var x = Math.random() * (w - s);\n  var y = Math.random() * (h - s);\n  var a = Math.random() * 2 - 1;\n  var dx = Math.random() * 2 - 1;\n  var dy = Math.random() * 2 - 1;\n  var da = 0.1 * (Math.random() * 2 - 1);\n  boxes.push(new Box(x, y, s, a, dx, dy, da));\n}\n// Do the first update\nupdateAll();\n\n",
     lessonSection: {
       en: "Velocity and Collisions",
-      de: "de section",
+      de: "Beschleunigung und Kollisionen",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "It's a little more complicated, but only a little.  Every time a box is told to update(), it moves by its velocity (<span class=tutor-code>dx</span> and <span class=tutor-code>dy</span>) and rotates by its angular velocity (<span class=tutor-code>da</span>).",
-      de: "de",
+      de: "Das wird jetzt ein ganz klein wenig komplizierter. Sieht aber wilder aus als es ist. Jedesmal wenn update() aufgerufen wird, ändert es seine Position mit der Geschwindigkeit <span class=tutor-code>dx</span> und <span class=tutor-code>dy</span> und es dreht sich um den Winkel <span class=tutor-code>da</span>.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "If a box gets off the edge of the screen, we reverse its velocities, making it appear to bounce!  Cool!",
-      de: "de",
+      de: "Wenn das Quadrat das Ende der Leinwand erreicht, kehren wir die Drehrichtung um. Das sieht aus als ob es abprallt! Cool!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "One thing that is new here.  When the box checks if it is off the screen, there's something you haven't seen before, <span class=tutor-code>||</span>",
-      de: "de",
+      de: "Etwas ist neu hier: Wenn das Quadratobjekt überprüft ob es am Ende der Leinwand ist, wird <span class=tutor-code>||</span> benutzt.",
       jp: "jp"
     },
     lessonSection: {
       en: "Bitwise Operators (And and Or)",
-      de: "de section",
+      de: "Bit Operatoren (Und (and) und Oder (or))",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>||</span> means <i>or</i>, as in either-or, so the first if statement checks if the box has either gone off the left or right edge, and the second checks if it has gone off the top or bottom.  Make sense?",
-      de: "de",
+      de: "<span class=tutor-code>||</span> bedeutet <i>oder (or)</i> im Sinne von 'entweder, oder'. Das erste Argument überprüft ob der Rand links oder rechts erreicht ist, und das zweite überprüft oben und unten.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "There is also a way to say <i>and</i>, as in both have to be true, which is <span class=tutor-code>&&</span>.  So, <span class=tutor-code>||</span> means <i>or</i> and <span class=tutor-code>&&</span> means <i>and</i>.",
-      de: "de",
+      de: "Es gibt auch eine Möglichkeit <i>Und (and)</i> zu haben. Beide Seiten müssen dann wahr sein: <span class=tutor-code>&&</span><br>Also <span class=tutor-code>||</span> heisst 'oder', <span class=tutor-code>&&</span> ist 'und'.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Back to the fun.  Have you tried putting in a lot of boxes yet?  Try it!  Make it so there are 10 boxes!  Or 50!",
-      de: "de",
+      de: "Zurück zum spassigen Teil. Hast du schon versucht viele Quadrate zu machen? Probier mal! Mach 10 Quadrate! Oder 50!",
       jp: "jp"
     },
     lessonSection: {
       en: "Easy with Objects",
-      de: "de section",
+      de: "Objekte machen's einfach",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "See how easy it is to keep track of all these boxes, their position, angle, velocity, and everything else, using objects?  Once you say what a Box object is, it's easy to create lots and lots of them!",
-      de: "de",
+      de: "Siehst du wie einfach es ist so viele Quadratobjekt mit ihrer Position, Winkel, Geschwindigkeit, Drehrichtung usw. zu benutzen? Wenn du erstmal erklärst was ein Quadrat ist, ist es einfach ganz viele davon zu benutzen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "You're nearing the end of the lessons now.  But I still have a couple fun things to show you.",
-      de: "de",
+      de: "Bald sind wir am Ende! Aber ich habe noch ein paar interessante Sachen für dich.",
       jp: "jp"
     },
     code: "",
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n",
     lessonSection: {
       en: "Circles, Arcs, and Balls",
-      de: "de section",
+      de: "Kreise, Bögen und Bälle",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Now that you know about objects with velocity, we actually are really close to being able to do cool things like make a ball bounce.  All we need is a little physics, some acceleration to go with our velocities!",
-      de: "de",
+      de: "Da du jetzt weisst wie Objekte funktionieren, sind wir jetzt ganz nah dran um interesante Sachen die springende Bälle zu machen. Etwas Physik und Beschleunigung ist alles was fehlt!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Here's a <span class=tutor-code>Ball</span> object.  It's a lot like the Box object you saw before, but has differences.  Take a look at the code.",
-      de: "de",
+      de: "Hier ist ein <span class=tutor-code>Ball</span> Objekt. Es ist fast wie ein Quadrat, aber es gibt einige Unterschiede. Schau es dir an.",
       jp: "jp"
     },
     code: "function Ball(x, y, r, dx, dy) {\n  this.x = x;\n  this.y = y;\n  this.r = r;\n  this.dx = dx;\n  this.dy = dy;\n\n  this.update = function() {\n    this.x = this.x + this.dx;\n    this.y = this.y + this.dy;\n    // Bounce off the edges\n    if (this.x - this.r < 0 ||\n        this.x + this.r > w) {\n      this.dx = -this.dx;\n    }\n    if (this.y - this.r < 0 ||\n        this.y + this.r > h) {\n      this.dy = -this.dy;\n    }\n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.beginPath();\n    c.arc(this.x, this.y, this.r,\n                 0, Math.PI * 2);\n    c.stroke();\n  };\n}\n\nvar timeStep = 50; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < balls.length; i = i + 1) {\n    balls[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the balls\nvar balls = [];\nvar r = 40;\nfor (var i = 0; i < 1; i = i + 1) {\n  var x = Math.random() * (w - r * 2) + r;\n  var y = Math.random() * (h - r * 2) + r;\n  var dx = Math.random() * 2 - 1;\n  var dy = Math.random() * 2 - 1;\n  \n  balls.push(new Ball(x, y, r, dx, dy));\n}\n// Do the first update\nupdateAll();\n\n",
@@ -2806,117 +2806,117 @@ var lessons =
   {
     message: {
       en: "One big difference is that a ball is round, so angle doesn't matter.  Look at the code.  There is no angle any more, right?",
-      de: "de",
+      de: "Ein grosser Unterschied ist dass der Ball rund ist. Deswegen gibt der Drehwinkel keinen Sinn mehr. Schau dir den Code an. Kein Winkel (angle) mehr da, gell?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Another big difference is that we use arc() to draw circles.  Arcs are cool, but they're a little complicated for just drawing a circle. Let me explain how they work.",
-      de: "de",
+      de: "Wir benutzen arc() (Bogen) zum zeichnen. Bögen sind cool, aber etwas komplizierter als einfache Kreise. Lass es mich erklären.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "To draw a circle in Javascript, you call <span class=tutor-code>c.arc(x, y, r, 0, Math.PI * 2);</span>, where (x, y) is the center of the circle, r is the radius, and then 0 and <span class=tutor-code>Math.PI * 2</span> says to draw an arc from 0 degrees to 360 degrees (since 2 * pi in radians is 360 degrees).",
-      de: "de",
+      de: "Um einen Kreis in Javascript zu zeichnen, rufst du <span class=tutor-code>c.arc(x, y, r, 0, Math.PI * 2);</span> auf. (x, y) ist die Mitte vom Kreis, r ist der Radius, 0 und <span class=tutor-code>Math.PI * 2</span> sagt dass der Bogen von 0 bis 360 Grad gezeichnet werden soll (2 * pi in Radianten ist 360 Grad).",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Because we draw circles from the center, a bunch of other things change, such as exactly how we check of whether we need to bounce off the sides.",
-      de: "de",
+      de: "Weil wir den Kreis von der Mitte aus zeichnen, ändern sich ein paar andere Sachen auch, z.B. die Erkennung der Ränder der Leinwand.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Take a look at the code again.  Does it make more sense now?",
-      de: "de",
+      de: "Schau dir den Code genau an. Gibt Sinn jetzt?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Okay, now we want to make a bouncing ball.  To do physics, we need velocity and acceleration.  So far, we have had velocity, but no acceleration.  Let's add acceleration!  Here it is!",
-      de: "de",
+      de: "Okay, wir wollen einen springenden Ball. Physik sagt wir brauchen Geschwindigkeit und Beschleunigung dafür. Bisher hatten wir Geschwindigkeit. Lasst uns Beschleunigung hinzufügen! Hier ist es!",
       jp: "jp"
     },
     code: "function Ball(x, y, r, dx, dy) {\n  this.x = x;\n  this.y = y;\n  this.r = r;\n  this.dx = dx;\n  this.dy = dy;\n\n  this.update = function() {\n    // Bounce off the edges\n    if (this.x - this.r + this.dx < 0 ||\n        this.x + this.r + this.dx > w) {\n      this.dx = -this.dx;\n    }\n    if (this.y - this.r + this.dy < 0 ||\n        this.y + this.r + this.dy > h) {\n      this.dy = -this.dy;\n    } else {\n      // Our only acceleration is gravity\n      this.dy += gravity;\n    }\n    \n    this.x = this.x + this.dx;\n    this.y = this.y + this.dy;\n    \n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.beginPath();\n    c.arc(this.x, this.y, this.r,\n                 0, Math.PI * 2);\n    c.stroke();\n  };\n}\n\nvar gravity = 0.05;\nvar timeStep = 25; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < balls.length; i = i + 1) {\n    balls[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the balls\nvar balls = [];\nvar r = 40;\nfor (var i = 0; i < 1; i = i + 1) {\n  var x = Math.random() * (w - r * 2) + r;\n  var y = Math.random() * (h - r * 2) + r;\n  var dx = Math.random() * 2 - 1;\n  var dy = Math.random() * 2 - 1;\n  \n  balls.push(new Ball(x, y, r, dx, dy));\n}\n// Do the first update\nupdateAll();\n\n",
     lessonSection: {
       en: "Acceleration, Velocity, and Physics",
-      de: "de section",
+      de: "Beschleunigung, Geschwindigkeit und Physik",
       jp: "jp section"
     }
   },
   {
     message: {
-      en: "Do you see it?  Now, every time we update() on a Ball (and the ball isn't bouncing, to simplify things), we change the downward velocity (<span class=tutor-code>dy</span>) by whatever gravity is.",
-      de: "de",
+      en: "Do you see it?  Now, every time we update() on a Ball (and the ball isn't bouncing, to simplify things), we change the downward velocity (<span class=tutor-code>dy</span>) by whatever <span class=tutor-code>gravity</span> is.",
+      de: "Siehst du es? Jedes mal wenn update() von einem Ball aufgerufen wird (und der Ball springt jetzt noch nicht damit es einfacher bleibt), ändern wir die Geschwindigkeit nach unten (<span class=tutor-code>dy</span>) um was <span class=tutor-code>gravity</span> ist.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Pretty cool!  Try adding 10-15 balls and watch it for a while.  It's a full physics simulation with gravity and bouncing!  Very fun!",
-      de: "de",
+      de: "Cool! Füge 10-15 Bälle dazu und schau es dir an. Es ist jetzt eine kleine Physik-Simulation!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Let me show you one more thing before we move on from bouncing balls.  What is called a partially elastic collision.",
-      de: "de",
+      de: "Lass mir noch eine Sache Zeigen bevor wir zur unelastischen Kollision gehen.",
       jp: "jp"
     },
     code: "function Ball(x, y, r, dx, dy) {\n  this.x = x;\n  this.y = y;\n  this.r = r;\n  this.dx = dx;\n  this.dy = dy;\n\n  this.update = function() {\n    // Bounce off the edges\n    if (this.x - this.r + this.dx < 0 ||\n        this.x + this.r + this.dx > w) {\n      this.dx = -this.dx * friction;\n    }\n    if (this.y - this.r + this.dy < 0 ||\n        this.y + this.r + this.dy > h) {\n      this.dy = -this.dy * friction;\n    } else {\n      // Our only acceleration is gravity\n      this.dy += gravity;\n    }\n    \n    this.x = this.x + this.dx;\n    this.y = this.y + this.dy;\n    \n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.beginPath();\n    c.arc(this.x, this.y, this.r,\n                 0, Math.PI * 2);\n    c.stroke();\n  };\n}\n\nvar gravity = 0.2;\nvar friction = 0.8;\nvar timeStep = 25; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < balls.length; i = i + 1) {\n    balls[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the balls\nvar balls = [];\nvar r = 40;\nfor (var i = 0; i < 4; i = i + 1) {\n  var x = Math.random() * (w - r * 2) + r;\n  var y = Math.random() * (h - r * 2) + r;\n  var dx = Math.random() * 2 - 1;\n  var dy = Math.random() * 2 - 1;\n  \n  balls.push(new Ball(x, y, r, dx, dy));\n}\n// Do the first update\nupdateAll();\n\n",
     lessonSection: {
       en: "Collisions and Physics",
-      de: "de section",
+      de: "Kollisionen und Physik",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "In the real world, when things collide, they usually bounce off each other slower than before.  That's why, when you drop a ball, it doesn't keep bouncing forever.",
-      de: "de",
+      de: "In der realen Welt prallen Sachen etwas langsamer voneinander ab verglichen mit ihrer Geschwindigkeit vor dem Zusammenprall. Darum springt ein Ball nicht für immer.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "If you look at the code in update, there is now a friction force applied when the balls bounce off the walls.  It makes them bounce off slower than they came in.  Eventually, the balls all stop bouncing and slowly roll along the bottom.",
-      de: "de",
+      de: "Schau dir den Code an. Es gibt jetzt eine Reibung (friction) ins Spiel wenn der Ball von einer Wand abprallt. Der Ball springt weniger und weniger und rollt am Ende über den Boden.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Cool simulation, and adds some realism.  Play with it a bit!  Change the friction, add more balls, increase gravity, change timeStep.  Try messing around with it!",
-      de: "de",
+      de: "Tolle Simulation und sieht sehr echt aus. Spiel damit ein bisschen. Ändere die Reibung (friction), mach mehr Bällem, erhöhe die Schwerkraft (gravity), oder ändere die Zeitschritte (timeStep). Spiel mit den Zahlen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "For our last lessons, let's work a bit with tracking the mouse.  This is a lot of fun!",
-      de: "de",
+      de: "Für den letzten Teil, lass uns mit der Computermaus arbeiten. Das macht Spass!",
       jp: "jp"
     },
     code: "",
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n",
     lessonSection: {
       en: "Mouse Events",
-      de: "de section",
+      de: "Mausereignisse",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Here is a ball that sticks to the mouse.  Every time the mouse moves, the ball redraws on top of the mouse.",
-      de: "de",
+      de: "Hier ist ein Ball der an der Computermaus hängt. Jedesmal wenn sich die Maus bewegt, wird der Ball neu gezeichtet. Und zwar wo die Maus ist.",
       jp: "jp"
     },
     code: "var pane = document.getElementById('pane');\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\npane.onmousemove = function(evt) {\n  var x = evt.clientX;\n  var y = evt.clientY;\n  \n  c.clearRect(0, 0, w, h);\n  c.beginPath();\n  c.arc(x, y, 40, 0, Math.PI * 2);\n  c.stroke();\n};\n"
@@ -2924,84 +2924,84 @@ var lessons =
   {
     message: {
       en: "How does it work?  It starts by setting the variable pane to the element of the web page called 'pane', which happens to be the one our drawing canvas is in.",
-      de: "de",
+      de: "Wie funktioniert das? Es fängt damit an dass eine Variable 'pane' das Element der Webseite findet wo gezeichnet wird. Das ist unsere Leinwand.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "<span class=tutor-code>pane.onmousemove = function(evt) {};</span> is really important.  That code binds a function to the <i>onmousemove</i> event on the 'pane' element, which means this function is called any time the mouse moves inside the drawing canvas.",
-      de: "de",
+      de: "<span class=tutor-code>pane.onmousemove = function(evt) {};</span> ist ganz wichtig. Diese Zeile verbindet die Funktion <i>onmousemove</i> mit dem 'pane' Element. D.h. jedesmal wenn die Maus in der Leinwand wo wir zeichnen ist, wird diese Funktion aufgerufen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Our function then asks the event where the mouse is (the <span class=tutor-code>clientX</span> and <span class=tutor-code>clientY</span>) and draws a big circle around it.  Make sense?",
-      de: "de",
+      de: "Unsere Function fragt dann wo die Maus ist (<span class=tutor-code>clientX</span> und <span class=tutor-code>clientY</span>) und zeichnet einen grossen Kreis dorthin. Okay?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "What's really cool about this is that we can combine it with animation.  Look at this!",
-      de: "de",
+      de: "Das Tolle ist, dass wir das jetzt mit Animationen kombinieren können. Schau hier!",
       jp: "jp"
     },
     code: "function Ball(x, y, r, dx, dy) {\n  this.x = x;\n  this.y = y;\n  this.r = r;\n  this.dx = dx;\n  this.dy = dy;\n\n  this.update = function() {\n    // Acceleration toward the mouse\n    var diffX = mouseX - this.x;\n    var diffY = mouseY - this.y;\n    var dist2 = diffX * diffX + diffY * diffY + 1;\n    var ddx = accel * Math.abs(diffX) *\n              diffX / dist2;\n    var ddy = accel * Math.abs(diffY) *\n              diffY / dist2;\n    \n    // Bounce off the edges\n    if (this.x - this.r + this.dx < 0 ||\n        this.x + this.r + this.dx > w) {\n      this.dx = -this.dx * friction;\n    } else {\n      this.dx += ddx;\n    }\n    if (this.y - this.r + this.dy < 0 ||\n        this.y + this.r + this.dy > h) {\n      this.dy = -this.dy * friction;\n    } else {\n      this.dy += ddy;\n    }\n    \n    this.x = this.x + this.dx;\n    this.y = this.y + this.dy;\n    \n    // Enforce the boundaries\n    this.x = Math.max(this.r, this.x);\n    this.x = Math.min(w - this.r, this.x);\n    this.y = Math.max(this.r, this.y);\n    this.y = Math.min(h - this.r, this.y);\n    \n    this.stroke();\n  };\n  \n  this.stroke = function() {\n    c.beginPath();\n    c.arc(this.x, this.y, this.r,\n                 0, Math.PI * 2);\n    c.stroke();\n  };\n}\n\nvar accel = 0.1;\nvar friction = 0.8;\nvar mouseX = 0;\nvar mouseY = 0;\nvar timeStep = 25; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < balls.length; i = i + 1) {\n    balls[i].update();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the balls\nvar balls = [];\nvar r = 40;\nfor (var i = 0; i < 4; i = i + 1) {\n  var x = Math.random() * (w - r * 2) + r;\n  var y = Math.random() * (h - r * 2) + r;\n  var dx = Math.random() * 2 - 1;\n  var dy = Math.random() * 2 - 1;\n  \n  balls.push(new Ball(x, y, r, dx, dy));\n}\n// Do the first update\nupdateAll();\n\n// Store the mouse position when the mouse moves\nvar pane = document.getElementById('pane');\npane.onmousemove = function(evt) {\n  mouseX = evt.clientX;\n  mouseY = evt.clientY;\n};\n",
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\ndocument.stopAnimation = function() {clearTimeout(cmTID);};\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n",
     lessonSection: {
       en: "Springs and Physics",
-      de: "de section",
+      de: "Federn und Physik",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "What this does is, every time the mouse moves in the canvas area, it sets <span class=tutor-code>mouseX</span> and <span class=tutor-code>mouseY</span> to the location of the mouse.",
-      de: "de",
+      de: "Hier ist was der Code macht: Jedesmal wenn die Maus innerhalb der Leinwand ist, wird <span class=tutor-code>mouseX</span> und <span class=tutor-code>mouseY</span> auf die Position der Maus gesetzt.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Then, when each ball is updated, it figures out how far away from the mouse it is, and accelerates toward it.",
-      de: "de",
+      de: "Wenn dann jeder Ball neu berechnet wird mittels update(), findet er heraus wie weit er von der Maus entfernt ist und beschleudnigt zur Maus.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "The acceleration is the square root of the distance, so it pulls harder when it is really far away.  Imagine all the balls being connected to the mouse by little rubber bands or springs.  It's a little like that.",
-      de: "de",
+      de: "Die Beschleunigung ist die Wurzel der Entfernung, das heisst sie ist grösser wenn die Maus weiter weg ist. Stell dir vor alle Bälle sind mit einem kleinen Gummiband mit der Maus verbunden.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Try making the balls smaller!  And add more of them!  I like it with about 40 small balls chasing the mouse.",
-      de: "de",
+      de: "Mach die Bälle kleiner! Mach mehr Bälle! Ich mag 40 kleine Bälle die die Maus verfolgen!",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Great job! Like what you learned? Was it fun?",
-      de: "de",
+      de: "Super! War das interessant? Hat es Spass gemacht?",
       jp: "jp"
     },
     code: "",
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n",
     lessonSection: {
       en: "The End",
-      de: "de section",
+      de: "Das Ende",
       jp: "jp section"
     }
   },
   {
     message: {
       en: "Wow, you did everything!  Congratulations, nice work!  A lot of these are really hard. I'm impressed you finished!  I hope you enjoyed it!",
-      de: "de",
+      de: "Wahnsinn! Du hast alles gemacht! Ich gratuliere dir! Viele waren wirklich schwer! Ich bin beeindruckt und hoffe es hat dir Spass gemacht!",
       jp: "jp"
     },
     code: "var pane = document.getElementById('pane');\nvar s = 3;\n\npane.onmousemove = function(evt) {\n  c.fillStyle = randomRGBA();\n  var x = evt.clientX;\n  var y = evt.clientY;\n  c.fillRect(x - s / 2, y - s / 2, s, s);};\n\nfunction randomRGBA() {\n  var r = randInt(255);\n  var g = randInt(255);\n  var b = randInt(255);\n  var a = Math.random();\n  var rgba = [r,g,b,a].join(\",\");\n  return \"rgba(\" + rgba + \")\";\n}\nfunction randInt(limit) {\n  var x = Math.random() * limit;\n  return Math.floor(x);\n}\n"
