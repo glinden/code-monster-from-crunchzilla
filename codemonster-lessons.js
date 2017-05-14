@@ -42,14 +42,14 @@ var lessons =
   {
     message: {
       en: "Below me, on the left, is Javascript code, on the right, what it does.",
-      de: "Unter mir, auf der linken Seite, ist JavaScript Code. Auf der rechten Seite ist das, was der Code macht",
+      de: "Unter mir, auf der linken Seite, ist Javascript Code. Auf der rechten Seite ist das, was der Code macht",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "You can use fillRect() to draw a box. See the number 50?  Can you change that to 150?",
-      de: "Du kannst mit fillRect() ein Rechteck zeichnen. Siehst Du die Nummer 50? Kannst Du die in 150 ändern?",
+      en: "You can use <span class=tutor-code>fillRect()</span> to draw a box. See the number 50?  Can you change that to 150?",
+      de: "Du kannst mit <span class=tutor-code>fillRect()</span> ein Rechteck zeichnen. Siehst Du die Nummer 50? Kannst Du die in 150 ändern?",
       jp: "jp"
     },
     code: "c.fillRect(20, 20, 50, 75);\n",
@@ -305,8 +305,8 @@ var lessons =
   },
   {
     message: {
-      en: "Wha... This does the same thing!  What could rgb() be?",
-      de: "Huch...das macht das gleiche! Was mag wohl rgb() sein?",
+      en: "Wha... This does the same thing!  What could <span class=tutor-code>rgb()</span> be?",
+      de: "Huch...das macht das gleiche! Was mag wohl <span class=tutor-code>rgb()</span> sein?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(255, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgb(0, 255, 0)\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"rgb(0, 0, 255)\";\nc.fillRect(140, 140, size, size);\n"
@@ -321,8 +321,8 @@ var lessons =
   },
   {
     message: {
-      en: "Did you figure it out?  rgb() refers to red, green, and blue.  The numbers go from 0 to 255. So, <span class=tutor-code>rgb(0, 255, 0)</span> means no red or blue, but all the green you got!",
-      de: "Hast du es herausgefunden? rgb() kommt von red, green, blue (rot, grün, blau). Die Zahlen gehen von 0 bis 255. <span class=tutor-code>rgb(0, 255, 0)</span> heisst kein rot, viel grün, kein blau.",
+      en: "Did you figure it out?  <span class=tutor-code>rgb()</span> refers to red, green, and blue.  The numbers go from 0 to 255. So, <span class=tutor-code>rgb(0, 255, 0)</span> means no red or blue, but all the green you got!",
+      de: "Hast du es herausgefunden? <span class=tutor-code>rgb()</span> kommt von red, green, blue (rot, grün, blau). Die Zahlen gehen von 0 bis 255. <span class=tutor-code>rgb(0, 255, 0)</span> heisst kein rot, viel grün, kein blau.",
       jp: "jp"
     }
   },
@@ -350,7 +350,7 @@ var lessons =
   {
     message: {
       en: "Can you make these both blue?",
-      de: "Kannst du die Quadtate blau machen?",
+      de: "Kannst du die Quadrate blau machen?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"blue\";\nc.fillRect(80, 80, size, size);\n",
@@ -359,7 +359,7 @@ var lessons =
 
   {
     message: {
-      en: "Can you figure out what the rgb() numbers should be to make these both yellow?",
+      en: "Can you figure out what the <span class=tutor-code>rgb()</span> numbers should be to make these both yellow?",
       de: "Welche Zahlen ergeben gelb?",
       jp: "jp"
     },
@@ -367,7 +367,7 @@ var lessons =
   },
   {
     message: {
-      en: "Can you figure out what the rgb() numbers should be to make these both teal?",
+      en: "Can you figure out what the <span class=tutor-code>rgb()</span> numbers should be to make these both teal?",
       de: "Welche Zahlen ergeben blaugrün?",
       jp: "jp"
     },
@@ -375,8 +375,8 @@ var lessons =
   },
   {
     message: {
-      en: "Okay, this one is really hard.  Can you make these two exactly match?  Can you figure out what the rgb() numbers should be to make these both crimson? Don't worry if you don't get it exactly, just see how close you can get!",
-      de: "Okay, das ist jetzt schwer: Kannst du die Farben genau gleich machen? Welche Zahlen für rgb() ergeben karminrot (crimson)? Versuche so genau wie möglich die karminrot zu treffen.",
+      en: "Okay, this one is really hard.  Can you make these two exactly match?  Can you figure out what the <span class=tutor-code>rgb()</span> numbers should be to make these both crimson? Don't worry if you don't get it exactly, just see how close you can get!",
+      de: "Okay, das ist jetzt schwer: Kannst du die Farben genau gleich machen? Welche Zahlen für <span class=tutor-code>rgb()</span> ergeben karminrot (crimson)? Versuche so genau wie möglich die karminrot zu treffen.",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgb(0, 0, 0)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"crimson\";\nc.fillRect(80, 80, size, size);\n"
@@ -398,8 +398,8 @@ var lessons =
   },
   {
     message: {
-      en: "rgba() is a crazy version of rgb(). See what this does?  It's got one more number at the end that's 0.5.  What is that last number doing? Try changing the 0.5 to 0.1.  Or to 0.8.  What does it do?",
-      de: "rgba() ist eine besondere version von rgb(). Siehst Du den Unterschied? Sie hat eine Zahl mehr am Ende und die ist 0.5. Was macht die letzte Zahl? Versuch die 0.5 durch 0.1 or 0.8 zu ersetzen. Was passiert?",
+      en: "<span class=tutor-code>rgba()</span> is a crazy version of <span class=tutor-code>rgb()</span>. See what this does?  It's got one more number at the end that's 0.5.  What is that last number doing? Try changing the 0.5 to 0.1.  Or to 0.8.  What does it do?",
+      de: "<span class=tutor-code>rgba()</span> ist eine besondere Version von <span class=tutor-code>rgb()</span>. Siehst Du den Unterschied? Sie hat eine Zahl mehr am Ende und die ist 0.5. Was macht die letzte Zahl? Versuch die 0.5 durch 0.1 or 0.8 zu ersetzen. Was passiert?",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(80, 80, size, size);\n",
@@ -411,15 +411,15 @@ var lessons =
   },
   {
     message: {
-      en: "The a in rgba means alpha (how transparent the box is) from 0.0 (invisible) to 1.0 (solid)",
-      de: "Das a in rgba steht für alpha (Transparenz) und sie reicht von 0.0 (unsichtbar) bis 1.0 (undurchsichtig).",
+      en: "The a in <span class=tutor-code>rgba</span> means alpha (how transparent the box is) from 0.0 (invisible) to 1.0 (solid)",
+      de: "Das a in <span class=tutor-code>rgba</span> steht für alpha (Transparenz) und sie reicht von 0.0 (unsichtbar) bis 1.0 (undurchsichtig).",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "You can do pretty cool things with rgba().  Look at this!  Try changing some of the 0.5 alphas to 0.2 or 0.8!",
-      de: "Du kannst interessante Sachen mit rgba() machen. Schau mal! Ändere einige der 0.5 transparenz in 0.2 oder 0.8!",
+      en: "You can do pretty cool things with <span class=tutor-code>rgba()</span>.  Look at this!  Try changing some of the 0.5 alphas to 0.2 or 0.8!",
+      de: "Du kannst interessante Sachen mit <span class=tutor-code>rgba()</span> machen. Schau mal! Ändere einige der 0.5 transparenz in 0.2 oder 0.8!",
       jp: "jp"
     },
     code: "var size = 80;\n\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(20, 20, size, size);\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(80, 80, size, size);\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(140, 140, size, size);\n"
@@ -527,7 +527,7 @@ var lessons =
   {
     message: {
       en: "This looks the same, but it's a little different.  What's that <span class=tutor-code>*</span> doing?  What happens if you change <span class=tutor-code>* 3</span> to <span class=tutor-code>* 2</span>?  Try changing it to <span class=tutor-code>* 1</span>.  Try changing the <span class=tutor-code>offset</span> too.  Did you figure out what <span class=tutor-code>*</span> means?",
-      de: "Das sieht ähnlich aus, ist aber etwas anders. Was macht das <span class=tutor-code>*</span>? Was passiert wenn du <span class=tutor-code>* 3</span> in <span class=tutor-code>* 2</span> änderst? Probier auch mal <span class=tutor-code>* 1</span>. Ändere auch <span class=tutor-code>offset</span>. Hast du's herausgefunden was <span class=tutor-code>*</span> macht?",
+      de: "Das sieht ähnlich aus, ist aber etwas anders. Was macht das <span class=tutor-code>*</span> ? Was passiert wenn du <span class=tutor-code>* 3</span> in <span class=tutor-code>* 2</span> änderst? Probier auch mal <span class=tutor-code>* 1</span>. Ändere auch <span class=tutor-code>offset</span>. Hast du's herausgefunden was <span class=tutor-code>*</span> macht?",
       jp: "jp"
     },
     code: "var offset = 30;\nvar size = 80;\nc.fillStyle =\"lime\";\nc.fillRect(offset, offset, size, size);\noffset = offset * 3;\nc.fillRect(offset, offset, size, size);\n",
@@ -595,8 +595,8 @@ var lessons =
   },
   {
     message: {
-      en: "Remember rgba()?  Monster like.  Can you make me three boxes with different colors?",
-      de: "Erinnerst du dich an rgba()? Monster mag das. Kannst du drei Quadrate mit verschiedenen Farben machen?",
+      en: "Remember <span class=tutor-code>rgba()</span> ?  Monster like.  Can you make me three boxes with different colors?",
+      de: "Erinnerst du dich an <span class=tutor-code>rgba()</span> ? Monster mag das. Kannst du drei Quadrate mit verschiedenen Farben machen?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\n"
@@ -633,7 +633,7 @@ var lessons =
   {
     message: {
       en: "For loops have three parts, where to start (<span class=tutor-code>i = 0</span>), when to keep going (<span class=tutor-code>i < 5</span>), and how much to change each time (<span class=tutor-code>i = i + 1</span>). Can you make ten boxes?",
-      de: "For Schleifen haben 3 Teile: wo man anfängt (<span class=tutor-code>i = 0</span>), wie lange man weitermacht (<span class=tutor-code>i < 5</span>), und wieviel pro Schleife verändert wird (<span class=tutor-code>i = i + 1</span>). Kannst du 10 Quadrate machen?",
+      de: "<span class=tutor-code>for</span> Schleifen haben 3 Teile: wo man anfängt (<span class=tutor-code>i = 0</span>), wie lange man weitermacht (<span class=tutor-code>i < 5</span>), und wieviel pro Schleife verändert wird (<span class=tutor-code>i = i + 1</span>). Kannst du 10 Quadrate machen?",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\n\nc.fillStyle =\"blue\";\nfor (var i = 0; i < 5; i = i + 1) {\n  c.fillRect(offset, offset, size, size);\n  offset = offset + 40;\n}\n"
@@ -712,8 +712,8 @@ var lessons =
   },
   {
     message: {
-      en: "Now can you make the second square red? (Hint: <span class=tutor-code>c.fillStyle = \"blue\";</span> before fillRect() will make the rect blue)",
-      de: "Kannst du das zweite Quadrat rot machen Tip: <span class=tutor-code>c.fillStyle = \"blue\";</span> vor fillRect() macht das nächste Recheck blau (blue)",
+      en: "Now can you make the second square red? (Hint: <span class=tutor-code>c.fillStyle = \"blue\";</span> before <span class=tutor-code>fillRect()</span> will make the rect blue)",
+      de: "Kannst du das zweite Quadrat rot machen Tip: <span class=tutor-code>c.fillStyle = \"blue\";</span> vor <span class=tutor-code>fillRect()</span> macht das nächste Recheck blau (blue)",
       jp: "jp"
     }
   },
@@ -727,8 +727,8 @@ var lessons =
   },
   {
     message: {
-      en: "Monster draw line. What do you think moveTo() does? lineTo()? Try changing 20 to 50.",
-      de: "Monster malt Linien. Was meinst du was moveTo() macht? Und lineTo()? Probier die 20 in 50 zu ändern.",
+      en: "Monster draw line. What do you think <span class=tutor-code>moveTo()</span> does? <span class=tutor-code>lineTo()</span> ? Try changing 20 to 50.",
+      de: "Monster malt Linien. Was meinst du was <span class=tutor-code>moveTo()</span> macht? Und <span class=tutor-code>lineTo()</span> ? Probier die 20 in 50 zu ändern.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.stroke();\n",
@@ -740,45 +740,45 @@ var lessons =
   },
   {
     message: {
-      en: "Try changing the other numbers too.  Can you figure out what moveTo() and lineTo() do?",
-      de: "Versuch auch die anderen Zahlen zu ändern. Weisst du was moveTo() und lineTo() tun?",
+      en: "Try changing the other numbers too.  Can you figure out what <span class=tutor-code>moveTo()</span> and <span class=tutor-code>lineTo()</span> do?",
+      de: "Versuch auch die anderen Zahlen zu ändern. Weisst du was <span class=tutor-code>moveTo()</span> und <span class=tutor-code>lineTo()</span> tun?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "moveTo(left, top) moves the pen to a spot without drawing.  lineTo(left, top) draws a line from wherever the pen is to a spot.",
+      en: "<span class=tutor-code>moveTo(left, top)</span> moves the pen to a spot without drawing.  <span class=tutor-code>lineTo(left, top)</span> draws a line from wherever the pen is to a spot.",
       de: "moveTo(links, oben) bewegt den Zeichenstift zu den Punkt (links, oben) ohne etwas zu zeichnen. lineTo(links, open) malt eine Linie von woimmer der Zeichenstift ist zu den Punkt (links, oben).",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Here is what happens if we do a second lineTo().  The second line starts from where the first ended.",
-      de: "Hier siehst du was passiert wenn man ein zweites lineTo() benutzt: die zweite Linie startet dort wo die erste endete.",
+      en: "Here is what happens if we do a second <span class=tutor-code>lineTo()</span>.  The second line starts from where the first ended.",
+      de: "Hier siehst du was passiert wenn man ein zweites <span class=tutor-code>lineTo()</span> benutzt: die zweite Linie startet dort wo die erste endete.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.lineTo(120, 150);\nc.stroke();\n"
   },
   {
     message: {
-      en: "So, we're drawing a path, a trail of lines all connected together.  We start the path with beginPath() and draw everything with stroke().",
-      de: "Wir zeichnen also einen Pfad der aus verbundenen Linien besteht. Wir starten den Pfad mit beginPath() und malen alles auf einmal mit stroke().",
+      en: "So, we're drawing a path, a trail of lines all connected together.  We start the path with <span class=tutor-code>beginPath()</span> and draw everything with <span class=tutor-code>stroke()</span>.",
+      de: "Wir zeichnen also einen Pfad der aus verbundenen Linien besteht. Wir starten den Pfad mit <span class=tutor-code>beginPath()</span> und malen alles auf einmal mit <span class=tutor-code>stroke()</span>.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "If we put a moveTo() before the second lineTo(), we'll move the pen without drawing.  See?",
-      de: "Wenn wir moveTo() vor das zweite lineTo() benutzen, bewegen wir den Zeichenstift ohne zu zeichnen. Siehst du?",
+      en: "If we put a <span class=tutor-code>moveTo()</span> before the second <span class=tutor-code>lineTo()</span>, we'll move the pen without drawing.  See?",
+      de: "Wenn wir <span class=tutor-code>moveTo()</span> vor das zweite <span class=tutor-code>lineTo()</span> benutzen, bewegen wir den Zeichenstift ohne zu zeichnen. Siehst du?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(120, 40);\nc.moveTo(120, 60);\nc.lineTo(120, 150);\nc.stroke();\n"
   },
   {
     message: {
-      en: "You try it!  Add another line, put a second c.lineTo() after the first going to (50, 115).",
-      de: "Probier du es! Füge eine neue Linue hinzu: mach ein zweites c.lineTo() nach dem ersten um zu (50, 115) zu gehen.",
+      en: "You try it!  Add another line, put a second <span class=tutor-code>c.lineTo()</span> after the first going to (50, 115).",
+      de: "Probier du es! Füge eine neue Linue hinzu: mach ein zweites <span class=tutor-code>c.lineTo()</span> nach dem ersten um zu (50, 115) zu gehen.",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\n\nc.stroke();\n"
@@ -816,8 +816,8 @@ var lessons =
   },
   {
     message: {
-      en: "I was trying to make two triangles, but forgot a moveTo().  See what happened?",
-      de: "ich wollte zwei Dreiecke machen, aber ich have moveTo() vergessen. Siehst du was passiert ist?",
+      en: "I was trying to make two triangles, but forgot a <span class=tutor-code>moveTo()</span>.  See what happened?",
+      de: "ich wollte zwei Dreiecke machen, aber ich have <span class=tutor-code>moveTo()</span> vergessen. Siehst du was passiert ist?",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(100, 30);\nc.lineTo(150, 115);\nc.lineTo(50, 115);\nc.lineTo(100, 30);\n\nc.lineTo(250, 215);\nc.lineTo(150, 215);\nc.lineTo(200, 130);\nc.stroke();\n"
@@ -831,8 +831,8 @@ var lessons =
   },
   {
     message: {
-      en: "I want a lot of triangles. We need to use <span class=tutor-code>for</span>!  This for loop draws two triangles.",
-      de: "Ich mal viele Dreiecke! Wir brauchen <span class=tutor-code>for</span>! Diese For Schleife zeichnet zwei Dreiecke.",
+      en: "I want a lot of triangles. We need to use <span class=tutor-code>for</span>!  This <span class=tutor-code>for</span> loop draws two triangles.",
+      de: "Ich male viele Dreiecke! Wir brauchen <span class=tutor-code>for</span>! Diese  <span class=tutor-code>for</span> Schleife zeichnet zwei Dreiecke.",
       jp: "jp"
     },
     code: "c.beginPath();\nfor (var i = 30; i <= 60; i = i + 30) {\n  c.moveTo(70 + i, i);\n  c.lineTo(120 + i, 85 + i);\n  c.lineTo(20 + i, 85 + i);\n  c.lineTo(70 + i, i);\n}\nc.stroke();\n",
@@ -844,22 +844,22 @@ var lessons =
   },
   {
     message: {
-      en: "This for loop starts at 30 and increases by 30 every time.  So, until it is told to stop, it counts 30, 60, 90, 120...  Right now, the for loop is told to stop at 60.",
-      de: "Diese For Schleife startet mit 30 und erhöht sich um 30 jedes mal. Das heisst es zählt 30, 60, 90, 120... bis es fertig ist. Im Moment hört es auf wenn 60 erreicht ist.",
+      en: "This <span class=tutor-code>for</span> loop starts at 30 and increases by 30 every time.  So, until it is told to stop, it counts 30, 60, 90, 120...  Right now, the for loop is told to stop at 60.",
+      de: "Diese <span class=tutor-code>for</span> Schleife startet mit 30 und erhöht sich um 30 jedes mal. Das heisst es zählt 30, 60, 90, 120... bis es fertig ist. Im Moment hört es auf wenn 60 erreicht ist.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "So, can you make this for loop draw three triangles? Five?",
-      de: "Kannst du diese For Schleife drei Dreiecke zeichnen lassen? Fünf auch?",
+      en: "So, can you make this <span class=tutor-code>for</span> loop draw three triangles? Five?",
+      de: "Kannst du diese <span class=tutor-code>for</span> Schleife drei Dreiecke zeichnen lassen? Fünf auch?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Can you make more triangles by changing how the for loop goes up?  What if it counted by 10 each time, so it would count 30, 40, 50, 60... Can you do try that?",
-      de: "Kannst du mehr Dreiecke zeichnen indem du die Zahl verringerst um den sich der Schleifenzähler ändert pro Schleife? Was we wenn du 10 pro Schleife addierst? Es würde dann so zählen: 30, 40, 50, 60... Kannst du das probieren?",
+      en: "Can you make more triangles by changing how the <span class=tutor-code>for</span> loop goes up?  What if it counted by 10 each time, so it would count 30, 40, 50, 60... Can you do try that?",
+      de: "Kannst du mehr Dreiecke zeichnen indem du die Zahl verringerst um den sich der Schleifenzähler ändert pro Schleife? Was wenn du 10 pro Schleife addierst? Es würde dann so zählen: 30, 40, 50, 60... Kannst du das probieren?",
       jp: "jp"
     }
   },
@@ -880,8 +880,8 @@ var lessons =
   },
   {
     message: {
-      en: "Two boxes, one using strokeRect(), the other using four lines.",
-      de: "Zwei Quadrate. Eins mit strokeRect() und eins mit vier Linien",
+      en: "Two boxes, one using <span class=tutor-code>strokeRect()</span>, the other using four lines.",
+      de: "Zwei Quadrate. Eins mit <span class=tutor-code>strokeRect()</span> und eins mit vier Linien",
       jp: "jp"
     },
     code: "var size = 100;\n// First box\nc.strokeRect(30, 30, size, size);\n// Second box\nc.beginPath();\nc.moveTo(80, 80);\nc.lineTo(80 + size, 80);\nc.lineTo(80 + size, 80 + size);\nc.lineTo(80, 80 + size);\nc.lineTo(80, 80);\nc.stroke();\n",
@@ -901,8 +901,8 @@ var lessons =
   },
   {
     message: {
-      en: "strokeRect() is easier, isn't it?  Here are three boxes all using strokeRect(). Can you add a fourth?",
-      de: "strokeRect() ist einfacher, gell? Hier sind drei Quadrate mit strokeRect(). Kannst du ein viertes hinzufügen?",
+      en: "<span class=tutor-code>strokeRect()</span> is easier, isn't it?  Here are three boxes all using <span class=tutor-code>strokeRect()</span>. Can you add a fourth?",
+      de: "<span class=tutor-code>strokeRect()</span> ist einfacher, gell? Hier sind drei Quadrate mit <span class=tutor-code>strokeRect()</span>. Kannst du ein viertes hinzufügen?",
       jp: "jp"
     },
     code: "var size = 100;\n\nc.strokeRect(30, 30, size, size);\nc.strokeRect(80, 80, size, size);\nc.strokeRect(130, 130, size, size);\n"
@@ -921,8 +921,8 @@ var lessons =
   },
   {
     message: {
-      en: "I know!  Use for loop!  Can you make more boxes for Code Monster?",
-      de: "Ich weiss! For Schleifen! Kannst du mehr Quadrate für mich machen?",
+      en: "I know!  Use <span class=tutor-code>for</span> loop!  Can you make more boxes for Code Monster?",
+      de: "Ich weiss! <span class=tutor-code>for</span> Schleifen! Kannst du mehr Quadrate für mich machen?",
       jp: "jp"
     },
     code: "var size = 100;\n\nfor (var x = 30; x <= 80; x = x + 50) {\n  c.strokeRect(x, x, size, size);\n}\n"
@@ -950,7 +950,7 @@ var lessons =
   {
     message: {
       en: "This works by having <span class=tutor-code>i</span> count up 1, 2, 3... then putting each box's (left, top) at <span class=tutor-code>i * offset</span>, so, since <span class=tutor-code>offset</span> is 30, the top left of the first box is (30, 30), the second is at (60, 60), then (90, 90) ...",
-      de: "Das funktioniert indem wir <span class=tutor-code>i</span> von 1, 2, 3... zählen lassen, und jedes Quadrat (links, oben) <span class=tutor-code>i * offset</span> sein lassen, und weil <span class=tutor-code>offset</span> 30 ist, ist (left, top) vom ersten Quadrat (30, 30), vom zweiten ist es (60, 60), dann (90, 90)...",
+      de: "Das funktioniert indem wir <span class=tutor-code>i</span> von 1, 2, 3... zählen lassen, und jedes Quadrat (links, oben) <span class=tutor-code>i * offset</span> sein lassen, und weil <span class=tutor-code>offset</span> 30 ist, ist (links, oben) vom ersten Quadrat (30, 30), vom zweiten ist es (60, 60), dann (90, 90)...",
       jp: "jp"
     }
   },
@@ -963,8 +963,8 @@ var lessons =
   },
   {
     message: {
-      en: "It's often good to have variables that control things (like size, num, and offset) together so they are easy to change.  Like it?",
-      de: "Es ist oft sinnvoll Variablen Sachen zusammen kontrollieren zu lassen (wie size, num und offset) damit sie einfacher zu ändern sind. Magst du das auch?",
+      en: "It's often good to have variables that control things (like <span class=tutor-code>size</span>, <span class=tutor-code>num</span>, and <span class=tutor-code>offset</span>) together so they are easy to change.  Like it?",
+      de: "Es ist oft sinnvoll Variablen Sachen zusammen kontrollieren zu lassen (wie <span class=tutor-code>size</span>, <span class=tutor-code>num</span> und <span class=tutor-code>offset</span>) damit sie einfacher zu ändern sind. Magst du das auch?",
       jp: "jp"
     }
   },
@@ -983,16 +983,16 @@ var lessons =
   },
   {
     message: {
-      en: "Now draw four boxes. Hint: Making four boxes is easy using for. Remember, for loop look like this: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "Jetzt zeichne 4 Quadrate. Tip: Es ist einfach mit der For Schleife. For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      en: "Now draw four boxes. Hint: Making four boxes is easy using <span class=tutor-code>for</span>. Remember, <span class=tutor-code>for</span> loop look like this: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      de: "Jetzt zeichne 4 Quadrate. Tip: Es ist einfach mit der <span class=tutor-code>for</span> Schleife. <span class=tutor-code>for</span> Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     },
     code: ""
   },
   {
     message: {
-      en: "Can you make it so you can change the size of all your boxes all at once? Hint: To make a variable named size set to 50, you use <span class=tutor-code>var size = 50;</span>",
-      de: "Kannst du es ändern dass du die Grösse aller Quadrate auf einmal ändern kannst? Tip: Damit du eine Variable mit dem Namen size mit dem Wert 50 bekommst, schreib <span class=tutor-code>var size = 50;</span>",
+      en: "Can you make it so you can change the size of all your boxes all at once? Hint: To make a variable named <span class=tutor-code>size</span> set to 50, you use <span class=tutor-code>var size = 50;</span>",
+      de: "Kannst du es ändern dass du die Grösse aller Quadrate auf einmal ändern kannst? Tip: Damit du eine Variable mit dem Namen <span class=tutor-code>size</span> mit dem Wert 50 bekommst, schreib <span class=tutor-code>var size = 50;</span>",
       jp: "jp"
     }
   },
@@ -1019,16 +1019,16 @@ var lessons =
   },
   {
     message: {
-      en: "This is a new function, strokeSquare().  It is just like strokeRect(), but draws squares.",
-      de: "Das ist eine neue Funktion: strokeSquare(). Es ist wie strokeRect(), aber es zeichnet Quadrate.",
+      en: "This is a new function, <span class=tutor-code>strokeSquare()</span>.  It is just like <span class=tutor-code>strokeRect()</span>, but draws squares.",
+      de: "Das ist eine neue Funktion: <span class=tutor-code>strokeSquare()</span>. Es ist wie <span class=tutor-code>strokeRect()</span>, aber es zeichnet Quadrate.",
       jp: "jp"
     },
     code: "function strokeSquare(left, top, size) {\n  c.strokeRect(left, top, size, size);\n}\n\nstrokeSquare(30, 100, 50);\nstrokeSquare(10, 10, 200);\nstrokeSquare(50, 50, 10);\n"
   },
   {
     message: {
-      en: "strokeSquare() uses strokeRect() to draw a rectangle with the same width and height. See how it works?",
-      de: "strokeSquare() benutzt strokeRect() um Rechtecke mit der gleichen Höhe wie Breite zu zeichnen. Siehst du wie das funktioniert?",
+      en: "<span class=tutor-code>strokeSquare()</span> uses <span class=tutor-code>strokeRect()</span> to draw a rectangle with the same width and height. See how it works?",
+      de: "<span class=tutor-code>strokeSquare()</span> benutzt <span class=tutor-code>strokeRect()</span> um Rechtecke mit der gleichen Höhe wie Breite zu zeichnen. Siehst du wie das funktioniert?",
       jp: "jp"
     }
   },
@@ -1041,8 +1041,8 @@ var lessons =
   },
   {
     message: {
-      en: "Can you add a fourth square below the others using strokeSquare()?",
-      de: "Kannst du ein 4. Quadrat mit strokeSquare() unter den anderen zeichnen?",
+      en: "Can you add a fourth square below the others using <span class=tutor-code>strokeSquare()</span>?",
+      de: "Kannst du ein 4. Quadrat mit <span class=tutor-code>strokeSquare()</span> unter den anderen zeichnen?",
       jp: "jp"
     }
   },
@@ -1086,15 +1086,15 @@ var lessons =
   {
     message: {
       en: "Here are two stars, but all that repeating myself hurts. No like. What we do?",
-      de: "Hier sind zwei Sterne, aber all die Wiederholungen tun weg. Mag ich nicht. Was können wir da machen?",
+      de: "Hier sind zwei Sterne, aber all die Wiederholungen tun weh. Mag ich nicht. Was können wir da machen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\n\nvar x = 50;\nvar y = 100;\nvar size = 100;\n\nc.beginPath();\nc.moveTo(x, y);\nc.lineTo(x + size, y);\nc.lineTo(x + size * 0.15, y + size * 0.5);\nc.lineTo(x + size / 2, y - size * 0.4);\nc.lineTo(x + size * 0.85, y + size * 0.5);\nc.lineTo(x, y);\nc.fill();\nx += 100;\ny += 50;\nc.beginPath();\nc.moveTo(x, y);\nc.lineTo(x + size, y);\nc.lineTo(x + size * 0.15, y + size * 0.5);\nc.lineTo(x + size / 2, y - size * 0.4);\nc.lineTo(x + size * 0.85, y + size * 0.5);\nc.lineTo(x, y);\nc.fill();\n"
   },
   {
     message: {
-      en: "Functions! It's fillStar()! Can you add a third star?",
-      de: "Funktionen! Sie heisst fillStar()! Kannst Du einen dritten Stern malen?",
+      en: "Functions! It's <span class=tutor-code>fillStar()</span>! Can you add a third star?",
+      de: "Funktionen! Sie heisst <span class=tutor-code>fillStar()</span>! Kannst Du einen dritten Stern malen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar size = 100;\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y);\n  c.lineTo(x + s, y);\n  c.lineTo(x + s * 0.15, y + s * 0.5);\n  c.lineTo(x + s / 2, y - s * 0.4);\n  c.lineTo(x + s * 0.85, y + s * 0.5);\n  c.lineTo(x, y);\n  c.fill();\n}\n\nfillStar(50, 100, size);\nfillStar(150, 150, size);",
@@ -1184,7 +1184,7 @@ var lessons =
   {
     message: {
       en: "Wow!  Five stars, randomly placed, changing every time. Can you have it draw fifty stars? A hundred?  How about bigger stars or smaller stars?",
-      de: "Wow! Fünf Sterne, zu fällig plaziert und jedesmal anders. Kannst du 50 Sterne zeichnen? 100? Wie wäre es mit grösseren oder kleineren Sternen?",
+      de: "Wow! Fünf Sterne, zufällig plaziert und jedesmal anders. Kannst du 50 Sterne zeichnen? 100? Wie wäre es mit grösseren oder kleineren Sternen?",
       jp: "jp"
     },
     code: "c.fillStyle = \"gold\";\nvar n = 5;\nvar size = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < n; i = i + 1) {\n  var x = (w - size) * Math.random();\n  var y = (h - size) * Math.random();\n  fillStar(x, y, size);\n}\n\nfunction fillStar(x, y, s) {\n  c.beginPath();\n  c.moveTo(x, y + s * 0.4);\n  c.lineTo(x + s, y + s * 0.4);\n  c.lineTo(x + s * 0.15, y + s * 0.9);\n  c.lineTo(x + s / 2, y);\n  c.lineTo(x + s * 0.85, y + s * 0.9);\n  c.lineTo(x, y + s * 0.4);\n  c.fill();\n}\n"
@@ -1204,8 +1204,8 @@ var lessons =
   },
   {
     message: {
-      en: "Need drawLine() function.  Here it is.  Now draw one line from (20, 20) to (200, 20) and another from (20, 50) to (200, 50).",
-      de: "Wir brauchen die drawLine() Funktion. Hier ist sie. Nun zeichne eine Linie von (20, 20) nach (200, 20) und eine andere von (20, 50) nach (200, 50).",
+      en: "Need <span class=tutor-code>drawLine()</span> function.  Here it is.  Now draw one line from (20, 20) to (200, 20) and another from (20, 50) to (200, 50).",
+      de: "Wir brauchen die <span class=tutor-code>drawLine()</span> Funktion. Hier ist sie. Nun zeichne eine Linie von (20, 20) nach (200, 20) und eine andere von (20, 50) nach (200, 50).",
       jp: "jp"
     },
     code: "function drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n\n"
@@ -1257,16 +1257,16 @@ var lessons =
   },
   {
     message: {
-      en: "Ooo!  Me like!  Try changing num, px, or py!",
-      de: "Oh! Schön! Versuche num, px oder py zu ändern!",
+      en: "Ooo!  Me like!  Try changing <span class=tutor-code>num</span>, <span class=tutor-code>px</span>, or <span class=tutor-code>py</span>!",
+      de: "Oh! Schön! Versuche <span class=tutor-code>num</span>, <span class=tutor-code>px</span> oder <span class=tutor-code>py</span> zu ändern!",
       jp: "jp"
     },
     code: "var num = 20;\nvar px = 200;\nvar py = 150;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var y = i * h / (num - 1);\n  drawLine(400, y, px, py);\n  var x = y * w / h;\n  drawLine(x, 300, px, py);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
   },
   {
     message: {
-      en: "Can you make lines from all sides?  You will need four drawLine() and your two new ones will use 0 instead of w and h.  Can you do it?",
-      de: "Kannst Du Linien von allen vier Seiten zeichnen? Du brauchst vier drawLine() und die zwei neuen brauchen 0 anstelle von w und h. Schaffst du das?",
+      en: "Can you make lines from all sides?  You will need four <span class=tutor-code>drawLine()</span> and your two new ones will use 0 instead of <span class=tutor-code>w</span> and <span class=tutor-code>h</span>.  Can you do it?",
+      de: "Kannst Du Linien von allen vier Seiten zeichnen? Du brauchst vier <span class=tutor-code>drawLine()</span> und die zwei neuen brauchen 0 anstelle von <span class=tutor-code>w</span> und <span class=tutor-code>h</span>. Schaffst du das?",
       jp: "jp"
     },
     code: "var num = 20;\nvar px = 200;\nvar py = 150;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var y = i * h / (num - 1);\n  drawLine(w, y, px, py);\n  var x = y * w / h;\n  drawLine(x, h, px, py);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1282,7 +1282,7 @@ var lessons =
   {
     message: {
       en: "When me little monster, me draw these.  You like too?  Change number of lines!",
-      de: "Als ich ein kleines Monster war, habe ich sowas gemalt. Magst Du es auch? Versuche die Anzahl der Linien zu ändern!",
+      de: "Als ich ein kleines Monster war, habe ich sowas gemacht. Magst Du es auch? Versuche die Anzahl der Linien zu ändern!",
       jp: "jp"
     },
     code: "var num = 10;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  drawLine(0, y, x, h);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n",
@@ -1294,8 +1294,8 @@ var lessons =
   },
   {
     message: {
-      en: "Can you add another curve at top right? You will need another drawLine() but use x, 0, w, y.",
-      de: "Kannst du eine neue Kurve oben rechts zeichnen? Du brauchst noch ein drawLine(), aber diesmal benutze x, 0, w, y.",
+      en: "Can you add another curve at top right? You will need another <span class=tutor-code>drawLine()</span> but use x, 0, w, y.",
+      de: "Kannst du eine neue Kurve oben rechts zeichnen? Du brauchst noch ein <span class=tutor-code>drawLine()</span>, aber diesmal benutze x, 0, w, y.",
       jp: "jp"
     },
     code: "var num = 10;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nfor (var i = 0; i < num; i = i + 1) {\n  var x = i * w / (num - 1);\n  var y = i * h / (num - 1);\n  drawLine(0, y, x, h);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1333,8 +1333,8 @@ var lessons =
   },
   {
     message: {
-      en: "You know programming?  Show me!  Can make a function called fillSquare() and then use that to draw a second bigger square? Hint: You'll need something like <span class=tutor-code>function fillSquare(left, top, size) {</span>",
-      de: "Kannst du programmieren? Zeig's mir! Kannst du eine Funktion fillSquare() schreiben die ein grösseres zweites Quadrat zeichnet. Tip: Du brauchst sowas wie <span class=tutor-code>function fillSquare(left, top, size) {</span>",
+      en: "You know programming?  Show me!  Can make a function called <span class=tutor-code>fillSquare()</span> and then use that to draw a second bigger square? Hint: You'll need something like <span class=tutor-code>function fillSquare(left, top, size) {</span>",
+      de: "Kannst du programmieren? Zeig's mir! Kannst du eine Funktion <span class=tutor-code>fillSquare()</span> schreiben die ein grösseres zweites Quadrat zeichnet. Tip: Du brauchst sowas wie <span class=tutor-code>function fillSquare(left, top, size) {</span>",
       jp: "jp"
     },
     code: "c.fillRect(20, 30, 100, 100);\n",
@@ -1346,16 +1346,16 @@ var lessons =
   },
   {
     message: {
-      en: "Did you get it?  Something like this? Now can you make the first square also use fillSquare() instead of calling fillRect()?",
-      de: "Hast du's geschafft? Sowas wie das hier? Kannst du das erste Quadrat auch mit fillSquare() anstelle von fillRect() machen?",
+      en: "Did you get it?  Something like this? Now can you make the first square also use <span class=tutor-code>fillSquare()</span> instead of calling <span class=tutor-code>fillRect()</span>?",
+      de: "Hast du's geschafft? Sowas wie das hier? Kannst du das erste Quadrat auch mit <span class=tutor-code>fillSquare()</span> anstelle von <span class=tutor-code>fillRect()</span> machen?",
       jp: "jp"
     },
     code: "c.fillRect(20, 30, 100, 100);\n\nfillSquare(200, 70, 150);\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, s, s);\n}\n"
   },
   {
     message: {
-      en: "Look, one line. Huh. Want more. It would be easier to add more lines if we had that drawLine() function again.  Can you write that and then make this line use it? Hint: Create a function with <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
-      de: "Guck mal, eine Linie. Ich will mehr! Es wäre einfacher wenn wir wieder die drawLine() Funktion hätten. Kannst du die schreiben und dann die Linie unten damit zeichnen? Tip: <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
+      en: "Look, one line. Huh. Want more. It would be easier to add more lines if we had that <span class=tutor-code>drawLine()</span> function again.  Can you write that and then make this line use it? Hint: Create a function with <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
+      de: "Guck mal, eine Linie. Ich will mehr! Es wäre einfacher wenn wir wieder die <span class=tutor-code>drawLine()</span> Funktion hätten. Kannst du die schreiben und dann die Linie unten damit zeichnen? Tip: <span class=tutor-code>function doStuff(a, b, c, d) {</span>",
       jp: "jp"
     },
     code: "c.beginPath();\nc.moveTo(30, 20);\nc.lineTo(200, 50);\nc.stroke();\n"
@@ -1370,15 +1370,15 @@ var lessons =
   },
   {
     message: {
-      en: "So easy to add more lines, I want lots more.  Give me ten lines total, one on top of the other, separated by 10! Hint: Easier with for loop. For loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "So einfach mehr Linien zu machen. Mehr! Gib mir 10 Linien! Eine über der anderen. Abstand 10. Tip: Einfacher mit for Schleifen. For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      en: "So easy to add more lines, I want lots more.  Give me ten lines total, one on top of the other, separated by 10! Hint: Easier with <span class=tutor-code>for</span> loop. <span class=tutor-code>for</span> loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      de: "So einfach mehr Linien zu machen. Mehr! Gib mir 10 Linien! Eine über der anderen. Abstand 10. Tip: Einfacher mit <span class=tutor-code>for</span> Schleifen. <span class=tutor-code>for</span> Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "You get something like this?  You getting good!  Try playing with the numbers! I like n of 40 and dy of 5!",
-      de: "Hast du das geschafft? So wie das hier? Du wirst gut! Probier andere Zahlen. n = 40 oder dy = 5!",
+      en: "You get something like this?  You getting good!  Try playing with the numbers! I like <span class=tutor-code>n</span> of 40 and <span class=tutor-code>dy</span> of 5!",
+      de: "Hast du das geschafft? So wie das hier? Du wirst gut! Probier andere Zahlen. <span class=tutor-code>n</span> = 40 oder <span class=tutor-code>dy</span> = 5!",
       jp: "jp"
     },
     code: "var n = 10;\nvar dy = 10;\nfor (var i = 0; i < n; i = i + 1) {\n  var y = 20 + i * dy;\n  drawLine(30, y, 200, y + 30);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1422,8 +1422,8 @@ var lessons =
   },
   {
     message: {
-      en: "A big clearRect() erases everything.  Uncomment the big clearRect() (remove the <span class=tutor-code>//</span>) and see what happens.",
-      de: "Ein grosses clearRect() löscht alles. Lösche die Kommentarzeichen (das <span class=tutor-code>//</span> sind Kommentarzeichen) und sieh was passiert.",
+      en: "A big <span class=tutor-code>clearRect()</span> erases everything.  Uncomment the big <span class=tutor-code>clearRect()</span> (remove the <span class=tutor-code>//</span>) and see what happens.",
+      de: "Ein grosses <span class=tutor-code>clearRect()</span> löscht alles. Lösche die Kommentarzeichen (das <span class=tutor-code>//</span> sind Kommentarzeichen) und sieh was passiert.",
       jp: "jp"
     },
     code: "var size = 80;\nvar offset = 20;\nvar w = c.canvas.width;\nvar h = c.canvas.height;\n\nc.fillStyle =\"rgba(0, 0, 255, 0.5)\";\nc.fillRect(offset, offset, size, size);\noffset = offset + 60;\nc.fillStyle =\"rgba(0, 255, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n// c.clearRect(0, 0, w, h);\noffset = offset + 60;\nc.fillStyle =\"rgba(255, 0, 0, 0.5)\";\nc.fillRect(offset, offset, size, size);\n"
@@ -1443,8 +1443,8 @@ var lessons =
   },
   {
     message: {
-      en: "A box.  But how did it get that far away from the edge?  Try changing x and y.",
-      de: "Ein Quadrat. Aber wieso ist es so weit vom Rand entfernt? Versuche x und y zu ändern.",
+      en: "A box.  But how did it get that far away from the edge?  Try changing <span class=tutor-code>x</span> and <span class=tutor-code>y</span>.",
+      de: "Ein Quadrat. Aber wieso ist es so weit vom Rand entfernt? Versuche <span class=tutor-code>x</span> und <span class=tutor-code>y</span> zu ändern.",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\n\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n",
@@ -1456,22 +1456,22 @@ var lessons =
   },
   {
     message: {
-      en: "The fillRect() says to make the (left, top) at (0, 0), so wouldn't you think the box would be at the upper left corner? But, wait, what is translate()?",
-      de: "Das fillRect() sagt dass (links, oben) (0, 0) sein soll, deshalb sollte es in der oberen linken Ecke sein. Aber was ist das: translate()?",
+      en: "The <span class=tutor-code>fillRect()</span> says to make the (left, top) at (0, 0), so wouldn't you think the box would be at the upper left corner? But, wait, what is <span class=tutor-code>translate()</span> ?",
+      de: "Das <span class=tutor-code>fillRect()</span> sagt dass (links, oben) (0, 0) sein soll, deshalb sollte es in der oberen linken Ecke sein. Aber was ist das: <span class=tutor-code>translate()</span> ?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "translate() changes where (0, 0) is. After translate(50, 50), for example, anything that tries to draw at (0, 0) will draw at (50, 50).  Drawing at (20, 20) would draw at (70, 70), since 50 + 20 = 70.  See?",
-      de: "translate() verändert wo (0, 0) ist. Nach translate(50, 50) zum Beispiel ist alles was bei (0, 0) zeichnen will, bei (50, 50). Zeichnen bei (20, 20) zeichnet wirklich bei (70, 70), weil 50 + 20 = 70. Siehst du?",
+      en: "<span class=tutor-code>translate()</span> changes where (0, 0) is. After <span class=tutor-code>translate(50, 50)</span>, for example, anything that tries to draw at (0, 0) will draw at (50, 50).  Drawing at (20, 20) would draw at (70, 70), since 50 + 20 = 70.  See?",
+      de: "<span class=tutor-code>translate()</span> verändert wo (0, 0) ist. Nach <span class=tutor-code>translate(50, 50)</span> zum Beispiel ist alles was bei (0, 0) zeichnen will, bei (50, 50). Zeichnen bei (20, 20) zeichnet wirklich bei (70, 70), weil 50 + 20 = 70. Siehst du?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Why does this do what it does?  What will happen if you uncomment save() and restore()? Try it. Was it what you expected?",
-      de: "Warum macht es das? Was passiert wenn man save() auskommentiert? Probier mal! Hast du das erwartet?",
+      en: "Why does this do what it does?  What will happen if you uncomment <span class=tutor-code>save()</span> and <span class=tutor-code>restore()</span>? Try it. Was it what you expected?",
+      de: "Warum macht es das? Was passiert wenn man <span class=tutor-code>save()</span> und <span class=tutor-code>restore()</span> auskommentiert? Probier mal! Hast du das erwartet?",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\n\n// c.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n// c.restore();\nc.translate(x, y);\nc.fillRect(0, 0, 100, 100);\n"
@@ -1486,23 +1486,23 @@ var lessons =
   },
   {
     message: {
-      en: "restore() eliminates all the changes since the last save().  So, if you save(), then change the fillStyle = color or do translate(), then restore(), everything goes back to what it was right before the save().",
-      de: "restore() entfernt alle Änderungen seit dem letzten save(). Also wenn du save() macht, dann die Füllfarbe oder translate() machst, und dann restore() benutzt, sind die Einstellungen wie vor dem save(),",
+      en: "<span class=tutor-code>restore()</span> eliminates all the changes since the last <span class=tutor-code>save()</span>.  So, if you <span class=tutor-code>save()</span>, then change the fillStyle = color or do <span class=tutor-code>translate()</span>, then <span class=tutor-code>restore()</span>, everything goes back to what it was right before the <span class=tutor-code>save()</span>.",
+      de: "<span class=tutor-code>restore()</span> entfernt alle Änderungen seit dem letzten <span class=tutor-code>save()</span>. Also wenn du <span class=tutor-code>save()</span> macht, dann die Füllfarbe oder <span class=tutor-code>translate()</span> machst, und dann <span class=tutor-code>restore()</span> benutzt, sind die Einstellungen wie vor dem <span class=tutor-code>save()</span>,",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "We can rotate stuff too.  Try changing angle!",
-      de: "Wir können auch Sachen rotieren! Versuch den Winkel zu ändern!",
+      en: "We can rotate stuff too.  Try changing <span class=tutor-code>angle</span>!",
+      de: "Wir können auch Sachen rotieren! Versuch den Winkel <span class=tutor-code>angle</span> zu ändern!",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(0, 0, 100, 100);\n"
   },
   {
     message: {
-      en: "You might be used to degrees?  Angles in Javascript are in radians.  45 degrees is about 0.8 in radians.  Try changing angle from 0.1 to 0.8!",
-      de: "Denkst du das der Winkel in Grad ist? Winkel in Javascript sind in Radianten geschrieben. 45 Grad subd etwa 0.8 Radianten. Probier den Winkel von 0.1 bis 0.8 zu ändern!",
+      en: "You might be used to degrees?  Angles in Javascript are in radians.  45 degrees is about 0.8 in radians.  Try changing <span class=tutor-code>angle</span> from 0.1 to 0.8!",
+      de: "Denkst du das der Winkel in Grad ist? Winkel in Javascript sind in Radianten geschrieben. 45 Grad sind etwa 0.8 Radianten. Probier den Winkel <span class=tutor-code>angle</span> von 0.1 bis 0.8 zu ändern!",
       jp: "jp"
     },
     code: "var x = 50;\nvar y = 50;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(0, 0, 100, 100);\n"
@@ -1516,45 +1516,45 @@ var lessons =
   },
   {
     message: {
-      en: "Did you notice that this box is pivoting through its top left corner when you rotate it?  That's the same spot we said to go with translate(), right?",
-      de: "Hast du bemerkt dass das Quadrat sich um seine linke obere Ecke dreht? Das ist der gleiche Punkt den wir mit translate() gesetzt haben, richtig?",
+      en: "Did you notice that this box is pivoting through its top left corner when you rotate it?  That's the same spot we said to go with <span class=tutor-code>translate()</span> , right?",
+      de: "Hast du bemerkt dass das Quadrat sich um seine linke obere Ecke dreht? Das ist der gleiche Punkt den wir mit <span class=tutor-code>translate()</span> gesetzt haben, richtig?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Try changing angle now.  How is this different?",
-      de: "Probier jetzt den Winkel zu ändern. Was hat sich geändert?",
+      en: "Try changing <span class=tutor-code>angle</span> now.  How is this different?",
+      de: "Probier jetzt den Winkel <span class=tutor-code>angle</span> zu ändern. Was hat sich geändert?",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.translate(x, y);\nc.rotate(angle);\nc.strokeRect(-50, -50, 100, 100);\n"
   },
   {
     message: {
-      en: "Kind of weird that the strokeRect() uses -50 for the left and top, isn't it?  But the top left of the box is still at (50, 50), because we translated to (100, 100), and 100 - 50 = 50.",
-      de: "Schon seltsam dass strokeRect() -50 für links und oben benutzt, gell? Aber oben links vom Quadrat ist immernoch bei (50, 50) weil wir alles nach (100, 100) verschoben haben (mit translate(100, 100)) und 100 - 50 = 50.",
+      en: "Kind of weird that the <span class=tutor-code>strokeRect()</span> uses -50 for the left and top, isn't it?  But the top left of the box is still at (50, 50), because we translated to (100, 100), and 100 - 50 = 50.",
+      de: "Schon seltsam dass <span class=tutor-code>strokeRect()</span> -50 für links und oben benutzt, gell? Aber oben links vom Quadrat ist immernoch bei (50, 50) weil wir alles nach (100, 100) verschoben haben (mit <span class=tutor-code>translate(100, 100)</span>) und 100 - 50 = 50.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "When we rotate, we rotate around (100, 100) because of the translate().  Oh, and (100, 100) is the center of the box!  So, this box is rotating around its center!",
-      de: "Wenn wir rotieren, rotieren wir um (100, 100) wegen translate(100, 100). Oh, (100, 100) ist auch die Mitte vom Quadrat! Deshalb rotiert das Quadrat um seine Mitte!",
+      de: "Wenn wir rotieren, rotieren wir um (100, 100) wegen <span class=tutor-code>translate(100, 100)</span>. Oh, (100, 100) ist auch die Mitte vom Quadrat! Deshalb rotiert das Quadrat um seine Mitte!",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "translate() and rotate() add to any earlier translate() and rotate(), unless you restore() the old state.  Try changing angle or uncommenting save() and restore()!",
-      de: "translate() und rotate() addieren sich zu vorherigen translate() und rotate() Funktionen, ausser wenn man restore() benutzt. Versuch den Winkel zu ändern und save() und restore() auszukommentieren!",
+      en: "<span class=tutor-code>translate()</span> and <span class=tutor-code>rotate()</span> add to any earlier translate() and <span class=tutor-code>rotate()</span>, unless you <span class=tutor-code>restore()</span> the old state.  Try changing angle or uncommenting <span class=tutor-code>save()</span> and <span class=tutor-code>restore()</span>!",
+      de: "<span class=tutor-code>translate()</span> und <span class=tutor-code>rotate()</span> addieren sich zu vorherigen <span class=tutor-code>translate()</span> und <span class=tutor-code>rotate()</span> Funktionen, ausser wenn man <span class=tutor-code>restore()</span> benutzt. Versuch den Winkel zu ändern und <span class=tutor-code>save()</span> und <span class=tutor-code>restore()</span> auszukommentieren!",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\n// c.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n// c.restore();\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\n"
   },
   {
     message: {
-      en: "Did that do what you expected?  You see why it did what it did?  With the save() and restore(), the second box is black and gets drawn right on top of the first purple box.",
-      de: "Macht es was du erwartest hast? Siehst du wie's funktioniert? Mit save() und restore() ist das zweite Quadrat schwarz und wird direkt über das vorherige violette Quadrat gemalt.",
+      en: "Did that do what you expected?  You see why it did what it did?  With the <span class=tutor-code>save()</span> and <span class=tutor-code>restore()</span>, the second box is black and gets drawn right on top of the first purple box.",
+      de: "Macht es was du erwartest hast? Siehst du wie's funktioniert? Mit <span class=tutor-code>save()</span> und <span class=tutor-code>restore()</span> ist das zweite Quadrat schwarz und wird direkt über das vorherige violette Quadrat gemalt.",
       jp: "jp"
     }
   },
@@ -1568,8 +1568,8 @@ var lessons =
   },
   {
     message: {
-      en: "Here is one way. See how the translate() is to a different spot?  Try changing angle now!  Did you try a negative number of angle like -0.2?",
-      de: "Hier ist eine Möglichkeit. Siehst du wie translate() alles zu einem neuen Punkt verschiebt? Ändere den Winkel jetzt! Probier auch mal einen negativen Winkel wie -0.2.",
+      en: "Here is one way. See how the <span class=tutor-code>translate()</span> is to a different spot?  Try changing angle now!  Did you try a negative number of angle like -0.2?",
+      de: "Hier ist eine Möglichkeit. Siehst du wie <span class=tutor-code>translate()</span> alles zu einem neuen Punkt verschiebt? Ändere den Winkel jetzt! Probier auch mal einen negativen Winkel wie -0.2.",
       jp: "jp"
     },
     code: "var x = 100;\nvar y = 100;\nvar angle = 0.1;\n\nc.save();\nc.fillStyle = \"purple\";\nc.translate(x, y);\nc.rotate(angle);\nc.fillRect(-50, -50, 100, 100);\nc.restore();\nc.translate(x * 2, y * 2);\nc.rotate(angle*2);\nc.fillRect(-50, -50, 100, 100);\n"
@@ -1584,8 +1584,8 @@ var lessons =
   },
   {
     message: {
-      en: "You coder now? Show me! Draw a box rotated by -0.5.  Hint: Use c.rotate(); and c.strokeRect();",
-      de: "Bist du ein Programmierer oder eine Programmiererin? Zeig's mir! Zeichne ein Quadrat das um -0.5 rotiert ist? Tip: Benutze c.rotate() und c.strokeRect()",
+      en: "You coder now? Show me! Draw a box rotated by -0.5.  Hint: Use <span class=tutor-code>c.rotate();</span> and <span class=tutor-code>c.strokeRect();</span>",
+      de: "Bist du ein Programmierer oder eine Programmiererin? Zeig's mir! Zeichne ein Quadrat das um -0.5 rotiert ist? Tip: Benutze <span class=tutor-code>c.rotate();</span> und <span class=tutor-code>c.strokeRect();</span>",
       jp: "jp"
     },
     code: "",
@@ -1597,23 +1597,23 @@ var lessons =
   },
   {
     message: {
-      en: "Oh, that too easy? You want harder problems? Draw five boxes on top of each other, each rotated by 0.3 more than the last.<br>Hint: c.translate() might be useful<br>Hint: For loops look like <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
-      de: "Oh, war das zu leicht? Möchtest du ein schwereres Problem? Zeichne fünf Quadrate, eine über dem anderen, jedes um 0.3 mehr verdreht als das vorherige.<br>Tip: c.translate() ist praktisch hier.<br>Noch ein Tip: For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
+      en: "Oh, that too easy? You want harder problems? Draw five boxes on top of each other, each rotated by 0.3 more than the last.<br>Hint: <span class=tutor-code>c.translate();</span> might be useful<br>Hint: <span class=tutor-code>for</span> loops look like <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
+      de: "Oh, war das zu leicht? Möchtest du ein schwereres Problem? Zeichne fünf Quadrate, eine über dem anderen, jedes um 0.3 mehr verdreht als das vorherige.<br>Tip: <span class=tutor-code>c.translate();</span> ist praktisch hier.<br>Noch ein Tip: <span class=tutor-code>for</span> Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 5; i += 1) {</span>",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Did you get something like this? See how this works?  It first moves a spot with translate(), then repeatedly draws squares around that spot and rotates around that spot.",
-      de: "Hast du sowas wie das hier herausbekommen? Siehst du wie das funktioniert? Zuerst bewegt es einen Punkt mit translate(), dann zeichnet es ein Quadrat um diesen Punkt herum und rotiert um den gleichen Punkt.",
+      en: "Did you get something like this? See how this works?  It first moves a spot with <span class=tutor-code>translate();</span>, then repeatedly draws squares around that spot and rotates around that spot.",
+      de: "Hast du sowas wie das hier herausbekommen? Siehst du wie das funktioniert? Zuerst bewegt es einen Punkt mit <span class=tutor-code>translate();</span>, dann zeichnet es ein Quadrat um diesen Punkt herum und rotiert um den gleichen Punkt.",
       jp: "jp"
     },
     code: "var angle = 0.2;\nvar num = 5;\nc.translate(150, 150);\nfor (var i = 0; i < num; i = i + 1) {\n  c.strokeRect(-75, -75, 150, 150);\n  c.rotate(angle);\n}\n"
   },
   {
     message: {
-      en: "Play with it a bit!  Try changing num and angle!",
-      de: "Spiel damit etwas! Versuche num und angle zu ändern!",
+      en: "Play with it a bit!  Try changing <span class=tutor-code>num</span> and <span class=tutor-code>angle</span>!",
+      de: "Spiel damit etwas! Versuche <span class=tutor-code>num</span> und <span class=tutor-code>angle</span> zu ändern!",
       jp: "jp"
     }
   },
@@ -1677,7 +1677,7 @@ var lessons =
   {
     message: {
       en: "Let's start with a function that draws a branch.  Here's one.  It takes four numbers, where to start (x,y), the length <span class=tutor-code>l</span>, and the <span class=tutor-code>direction</span> which says whether to draw left, right, or straight.",
-      de: "Lass und mit einer Funktion starten die einen Zweig zeichnet. Hier ist eine. Sie nimmt 4 Zahlen als Argumente: Wo man startet (x, y), die Länge <span class=tutor-code>l</span>, und die Richtung <span class=tutor-code>direction</span> die anzeigt ob man nach links, rechts oder geradeaus zeichnen soll.",
+      de: "Lass uns mit einer Funktion starten die einen Zweig zeichnet. Hier ist eine. Sie nimmt 4 Zahlen als Argumente: Wo man startet (x, y), die Länge <span class=tutor-code>l</span>, und die Richtung <span class=tutor-code>direction</span> die anzeigt ob man nach links, rechts oder geradeaus zeichnen soll.",
       jp: "jp"
     },
     code: "var w = c.canvas.width;\nvar h = c.canvas.height;\n\ndrawBranch(w / 2, h, 100, 0);\n\nfunction drawBranch(x, y, l, direction) {\n  var x2 = x + l * direction;\n  var y2 = y - l;\n  drawLine(x, y, x2, y2);\n}\n\nfunction drawLine(x1, y1, x2, y2) {\n  c.beginPath();\n  c.moveTo(x1, y1);\n  c.lineTo(x2, y2);\n  c.stroke();\n}\n"
@@ -1727,15 +1727,15 @@ var lessons =
   },
   {
     message: {
-      en: "drawBranch() is a <i>recursive</i> function.  That means it calls itself.",
-      de: "drawBranch() ist eine <i>rekursive</i> Funktion. Das heisst sie ruft sich selber auf.",
+      en: "<span class=tutor-code>drawBranch()</span> is a <i>recursive</i> function.  That means it calls itself.",
+      de: "<span class=tutor-code>drawBranch()</span> ist eine <i>rekursive</i> Funktion. Das heisst sie ruft sich selber auf.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "drawBranch() only calls itself if <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> gets smaller and smaller every time drawBranch() calls itself, so drawBranch() stops calling itself eventually when the length of a branch gets small enough.",
-      de: "drawBranch() ruft sich aber nur selber auf wenn <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> wird jedes mal kleiner wenn sich drawBranch() selber aufruft. Am Ende, wenn die Länge des Zweiges zu klein wird, hört sie auf sich selber aufzurufen.",
+      en: "<span class=tutor-code>drawBranch()</span> only calls itself if <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> gets smaller and smaller every time <span class=tutor-code>drawBranch()</span> calls itself, so <span class=tutor-code>drawBranch()</span> stops calling itself eventually when the length of a branch gets small enough.",
+      de: "<span class=tutor-code>drawBranch()</span> ruft sich aber nur selber auf wenn <span class=tutor-code>l > minLength</span>.  <span class=tutor-code>l</span> wird jedes mal kleiner wenn sich <span class=tutor-code>drawBranch()</span> selber aufruft. Am Ende, wenn die Länge des Zweiges zu klein wird, hört sie auf sich selber aufzurufen.",
       jp: "jp"
     }
   },
@@ -1756,15 +1756,15 @@ var lessons =
   },
   {
     message: {
-      en: "nSquare() uses a for loop, starts at 4, and counts down: 4, 3, 2, 1.",
-      de: "nSquare() benutzt eine for Schleife die mit 4 started und dann runterzählt: 4, 3, 2, 1.",
+      en: "<span class=tutor-code>nSquare()</span> uses a for loop, starts at 4, and counts down: 4, 3, 2, 1.",
+      de: "<span class=tutor-code>nSquare()</span> benutzt eine for Schleife die mit 4 started und dann runterzählt: 4, 3, 2, 1.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "nSquareRecursive() calls itself with one less each time.  So, when called with 4, it calls itself with 3, and that call calls itself with 2, and that call calls itself with 1.  At one, it says, stop calling yourself, so it stops.  And, on each call, it draws a box located at (n * 30, n * 30).  See?",
-      de: "nSquareRecursive() ruft sich selber auf aber verringert ihr Argument n. Wenn man es mit 4 aufruft, ruft es sich selber auf mit 3, danach ruft es sich selber auf mir 2 und dann mit 1. Jetzt stopps es sich selber aufzurufen. Und jedes mal zeichnet es ein Quadrat bei (n * 30, n * 30). Siehst du?",
+      en: "<span class=tutor-code>nSquareRecursive()</span> calls itself with one less each time.  So, when called with 4, it calls itself with 3, and that call calls itself with 2, and that call calls itself with 1.  At one, it says, stop calling yourself, so it stops.  And, on each call, it draws a box located at (n * 30, n * 30).  See?",
+      de: "<span class=tutor-code>nSquareRecursive()</span> ruft sich selber auf aber verringert ihr Argument n. Wenn man es mit 4 aufruft, ruft es sich selber auf mit 3, danach ruft es sich selber auf mir 2 und dann mit 1. Jetzt stopps es sich selber aufzurufen. Und jedes mal zeichnet es ein Quadrat bei (n * 30, n * 30). Siehst du?",
       jp: "jp"
     }
   },
@@ -1778,23 +1778,23 @@ var lessons =
   },
   {
     message: {
-      en: "The way it works is it does a translate() to the bottom right corner of the box, then draws the box back up behind it. So the box will be <span class=tutor-code>size</span> big starting at (-size, -size).  Then, as long as the boxes haven't gotten too small, it does that again by calling itself, but shrinking the size of the box the next time.",
-      de: "Es funktioniert so: Es macht eine Verschiebung mit translate() zur unteren rechten Ecke vom Quadrat, dann malt es eine Quadrat. Das Quadrat wird <span class=tutor-code>size</span> gross und startet bei (-size, -size). Dann, solange die Quadrate noch nicht zu klein sind, macht es das wieder, aber die Grösse verringert sich jedes mal.",
+      en: "The way it works is it does a <span class=tutor-code>translate()</span> to the bottom right corner of the box, then draws the box back up behind it. So the box will be <span class=tutor-code>size</span> big starting at (-size, -size).  Then, as long as the boxes haven't gotten too small, it does that again by calling itself, but shrinking the size of the box the next time.",
+      de: "Es funktioniert so: Es macht eine Verschiebung mit <span class=tutor-code>translate()</span> zur unteren rechten Ecke vom Quadrat, dann malt es eine Quadrat. Das Quadrat wird <span class=tutor-code>size</span> gross und startet bei (-size, -size). Dann, solange die Quadrate noch nicht zu klein sind, macht es das wieder, aber die Grösse verringert sich jedes mal.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Here is the same thing using a for loop instead. Compare the two. See how they both work?",
-      de: "Hier das gleiche mit einer For Schleife. Vergleiche die beiden. Verstehst du wie beide funktionieren?",
+      en: "Here is the same thing using a <span class=tutor-code>for</span> loop instead. Compare the two. See how they both work?",
+      de: "Hier das gleiche mit einer <span class=tutor-code>for</span> Schleife. Vergleiche die beiden. Verstehst du wie beide funktionieren?",
       jp: "jp"
     },
     code: "branchBoxForLoop(100);\n\nfunction branchBoxForLoop(size) {\n  c.strokeStyle = \"blue\";\n  for (var i = size; i > 4; i = i * 0.65) {\n    c.translate(i, i);\n    c.strokeRect(-i, -i, i, i);\n  }\n}\nfunction branchBox(size) {\n  c.translate(size, size);\n  c.strokeRect(-size, -size, size, size);\n  if (size > 5) {\n    branchBox(size * 0.65);\n  }\n}\n"
   },
   {
     message: {
-      en: "The for loop starts by drawing a box of size 100, then one of 65, and so on.  So does the recursive version, but the recursive version does it by calling itself.",
-      de: "Die For Schleife beginnt ein Quadrat mit der Grösse 100 zu zeichnen, dann 65 und so weiter. Genauso wie die rekursive Funktion, aber letztere ruft sich selber auf.",
+      en: "The <span class=tutor-code>for</span> loop starts by drawing a box of size 100, then one of 65, and so on.  So does the recursive version, but the recursive version does it by calling itself.",
+      de: "Die <span class=tutor-code>for</span> Schleife beginnt ein Quadrat mit der Grösse 100 zu zeichnen, dann 65 und so weiter. Genauso wie die rekursive Funktion, aber letztere ruft sich selber auf.",
       jp: "jp"
     }
   },
@@ -1820,8 +1820,8 @@ var lessons =
   },
   {
     message: {
-      en: "See how this works? It uses translate() to move to the end of a branch, then rotate() to tilt the branches off to one side or the other.",
-      de: "Siehst du wie das funktioniert? Es benutzt translate() um das Ende vom Zweig zu verschieben, dann rotate() zum drehen/kippen vom Zweig zur einen oder anderen Seite.",
+      en: "See how this works? It uses <span class=tutor-code>translate()</span> to move to the end of a branch, then <span class=tutor-code>rotate()</span> to tilt the branches off to one side or the other.",
+      de: "Siehst du wie das funktioniert? Es benutzt <span class=tutor-code>translate()</span> um das Ende vom Zweig zu verschieben, dann <span class=tutor-code>rotate()</span> zum drehen/kippen vom Zweig zur einen oder anderen Seite.",
       jp: "jp"
     }
   },
@@ -1834,8 +1834,8 @@ var lessons =
   },
   {
     message: {
-      en: "I think it would look even more like a tree if <span class=tutor-code>angle</span> was a little more random.  Can you make angle bigger and then make rotate() use a number between 0 and angle? (Hint: <span class=tutor-code>Math.random()</span> makes a number from 0.0 to 1.0)",
-      de: "Ich glaube der Baum sähe besser aus mit etwas Zufall für <span class=tutor-code>angle</span>. Kannst du <span class=tutor-code>angle</span> grösser machen und rorate() eine Zahl zwischen 0 und <span class=tutor-code>angle</span> benutzen lassen? Tip: <span class=tutor-code>Math.random()</span> ergibt eine Zahl von 0.0 bis 1.0",
+      en: "I think it would look even more like a tree if <span class=tutor-code>angle</span> was a little more random.  Can you make angle bigger and then make <span class=tutor-code>rotate()</span> use a number between 0 and angle? (Hint: <span class=tutor-code>Math.random()</span> makes a number from 0.0 to 1.0)",
+      de: "Ich glaube der Baum sähe besser aus mit etwas Zufall für <span class=tutor-code>angle</span>. Kannst du <span class=tutor-code>angle</span> grösser machen und <span class=tutor-code>rotate()</span> eine Zahl zwischen 0 und <span class=tutor-code>angle</span> benutzen lassen? Tip: <span class=tutor-code>Math.random()</span> ergibt eine Zahl von 0.0 bis 1.0",
       jp: "jp"
     }
   },
@@ -1884,16 +1884,16 @@ var lessons =
   },
   {
     message: {
-      en: "So, first we need a branch.  Let's make a function drawBranch() that takes two values, a length called <span class=tutor-code>l</span> and a <span class=tutor-code>direction</span>.",
-      de: "So, zuerst brauchen wir einen Zweig. Lass uns eine Funktion drawBranch() machen die 2 Argumente hat: Länge <span class=tutor-code>l</span> und Richtung <span class=tutor-code>direction</span>.",
+      en: "So, first we need a branch.  Let's make a function <span class=tutor-code>drawBranch()</span> that takes two values, a length called <span class=tutor-code>l</span> and a <span class=tutor-code>direction</span>.",
+      de: "So, zuerst brauchen wir einen Zweig. Lass uns eine Funktion <span class=tutor-code>drawBranch()</span> machen die 2 Argumente hat: Länge <span class=tutor-code>l</span> und Richtung <span class=tutor-code>direction</span>.",
       jp: "jp"
     },
     code: ""
   },
   {
     message: {
-      en: "Do you remember how to write a function like that?  You don't need to make it do anything yet, just declare a function called drawBranch().",
-      de: "Weisst du noch wie man so eine Funktion schreibt? Versuche erstmal nur eine Funktion zu definieren die drawBranch() heisst.",
+      en: "Do you remember how to write a function like that?  You don't need to make it do anything yet, just declare a function called <span class=tutor-code>drawBranch()</span>.",
+      de: "Weisst du noch wie man so eine Funktion schreibt? Versuche erstmal nur eine Funktion zu definieren die <span class=tutor-code>drawBranch()</span> heisst.",
       jp: "jp"
     }
   },
@@ -1915,8 +1915,8 @@ var lessons =
   },
   {
     message: {
-      en: "Okay, so you translate() so you start at the right spot and then you try to draw a branch.  Now we need to make drawBranch() do something!  Can you do what the comments say to do?  You should get a single branch (which will look like the trunk of the tree) when you are done.",
-      de: "Ok, jetzt musst du mit translate() am richtigen Punkt starten und dann einen Zweig zeichnen. Jetzt musst du drawBranch() etwas machen lassen! Kannst du machen was die Kommentare sagen? Du solltest am Ende einen einzelnen Zweig haben der die der Stamm aussieht.<br>// c.fillRect(links, oben, weite, höhe) zeichnet ein Rechteck<br>// Benutze es um ein Rechteck zu zeichnen das bei (-1, 0) startet und 2 weit ist mit der Höhe -l (l wie in Länge)",
+      en: "Okay, so you <span class=tutor-code>translate()</span> so you start at the right spot and then you try to draw a branch.  Now we need to make <span class=tutor-code>drawBranch()</span> do something!  Can you do what the comments say to do?  You should get a single branch (which will look like the trunk of the tree) when you are done.",
+      de: "Ok, jetzt musst du mit <span class=tutor-code>translate()</span> am richtigen Punkt starten und dann einen Zweig zeichnen. Jetzt musst du <span class=tutor-code>drawBranch()</span> etwas machen lassen! Kannst du machen was die Kommentare sagen? Du solltest am Ende einen einzelnen Zweig haben der die der Stamm aussieht.<br>// c.fillRect(links, oben, weite, höhe) zeichnet ein Rechteck<br>// Benutze es um ein Rechteck zu zeichnen das bei (-1, 0) startet und 2 weit ist mit der Höhe -l (l wie in Länge)",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  // c.fillRect(left, top, width, height);\n  // will draw a rectangle.\n  // Use it do draw a rectangle that\n  // starts at (-1, 0) and is 2 wide\n  // and -l (that's l as in length) tall.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -1924,7 +1924,7 @@ var lessons =
   {
     message: {
       en: "You should have something like this now.  Let's keep going!  Look for the comments to tell you what to do next!",
-      de: "Jetzt solltest du das hier haben. Weiter geht's! Schau die Kommentare an um zu wissen wie's weitergeht.<br>// Benutze c.translate() um an das Ende<br>// vom Zweig zu gehen<br>// Tip: Das Ende ist bei (0, -l)",
+      de: "Jetzt solltest du das hier haben. Weiter geht's! Schau die Kommentare an um zu wissen wie's weitergeht.<br>// Benutze c.translate() um an das Ende<br>// vom Zweig zu gehen<br>// Tip: Das Ende ist bei (0, -l) l wie Länge",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  c.fillRect(-1, 0, 2, -l);\n  \n  // Use c.translate() to move to the end\n  // of the branch.\n  // Hint: The end is at (0, -l), that's l\n  // as in length.\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2015,14 +2015,14 @@ var lessons =
   {
     message: {
       en: "Aieeee!  What did you do?",
-      de: "Oh meine Güte! Was hast du gemacht!",
+      de: "Oh weia! Was hast du gemacht?",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Just kidding!  It's all fine!",
-      de: "War nur Spass. Ist alles ok!",
+      de: "War nur Spass! Ist alles ok!",
       jp: "jp"
     }
   },
@@ -2049,15 +2049,15 @@ var lessons =
   },
   {
     message: {
-      en: "What's happening is that all those translate() and rotate() calls are piled on top of each other.  We didn't really want that.  When it's time to draw the second branch, we really want everything to be the way it was when we did the first branch, but it's not, we've translated and rotated all over the place.",
-      de: "Was passiert ist das all die translate() (verschieben) und rotate() (drehen) Aufrufe sich aufeinanderstapeln. Das wollen wir nicht. Wenn wir den 2. Zweig zeichnen wollen wir alles so haben wie es beim 1. Zweig war, aber im Moment ist alles verschoben und gedreht.",
+      en: "What's happening is that all those <span class=tutor-code>translate()</span> and <span class=tutor-code>rotate()</span> calls are piled on top of each other.  We didn't really want that.  When it's time to draw the second branch, we really want everything to be the way it was when we did the first branch, but it's not, we've translated and rotated all over the place.",
+      de: "Was passiert ist das all die <span class=tutor-code>translate()</span> (verschieben) und <span class=tutor-code>rotate()</span> (drehen) Aufrufe sich aufeinanderstapeln. Das wollen wir nicht. Wenn wir den 2. Zweig zeichnen wollen wir alles so haben wie es beim 1. Zweig war, aber im Moment ist alles verschoben und gedreht.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Save and restore to the rescue!  Can you add <span class=tutor-code>c.save();</span> and <span class=tutor-code>c.restore();</span> where the comments say to add them?",
-      de: "save() und restore() kommen zur Rettung! Kannst du <span class=tutor-code>c.save();</span> und <span class=tutor-code>c.restore();</span> da einfügen wo die Kommentare es anzeigen?",
+      en: "<span class=tutor-code>save()</span> and <span class=tutor-code>restore()</span> to the rescue!  Can you add <span class=tutor-code>c.save();</span> and <span class=tutor-code>c.restore();</span> where the comments say to add them?",
+      de: "<span class=tutor-code>save()</span> und <span class=tutor-code>restore()</span> kommen zur Rettung! Kannst du <span class=tutor-code>c.save();</span> und <span class=tutor-code>c.restore();</span> da einfügen wo die Kommentare es anzeigen?",
       jp: "jp"
     },
     code: "function drawBranch(l, direction) {\n  // Save here!\n  \n  \n  c.fillRect(-1, 0, 2, -l);\n  \n  c.translate(0, -l);\n  \n  if ( l > 5 ) {\n    drawBranch(l * 0.8, direction);\n    \n    c.rotate(0.5 * direction);\n    drawBranch(l * 0.7, direction);\n  }\n  \n  // Restore here!\n  \n}\n\nc.translate(200, 250);\ndrawBranch(50, 1);\n"
@@ -2080,14 +2080,14 @@ var lessons =
   {
     message: {
       en: "It's because we didn't switch direction.  Direction is always the same as what it was at the start, it is always 1.  It should alternate, 1, -1, 1, -1 ...",
-      de: "Das ist so weil wir die Richtung nicht wechseln. Richtung direction ist immer 1. Es sollte 1, dann -1, dann wieder 1, dann -1 usw. sein.",
+      de: "Das ist so weil wir die Richtung nicht wechseln. Richtung <span class=tutor-code>direction</span> ist immer 1. Es sollte 1, dann -1, dann wieder 1, dann -1 usw. sein.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Can you make it so both of the drawBranch() calls inside of drawBranch() use -direction instead of direction?",
-      de: "Kannst du den Code ändern dass drawBranch() Aufrufe innerhalb der drawBranch() Funktion -direction anstelle von direction benutzen?",
+      en: "Can you make it so both of the <span class=tutor-code>drawBranch()</span> calls inside of <span class=tutor-code>drawBranch()</span> use <span class=tutor-code>-direction</span> instead of <span class=tutor-code>direction</span>?",
+      de: "Kannst du den Code ändern dass <span class=tutor-code>drawBranch()</span> Aufrufe innerhalb der <span class=tutor-code>drawBranch()</span> Funktion <span class=tutor-code>-direction</span> anstelle von <span class=tutor-code>direction</span> benutzen?",
       jp: "jp"
     }
   },
@@ -2182,8 +2182,8 @@ var lessons =
   },
   {
     message: {
-      en: "If you make l bigger, you can zoom in and see it's made of little triangles!",
-      de: "Wenn du l grösser machst, kannst du das vergrössern und dann siehst du dass das aus kleinen Dreiecken gemacht ist!",
+      en: "If you make <span class=tutor-code>l</span> bigger, you can zoom in and see it's made of little triangles!",
+      de: "Wenn du <span class=tutor-code>l</span> grösser machst, kannst du das vergrössern und dann siehst du dass das aus kleinen Dreiecken gemacht ist!",
       jp: "jp"
     }
   },
@@ -2224,8 +2224,8 @@ var lessons =
   },
   {
     message: {
-      en: "If you did it, good job, this is really hard, I'm impressed!  If you didn't get it, no worries, here's a hint, you might need two for loops, one inside the other, you'll use at least one c.fillRect(), and don't forget a for loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
-      de: "Wenn du's geschafft hast: Super! Das ist nicht einfach gewesen. Falls du es nicht geschafft hast, hier ist ein Tip: Du brauchst vielleicht zwei for Schleifen: eine innerhalb der anderen, und du brauchst c.fillRect(). Vergiss nicht: For Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      en: "If you did it, good job, this is really hard, I'm impressed!  If you didn't get it, no worries, here's a hint, you might need two <span class=tutor-code>for</span> loops, one inside the other, you'll use at least one <span class=tutor-code>c.fillRect()</span>, and don't forget a <span class=tutor-code>for</span> loop looks like <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
+      de: "Wenn du's geschafft hast: Super! Das ist nicht einfach gewesen. Falls du es nicht geschafft hast, hier ist ein Tip: Du brauchst vielleicht zwei <span class=tutor-code>for</span> Schleifen: eine innerhalb der anderen, und du brauchst <span class=tutor-code>c.fillRect()</span>. Vergiss nicht: <span class=tutor-code>for</span> Schleifen sehen so aus: <span class=tutor-code>for (var i = 0; i < 3; i += 1) {</span>",
       jp: "jp"
     }
   },
@@ -2251,8 +2251,8 @@ var lessons =
   },
   {
     message: {
-      en: "If not, try commenting out one of the fillSquare() lines (using <span class=tutor-code>//</span>) so you can see what the other is drawing.",
-      de: "Probier eine nach der anderen fillSquare() Zeilen auszukommentieren (mit <span class=tutor-code>//</span>) damit du sehen kannst was die anderen zeichnen.",
+      en: "If not, try commenting out one of the <span class=tutor-code>fillSquare()</span> lines (using <span class=tutor-code>//</span>) so you can see what the other is drawing.",
+      de: "Probier eine nach der anderen <span class=tutor-code>fillSquare()</span> Zeilen auszukommentieren (mit <span class=tutor-code>//</span>) damit du sehen kannst was die anderen zeichnen.",
       jp: "jp"
     }
   },
@@ -2288,7 +2288,7 @@ var lessons =
   {
     message: {
       en: "Here is yet another way of doing a checkerboard.  Any idea how this works?  What's that <span class=tutor-code>i % 2</span> doing?",
-      de: "Hier ist noch eine andere Möglichkeit: Hast du eine idee wie das funktioniert? Was ist das <span class=tutor-code>i % 2</span>?",
+      de: "Hier ist noch eine andere Möglichkeit: Hast du eine Idee wie das funktioniert? Was ist das <span class=tutor-code>i % 2</span>?",
       jp: "jp"
     },
     code: "var size = 50;\n\nfor (var i = 0; i < 6; i = i + 1) {\n  for (var j = 0; j < 4; j = j + 1) {\n    if ((i % 2 + j % 2) % 2) {\n      var x = i * size;\n      var y = j * size;\n      fillSquare(x, y, size);\n\n    }\n  }\n}\n\nfunction fillSquare(x, y, s) {\n  c.fillRect(x, y, size, size);\n}\n",
@@ -2315,15 +2315,15 @@ var lessons =
   },
   {
     message: {
-      en: "So, how does that complicated expression -- <span class=tutor-code>(i % 2 + j % 2) % 2</span> -- work? When i is even, <span class=tutor-code>i % 2</span> will be 0.  Same for j.  If both are odd, then you get (1 + 1) % 2, which is 0. So, that expression will be 0 if both i and j are even or both i and j are odd.",
-      de: "Was macht das kompliziert aussehende <span class=tutor-code>(i % 2 + j % 2) % 2</span>? Wenn i gerade ist, ist <span class=tutor-code>i % 2</span> 0. Für j ist es genauso. Wenn beide ungerade sind, ist (1 + 1) % 2, was 0 ist. Also ist <span class=tutor-code>(i % 2 + j % 2) % 2</span> 0 wenn beide Zahlen gerade oder beide ungerade sind.",
+      en: "So, how does that complicated expression -- <span class=tutor-code>(i % 2 + j % 2) % 2</span> -- work? When <span class=tutor-code>i</span> is even, <span class=tutor-code>i % 2</span> will be 0.  Same for <span class=tutor-code>j</span>.  If both are odd, then you get (1 + 1) % 2, which is 0. So, that expression will be 0 if both <span class=tutor-code>i</span> and <span class=tutor-code>j</span> are even or both <span class=tutor-code>i</span> and <span class=tutor-code>j</span> are odd.",
+      de: "Was macht das kompliziert aussehende <span class=tutor-code>(i % 2 + j % 2) % 2</span>? Wenn <span class=tutor-code>i</span> gerade ist, ist <span class=tutor-code>i % 2</span> 0. Für <span class=tutor-code>j</span> ist es genauso. Wenn beide ungerade sind, ist (1 + 1) % 2, was 0 ist. Also ist <span class=tutor-code>(i % 2 + j % 2) % 2</span> 0 wenn beide Zahlen gerade oder beide ungerade sind.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "For if statements, 0 means false and anything else is true.  So, we'll do what's inside the if statement only when only one of i or j is odd.",
-      de: "Für die if Bedingung, 0 bedeuted falsch und alles andere ist richtig. Also machen wir das in der if Befehlen nur wenn entweder i oder j unregade sind.",
+      en: "For <span class=tutor-code>if</span> statements, 0 means false and anything else is true.  So, we'll do what's inside the <span class=tutor-code>if</span> statement only when only one of <span class=tutor-code>i</span> or <span class=tutor-code>j</span> is odd.",
+      de: "Für die <span class=tutor-code>if</span> Befehl, 0 bedeuted falsch und alles andere ist richtig. Also machen wir das in der <span class=tutor-code>if</span> Befehlen nur wenn entweder <span class=tutor-code>i</span> oder <span class=tutor-code>j</span> unregade sind.",
       jp: "jp"
     }
   },
@@ -2365,8 +2365,8 @@ var lessons =
   },
   {
     message: {
-      en: "The way this works is that, every time we are told to do drawStep(), we erase the screen, move the box, draw the box, and, unless we hit the edge, we say to do drawStep() again a little while later.",
-      de: "Was passiert ist folgendes: jedesmal wenn wir etwas zeichnen sollen mit drawStep(), löschen wir den Bildschirm, bewegen das Quadrat, zeichnen das Quadrat und wir sagen dass wir, ausser wir haben den Rand erreicht, drawStep() nochmal bald aufrufen wollen.",
+      en: "The way this works is that, every time we are told to do <span class=tutor-code>drawStep()</span>, we erase the screen, move the box, draw the box, and, unless we hit the edge, we say to do <span class=tutor-code>drawStep()</span> again a little while later.",
+      de: "Was passiert ist folgendes: jedesmal wenn wir etwas zeichnen sollen mit <span class=tutor-code>drawStep()</span>, löschen wir den Bildschirm, bewegen das Quadrat, zeichnen das Quadrat und wir sagen dass wir, ausser wir haben den Rand erreicht, <span class=tutor-code>drawStep()</span> nochmal bald aufrufen wollen.",
       jp: "jp"
     }
   },
@@ -2379,8 +2379,8 @@ var lessons =
   },
   {
     message: {
-      en: "Try commenting out the clearRect().  That's kind of cool, isn't it?",
-      de: "Kommentier auch mal das clearRect() aus (mit //). Cool, oder?",
+      en: "Try commenting out the <span class=tutor-code>clearRect()</span>.  That's kind of cool, isn't it?",
+      de: "Kommentier auch mal das <span class=tutor-code>clearRect()</span> aus (mit //). Cool, oder?",
       jp: "jp"
     }
   },
@@ -2399,15 +2399,15 @@ var lessons =
   },
   {
     message: {
-      en: "This works the same way as the moving box.  Every time it is told to do drawStep(), it clears the screen, rotates, draws the box, and then says to do drawStep() again in a little while later.",
-      de: "Das funktioniert genauso wie das sich bewegende Quadrat. Jedesmal wenn drawStep() aufgerufen wird, löscht es den Bildschirm, rotiert, zeichnet und sagt nochmal drawStep() etwas später aufzurufen.",
+      en: "This works the same way as the moving box.  Every time it is told to do <span class=tutor-code>drawStep()</span>, it clears the screen, rotates, draws the box, and then says to do <span class=tutor-code>drawStep()</span> again in a little while later.",
+      de: "Das funktioniert genauso wie das sich bewegende Quadrat. Jedesmal wenn <span class=tutor-code>drawStep()</span> aufgerufen wird, löscht es den Bildschirm, rotiert, zeichnet und sagt nochmal <span class=tutor-code>drawStep()</span> etwas später aufzurufen.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "What happens if you comment out the clearRect()?",
-      de: "Was passiert wenn du clearRect() auskommentierst?",
+      en: "What happens if you comment out the <span class=tutor-code>clearRect()</span>?",
+      de: "Was passiert wenn du <span class=tutor-code>clearRect()</span> auskommentierst?",
       jp: "jp"
     }
   },
@@ -2443,15 +2443,15 @@ var lessons =
   },
   {
     message: {
-      en: "Well, you'd need the x and y position of each, right?  And the size of each.  And maybe the dx and dy velocity of each?  And the angle?",
-      de: "Zuerst brauchen die die x und y Koordinaten von jedem, richtig? Und die Grösse. Und die Geschwindigkeit (dx, dy). Und der Winkel (angle).",
+      en: "Well, you'd need the <span class=tutor-code>x</span> and <span class=tutor-code>y</span> position of each, right?  And the size of each.  And maybe the dx and dy velocity of each?  And the <span class=tutor-code>angle</span>?",
+      de: "Zuerst brauchen die die <span class=tutor-code>x</span> und <span class=tutor-code>y</span> Koordinaten von jedem, richtig? Und die Grösse. Und die Geschwindigkeit (<span class=tutor-code>dx, dy</span>). Und der Winkel <span class=tutor-code>angle</span>.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "You could create variables x1, x2, x3, y1, y2, y3, dx1 ... ugh.  That's getting painful, isn't it?",
-      de: "Man kann jetzt Variablen x1, x2, x3, y1, y2, y3, dx1 ... hmm ... das wird schnell unpraktisch.",
+      en: "You could create variables <span class=tutor-code>x1, x2, x3, y1, y2, y3, dx1</span> ... ugh.  That's getting painful, isn't it?",
+      de: "Man kann jetzt Variablen <span class=tutor-code>x1, x2, x3, y1, y2, y3, dx1</span> ... hmm ... das wird schnell unpraktisch.",
       jp: "jp"
     }
   },
@@ -2465,22 +2465,22 @@ var lessons =
   },
   {
     message: {
-      en: "What is going on is <span class=tutor-code>new Box(10, 10, 100)</span> creates an object, then immediately calls the Box() function to set it up.  Box() then uses <span class=tutor-code>this.x</span> to set a variable named x in the object to the x that was passed into the function.",
-      de: "<span class=tutor-code>new Box(10, 10, 100)</span> macht ein neues Objekt und ruft Box() auf. Box() benutzt dann <span class=tutor-code>this.x</span> für das x vom Objekt.",
+      en: "What is going on is <span class=tutor-code>new Box(10, 10, 100)</span> creates an object, then immediately calls the <span class=tutor-code>Box()</span> function to set it up.  <span class=tutor-code>Box()</span> then uses <span class=tutor-code>this.x</span> to set a variable named <span class=tutor-code>x</span> in the object to the <span class=tutor-code>x</span> that was passed into the function.",
+      de: "<span class=tutor-code>new Box(10, 10, 100)</span> macht ein neues Objekt und ruft <span class=tutor-code>Box()</span> auf. <span class=tutor-code>Box()</span> benutzt dann <span class=tutor-code>this.x</span> für das <span class=tutor-code>x</span> vom Objekt.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "It does the same thing to set up all the other variables in our new Box object.  Once the object is created and set up, we set our variable <span class=tutor-code>b</span> to that.  Later, we can get at the x and y and other variables of our box using <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span>, and so forth.",
-      de: "Es macht das gleiche mit den anderen Variablen underes Box Objekts. Wenn es erstmal erzeugt und initialisiert ist, weisen wir dieses Objekt unserer Variablen <span class=tutor-code>b</span> zu. Jetzt können wir x und y von unserem Box Objekt b mit <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span> usw. benutzen.",
+      en: "It does the same thing to set up all the other variables in our new Box object.  Once the object is created and set up, we set our variable <span class=tutor-code>b</span> to that.  Later, we can get at the <span class=tutor-code>x</span> and <span class=tutor-code>y</span> and other variables of our box using <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span>, and so forth.",
+      de: "Es macht das gleiche mit den anderen Variablen unseres Box Objekts. Wenn es erstmal erzeugt und initialisiert ist, weisen wir diesem Objekt unserer Variablen <span class=tutor-code>b</span> zu. Jetzt können wir <span class=tutor-code>x</span> und <span class=tutor-code>y</span> von unserem Box Objekt <span class=tutor-code>b</span> mit <span class=tutor-code>b.x</span>, <span class=tutor-code>b.y</span> usw. benutzen.",
       jp: "jp"
     }
   },
   {
     message: {
       en: "Our box object is just a little bundle of variables that describe our box.  It says where the box is, its velocity (dx and dy), how big it is, everything that it means to be a box.",
-      de: "Unser Box Objekt ist einfach ein kleines Paket mit Variablen die unser Quadrat beschreibt. Es sagt wo das Quadrat ist (x, y), wie schnell es ist (dx, dy), wie gross es ist, und alles andere was ein Quadrat ausmacht.",
+      de: "Unser Box Objekt ist einfach ein kleines Paket mit Variablen die unser Quadrat beschreiben. Es sagt wo das Quadrat ist (x, y), wie schnell es ist (dx, dy), wie gross es ist, und alles andere was ein Quadrat ausmacht.",
       jp: "jp"
     }
   },
@@ -2494,8 +2494,8 @@ var lessons =
   },
   {
     message: {
-      en: "See how <span class=tutor-code>this.stroke</span> is set equal to a function?  And that function calls strokeRect() to draw this box?  Then, later, we create a box called b1 and tell it to draw itself with <span class=tutor-code>b1.stroke()</span>. That's pretty cool, isn't it?",
-      de: "Siehst du wie <span class=tutor-code>this.stroke</span> eine Funktion ist? Und diese Funktion ruft strokeRect() auf um das Quadrat zu zeichnen. Dann, später, machen wir ein neues Quadrat und nennen es b1 und lasses es sich selber zeichnen mittels <span class=tutor-code>b1.stroke()</span>. Schlau, gell?",
+      en: "See how <span class=tutor-code>this.stroke</span> is set equal to a function?  And that function calls <span class=tutor-code>strokeRect()</span> to draw this box?  Then, later, we create a box called <span class=tutor-code>b1</span> and tell it to draw itself with <span class=tutor-code>b1.stroke()</span>. That's pretty cool, isn't it?",
+      de: "Siehst du wie <span class=tutor-code>this.stroke</span> eine Funktion ist? Und diese Funktion ruft <span class=tutor-code>strokeRect()</span> auf um das Quadrat zu zeichnen. Dann, später, machen wir ein neues Quadrat und nennen es b1 und lasses es sich selber zeichnen mittels <span class=tutor-code>b1.stroke()</span>. Schlau, gell?",
       jp: "jp"
     }
   },
@@ -2536,7 +2536,7 @@ var lessons =
   {
     message: {
       en: "That code asks the document object (which is the web page) to give us the element in the web page called 'pane' (which is the id in the web page of the canvas where we draw), and then gets the 2d drawing canvas from that element.  We name that canvas object <span class=tutor-code>c</span> and use all its drawing functions, which is why we use <span class=tutor-code>c.</span> in front of every use of strokeRect().",
-      de: "Dieser Code fragt das Dokument Objekt (das ist die Webseite) für das 'pane' Element (das ist der Teil der Webseite wo wir hinzeichnen wollen), und holt dann das 2D Leinwand (canvas) von diesem Element. Das Objekt nennen wir <span class=tutor-code>c</span> und von dem benutzen wir die Zeichenfunktionen wie <span class=tutor-code>strokeRect()</span> mittels <span class=tutor-code>c.strokerect()</span>.",
+      de: "Dieser Code fragt das Dokument Objekt (das ist die Webseite) für das 'pane' Element (das ist der Teil der Webseite wo wir hinzeichnen wollen), und holt dann die 2D Leinwand (canvas) von diesem Element. Das Objekt nennen wir <span class=tutor-code>c</span> und von dem benutzen wir die Zeichenfunktionen wie <span class=tutor-code>strokeRect()</span> mittels <span class=tutor-code>c.strokeRect()</span>.",
       jp: "jp"
     }
   },
@@ -2555,15 +2555,15 @@ var lessons =
   },
   {
     message: {
-      en: "Can you create a couple more boxes and have them draw themselves? For each one, you'll have to use new and stroke(), like we did for the box we called <span class=tutor-code>b1</span>.",
-      de: "Kannst du ein paar mehr Quadrate machen die sich selber zeichnen? Für jedes brauchst du ein new und stroke() wie wir es mit <span class=tutor-code>b1</span> gemacht haben.",
+      en: "Can you create a couple more boxes and have them draw themselves? For each one, you'll have to use new and <span class=tutor-code>stroke()</span>, like we did for the box we called <span class=tutor-code>b1</span>.",
+      de: "Kannst du ein paar mehr Quadrate machen die sich selber zeichnen? Für jedes brauchst du ein new und <span class=tutor-code>stroke()</span> wie wir es mit <span class=tutor-code>b1</span> gemacht haben.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "That's pretty nice, but calling each box b1, b2, b3, or whatever is painful. What if I want ten boxes?  Or a hundred?",
-      de: "Das ist schon ganz gut, aber jedes Quadrat b1, b2, b3 usw. zu nennen ist unpraktisch wenn ich 10 oder 100 Quadrate mag.",
+      en: "That's pretty nice, but calling each box <span class=tutor-code>b1, b2, b3</span>, or whatever is painful. What if I want ten boxes?  Or a hundred?",
+      de: "Das ist schon ganz gut, aber jedes Quadrat <span class=tutor-code>b1, b2, b3</span> usw. zu nennen ist unpraktisch wenn ich 10 oder 100 Quadrate mag.",
       jp: "jp"
     }
   },
@@ -2596,22 +2596,22 @@ var lessons =
   },
   {
     message: {
-      en: "So, <span class=tutor-code>var boxes = []</span> means create an empty list and call it boxes.",
-      de: "Deshalb bedeutet <span class=tutor-code>var boxes = []</span> dass boxes ein neues leered Feld sein soll.",
+      en: "So, <span class=tutor-code>var boxes = []</span> means create an empty list and call it <span class=tutor-code>boxes</span>.",
+      de: "Deshalb bedeutet <span class=tutor-code>var boxes = []</span> dass <span class=tutor-code>boxes</span> ein neues leered Feld sein soll.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "<span class=tutor-code>boxes.push()</span> adds something to the end of the list.  Here, we use it to add a new box.  Because it is in a for loop that counts 0, 1, 2 and then stops, we will add three boxes to the end of the list.",
-      de: "<span class=tutor-code>boxes.push()</span> hängt etwas neues an das Ende vom Feld boxes. Das benutzen wir für neue Quadrate. Weil es in einer For Schleife ist die nur 0, 1 und 2 zählt, machen wir 3 neue Quadratobjekte und tun die in das boxes Feld.",
+      en: "<span class=tutor-code>boxes.push()</span> adds something to the end of the list.  Here, we use it to add a new box.  Because it is in a <span class=tutor-code>for</span> loop that counts 0, 1, 2 and then stops, we will add three boxes to the end of the list.",
+      de: "<span class=tutor-code>boxes.push()</span> hängt etwas neues an das Ende vom Feld <span class=tutor-code>boxes</span>. Das benutzen wir für neue Quadrate. Weil es in einer <span class=tutor-code>for</span> Schleife ist die nur 0, 1 und 2 zählt, machen wir 3 neue Quadratobjekte und tun die in das <span class=tutor-code>boxes</span> Feld.",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Take a look at the second for loop.  <span class=tutor-code>boxes.length</span> is the length of the list.  <span class=tutor-code>boxes[0]</span> is the first box in the list, <span class=tutor-code>boxes[1]</span> the second, and so forth.  So, that second for loop goes through every box in the list and tells it to draw itself by calling <span class=tutor-code>boxes[i].stroke();</span>",
-      de: "Schau dir die zweite For Schleife an. <span class=tutor-code>boxes.length</span> ist die Grösse des Feldes. <span class=tutor-code>boxes[0]</span> ist das erste Element in dem Feld, also das erste Quadratobjekt. <span class=tutor-code>boxes[1]</span> ist das zweite usw. Die zweite For Schleife ruft also jedes Quadratobjekt im Feld auf und lässt es sich mittels <span class=tutor-code>boxes[i].stroke();</span> zeichnen.",
+      en: "Take a look at the second for loop.  <span class=tutor-code>boxes.length</span> is the length of the list.  <span class=tutor-code>boxes[0]</span> is the first box in the list, <span class=tutor-code>boxes[1]</span> the second, and so forth.  So, that second <span class=tutor-code>for</span> loop goes through every box in the list and tells it to draw itself by calling <span class=tutor-code>boxes[i].stroke();</span>",
+      de: "Schau dir die zweite For Schleife an. <span class=tutor-code>boxes.length</span> ist die Grösse des Feldes. <span class=tutor-code>boxes[0]</span> ist das erste Element in dem Feld, also das erste Quadratobjekt. <span class=tutor-code>boxes[1]</span> ist das zweite usw. Die zweite <span class=tutor-code>for</span> Schleife ruft also jedes Quadratobjekt im Feld auf und lässt es sich mittels <span class=tutor-code>boxes[i].stroke();</span> zeichnen.",
       jp: "jp"
     }
   },
@@ -2636,8 +2636,8 @@ var lessons =
   },
   {
     message: {
-      en: "Let's start by making all our boxes draw to whatever angle they are supposed to be at.  See how this new version of stroke() works?",
-      de: "Zuerst wollen wir alle Quadrate mit ihrem Winkel zeichnen. Siehst du wie stroke() funktioniert?",
+      en: "Let's start by making all our boxes draw to whatever angle they are supposed to be at.  See how this new version of <span class=tutor-code>stroke()</span> works?",
+      de: "Zuerst wollen wir alle Quadrate mit ihrem Winkel zeichnen. Siehst du wie <span class=tutor-code>stroke()</span> funktioniert?",
       jp: "jp"
     },
     code: "function Box(x, y, size, a) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.save();\n    // Find the center of the box\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    // Move to the center of the box\n    c.translate(x, y);\n    // Rotate the box around the center\n    c.rotate(this.angle);\n    // Draw the box around its center\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n\nvar boxes = [];\nfor (var i = 1; i < 6; i = i + 1) {\n  var a = Math.random() * 2 - 1;\n  boxes.push(new Box(i * 50, i * 30, 100, a));\n}\nfor (var i = 0; i < boxes.length; i = i + 1) {\n  boxes[i].stroke();\n}\n"
@@ -2645,14 +2645,14 @@ var lessons =
   {
     message: {
       en: "Whenever a box is told to draw itself, we do that by moving to the center of the box, rotating around that center to match the angle of the box, and then draw the box around its center.  Kind of like what we did before for rotated boxes, right?",
-      de: "Wenn das Quadratobjekt sich zeichnen soll, drehen wir es um seine Mitte um den richtigen Winkel (angle) und zeichnen es dann. Genauso wie vorher mit den sich drehenden Quadraten, gell?",
+      de: "Wenn das Quadratobjekt sich zeichnen soll, drehen wir es um seine Mitte um den richtigen Winkel <span class=tutor-code>angle</span> und zeichnen es dann. Genauso wie vorher mit den sich drehenden Quadraten, gell?",
       jp: "jp"
     }
   },
   {
     message: {
-      en: "Now let's make the boxes spin!  Look at the new function updateAll().  See what it is doing?",
-      de: "So, lassen wir jetzt die Quadrate sich drehen! Schau dir die Funktion updateAll() an. Siehst du was sie macht?",
+      en: "Now let's make the boxes spin!  Look at the new function <span class=tutor-code>updateAll()</span> .  See what it is doing?",
+      de: "So, lassen wir jetzt die Quadrate sich drehen! Schau dir die Funktion <span class=tutor-code>updateAll()</span> an. Siehst du was sie macht?",
       jp: "jp"
     },
     code: "var rotateSpeed = 0.02;\nvar timeStep = 50; // In milliseconds\nvar w = c.canvas.width;\nvar h = c.canvas.height;\nvar cmTID;\n\nfunction updateAll() {\n  c.clearRect(0, 0, w, h);\n  for (var i = 0; i < boxes.length; i = i + 1) {\n    boxes[i].angle += rotateSpeed;\n    boxes[i].stroke();\n  }\n  clearTimeout(cmTID);\n  cmTID = setTimeout(updateAll, timeStep);\n}\n\n// Create the boxes\nvar boxes = [];\nfor (var i = 1; i < 6; i = i + 1) {\n  var a = Math.random() * 2 - 1;\n  boxes.push(new Box(i * 50, i * 30, 100, a));\n}\n// Do the first update\nupdateAll();\n\nfunction Box(x, y, size, a) {\n  this.x = x;\n  this.y = y;\n  this.size = size;\n  this.angle = a;\n  this.dx = 0;\n  this.dy = 0;\n\n  this.stroke = function() {\n    c.save();\n    // Find the center of the box\n    var x = this.x + this.size / 2;\n    var y = this.y + this.size / 2;\n    // Move to the center of the box\n    c.translate(x, y);\n    // Rotate the box around the center\n    c.rotate(this.angle);\n    // Draw the box around its center\n    c.strokeRect(-this.size / 2, -this.size / 2,\n                 this.size, this.size);\n    c.restore();\n  };\n}\n",
@@ -2660,8 +2660,8 @@ var lessons =
   },
   {
     message: {
-      en: "updateAll() starts by clearing the screen, then rotates each box a little more before drawing it.  Finally, it says, call me again in 1/20th of a second.  So, 20 times a second, we rotate each box a little and redraw it.  Cool, huh?",
-      de: "updateAll() löscht zuerst den Bildschirm, dann dreht es jedes Quadrat etwas bevor es gezeichnet wird. Und am ende sagt es sich nochmal aufzurufen in einer 20-tel Sekunde. Damit wiederholen wir das 20 mal pro Sekunde: Bildschirm löschen, drehen, zeichnen. Einfach, oder?",
+      en: "<span class=tutor-code>updateAll()</span> starts by clearing the screen, then rotates each box a little more before drawing it.  Finally, it says, call me again in 1/20th of a second.  So, 20 times a second, we rotate each box a little and redraw it.  Cool, huh?",
+      de: "<span class=tutor-code>updateAll()</span> löscht zuerst den Bildschirm, dann dreht es jedes Quadrat etwas bevor es gezeichnet wird. Und am Ende sagt es sich nochmal aufzurufen in einer 20-tel Sekunde. Damit wiederholen wir das 20 mal pro Sekunde: Bildschirm löschen, drehen, zeichnen. Einfach, oder?",
       jp: "jp"
     }
   },
@@ -2696,8 +2696,8 @@ var lessons =
   },
   {
     message: {
-      en: "updateAll() just calls the update() of the box.  update() on the box changes the angle and then draws the box.  Each box knows how to update and draw itself now.",
-      de: "updateAll() ruft jetzt nur update() von jedem Quadratobjekt auf. update() verändert den Winkel und zeichnet dann sich selber. Jedes Quadratobjekt weiss wie es sich selber ändern muss und wie es sich selber zeichnet.",
+      en: "<span class=tutor-code>updateAll()</span> just calls the <span class=tutor-code>update()</span> of the box.  <span class=tutor-code>update()</span> on the box changes the angle and then draws the box.  Each box knows how to update and draw itself now.",
+      de: "<span class=tutor-code>updateAll()</span> ruft jetzt nur <span class=tutor-code>update()</span> von jedem Quadratobjekt auf. <span class=tutor-code>update()</span> verändert den Winkel und zeichnet dann sich selber. Jedes Quadratobjekt weiss wie es sich selber ändern muss und wie es sich selber zeichnet.",
       jp: "jp"
     }
   },
@@ -2716,8 +2716,8 @@ var lessons =
   },
   {
     message: {
-      en: "It's a little more complicated, but only a little.  Every time a box is told to update(), it moves by its velocity (<span class=tutor-code>dx</span> and <span class=tutor-code>dy</span>) and rotates by its angular velocity (<span class=tutor-code>da</span>).",
-      de: "Das wird jetzt ein ganz klein wenig komplizierter. Sieht aber wilder aus als es ist. Jedesmal wenn update() aufgerufen wird, ändert es seine Position mit der Geschwindigkeit <span class=tutor-code>dx</span> und <span class=tutor-code>dy</span> und es dreht sich um den Winkel <span class=tutor-code>da</span>.",
+      en: "It's a little more complicated, but only a little.  Every time a box is told to <span class=tutor-code>update()</span>, it moves by its velocity (<span class=tutor-code>dx</span> and <span class=tutor-code>dy</span>) and rotates by its angular velocity (<span class=tutor-code>da</span>).",
+      de: "Das wird jetzt ein ganz klein wenig komplizierter. Sieht aber wilder aus als es ist. Jedesmal wenn <span class=tutor-code>update()</span> aufgerufen wird, ändert es seine Position mit der Geschwindigkeit <span class=tutor-code>dx</span> und <span class=tutor-code>dy</span> und es dreht sich um den Winkel <span class=tutor-code>da</span>.",
       jp: "jp"
     }
   },
@@ -2743,7 +2743,7 @@ var lessons =
   {
     message: {
       en: "<span class=tutor-code>||</span> means <i>or</i>, as in either-or, so the first if statement checks if the box has either gone off the left or right edge, and the second checks if it has gone off the top or bottom.  Make sense?",
-      de: "<span class=tutor-code>||</span> bedeutet <i>oder (or)</i> im Sinne von 'entweder, oder'. Das erste Argument überprüft ob der Rand links oder rechts erreicht ist, und das zweite überprüft oben und unten.",
+      de: "<span class=tutor-code>||</span> bedeutet <i>oder (or)</i> im Sinne von 'entweder, oder'. Die linke Seite überprüft ob der Rand links oder rechts erreicht ist, und die rechte Seite überprüft oben und unten.",
       jp: "jp"
     }
   },
@@ -2812,8 +2812,8 @@ var lessons =
   },
   {
     message: {
-      en: "Another big difference is that we use arc() to draw circles.  Arcs are cool, but they're a little complicated for just drawing a circle. Let me explain how they work.",
-      de: "Wir benutzen arc() (Bogen) zum zeichnen. Bögen sind cool, aber etwas komplizierter als einfache Kreise. Lass es mich erklären.",
+      en: "Another big difference is that we use <span class=tutor-code>arc()</span> to draw circles.  Arcs are cool, but they're a little complicated for just drawing a circle. Let me explain how they work.",
+      de: "Wir benutzen <span class=tutor-code>arc()</span> (Bogen) zum zeichnen. Bögen sind cool, aber etwas komplizierter als einfache Kreise. Lass es mich erklären.",
       jp: "jp"
     }
   },
@@ -2853,8 +2853,8 @@ var lessons =
   },
   {
     message: {
-      en: "Do you see it?  Now, every time we update() on a Ball (and the ball isn't bouncing, to simplify things), we change the downward velocity (<span class=tutor-code>dy</span>) by whatever <span class=tutor-code>gravity</span> is.",
-      de: "Siehst du es? Jedes mal wenn update() von einem Ball aufgerufen wird (und der Ball springt jetzt noch nicht damit es einfacher bleibt), ändern wir die Geschwindigkeit nach unten (<span class=tutor-code>dy</span>) um was <span class=tutor-code>gravity</span> ist.",
+      en: "Do you see it?  Now, every time we <span class=tutor-code>update()</span> on a Ball (and the ball isn't bouncing, to simplify things), we change the downward velocity (<span class=tutor-code>dy</span>) by whatever <span class=tutor-code>gravity</span> is.",
+      de: "Siehst du es? Jedes mal wenn <span class=tutor-code>update()</span> von einem Ball aufgerufen wird (und der Ball springt jetzt noch nicht damit es einfacher bleibt), ändern wir die Geschwindigkeit nach unten (<span class=tutor-code>dy</span>) um was <span class=tutor-code>gravity</span> ist.",
       jp: "jp"
     }
   },
@@ -2966,7 +2966,7 @@ var lessons =
   {
     message: {
       en: "Then, when each ball is updated, it figures out how far away from the mouse it is, and accelerates toward it.",
-      de: "Wenn dann jeder Ball neu berechnet wird mittels update(), findet er heraus wie weit er von der Maus entfernt ist und beschleudnigt zur Maus.",
+      de: "Wenn dann jeder Ball neu berechnet wird mittels <span class=tutor-code>update()</span>, findet er heraus wie weit er von der Maus entfernt ist und beschleunigt zur Maus.",
       jp: "jp"
     }
   },
