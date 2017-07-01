@@ -21,13 +21,13 @@ var lessons =
     message: {
       en: "I'm Code Monster! (click on my words to see what's next)",
       de: "Ich bin das Code Monster! (Klick auf meine Wörter was danach kommt)",
-      jp: "コードモンスターだ! ここの文章をクリックして次に進んでね!"
+      jp: "コードモンスターだ！ここの文しょうをクリックして次に進んでね！"
     },
     code: "c.fillRect(20, 20, 50, 75);\n",
     lessonSection: {
       en: "Getting Started",
       de: "Los geht's!",
-      jp: "さぁはじめよう!"
+      jp: "さあ、はじめよう！"
     },
     tutorImage: 1,
     hiddenCode: "var c = document.getElementById('pane').getContext('2d');\nfunction rgba(r,g,b,a) {return 'rgba('+[r,g,b,a].join(',')+')';}\nfunction rgb(r,g,b,a) {return 'rgb('+[r,g,b].join(',')+')';}\n\n"
@@ -36,21 +36,21 @@ var lessons =
     message: {
       en: "You're going to learn some programming! (click again)",
       de: "Du wirst etwas programmieren lernen! (Klicke wieder hier)",
-      jp: "これからプログラミングについて学ぼう! (もう一度クリックしてね)"
+      jp: "これからプログラミングについて学ぼう！(もういちどクリックしてね)"
     }
   },
   {
     message: {
       en: "Below me, on the left, is Javascript code, on the right, what it does.",
-      de: "Unter mir, auf der linken Seite, ist Javascript Code. Auf der rechten Seite ist das, was der Code macht",
-      jp: "下を見て.左側にはJavaスクリプトのコード,右側にはそのコードが何をやっているかが書いてあるよ"
+      de: "Unter mir, auf der linken Seite, ist Javascript Code. Auf der rechten Seite ist das, was der Code macht.",
+      jp: "下を見て。左がわにはJavaスクリプトのコード、右がわにはそのコードが何をやっているかが書いてあるよ"
     }
   },
   {
     message: {
       en: "You can use <span class=tutor-code>fillRect()</span> to draw a box. See the number 50?  Can you change that to 150?",
       de: "Du kannst mit <span class=tutor-code>fillRect()</span> ein Rechteck zeichnen. Siehst Du die Nummer 50? Kannst Du die in 150 ändern?",
-      jp: "fillRect() を使って四角形を描けるよ.50という数字が見えるかな?それを150に変えてみよう!"
+      jp: "fillRect() を使って四角形をかけるよ。50という数字が見えるかな?それを150にかえてみよう！"
     },
     code: "c.fillRect(20, 20, 50, 75);\n"
   },
@@ -58,8 +58,7 @@ var lessons =
     message: {
       en: "That made the box wider. What do you think the other numbers do? Try changing them.",
       de: "Das hat das Rechteck weiter gemacht. Was glaubst du machen die anderen Zahlen? Versuche sie zu ändern.",
-      jp: "四角形が大きくなったね.他の数字にするとどうなると思う?色々変えてみよう!"
-    },
+      jp: "四角形が大きくなったね。他の数字にするとどうなると思う？いろいろかえてみよう！",
     lessonSection: {
       en: "Parameters and Drawing",
       de: "Parameter und Zeichnen",
@@ -70,21 +69,21 @@ var lessons =
     message: {
       en: "Did you figure it out?  The numbers are how far from the left side to draw the box, how far from the top, how wide to draw the box, and how tall.",
       de: "Hast du verstanden was sie machen? Die Zahlen sagen wie weit von links das Rechteck zu zeichnen ist, wie weit von oben, wie weit das Rechteck ist und wie hoch es gezeichnet werden soll.",
-      jp: "分かったかな?これらの数字は,左端,又は上からどのくらい離れた位置に四角形を描くか,四角形の幅,高さはどのくらいにするかを表しているんだ."
+      jp: "分かったかな？これらの数字は、左はし、または上からどのくらいはなれた場所に四角形をかくか、四角形のはば、高さはどのくらいにするかを表しているんだ。"
     }
   },
   {
     message: {
       en: "Try changing all the numbers!  Play with it!",
       de: "Ändere alle Zahlen! Spiel mit ihnen!",
-      jp: "全ての数字を変えてみよう! 色々変えて遊んでみよう!"
+      jp: "全ての数字をかえてみよう！いろいろかえて遊んでみよう！"
     }
   },
   {
     message: {
       en: "Two boxes. Can you change the numbers to make them bigger?",
       de: "Zwei Rechtecke. Kannst du sie grösser machen?",
-      jp: "2つの四角形があるね.数字を変えてこれらを大きくしてみよう!"
+      jp: "2つの四角形があるね。数字をかえてこれらを大きくしてみよう！"
     },
     code: "c.fillRect(20, 20, 50, 75);\nc.fillRect(100, 100, 60, 80);\n"
   },
@@ -92,29 +91,29 @@ var lessons =
     message: {
       en: "Can you change the numbers to move them around?",
       de: "Kannst du die Zahlen ändern um sie herumzubewegen?",
-      jp: "数字を変えて四角形を動かしてみよう."
+      jp: "数字をかえて四角形を動かしてみよう。"
     }
   },
   {
     message: {
       en: "Can you change the numbers so that one covers the other?",
       de: "Kannst du die Zahlen ändern damit eins mit dem anderen überlappt?",
-      jp: "片方を隠すように数字を変えてみよう."
+      jp: "かた方をかくすように数字をかえてみよう。"
     }
   },
   {
     message: {
       en: "Monster like boxes square.",
       de: "Monster mögen Quadrate.",
-      jp: "モンスターは正方形が好き."
+      jp: "モンスターは正方形が好き。"
     },
     code: "c.fillRect(20, 20, 80, 80);\n"
   },
   {
     message: {
-      en: "A square has the same width and height.  This box has the same width and height, both are 80.",
+      en: "A square has the same width and height. This box has the same width and height, both are 80.",
       de: "Ein Quadrat hat die gleiche Weite und Höhe. Dieses Rechteck hat die gleiche Weite und Höhe: 80.",
-      jp: "正方形は縦と横が同じ長さの四角形だよ.これは縦と横が両方とも80で同じ長さだよ."
+      jp: "正方形はたてと横が同じ長さの四角形だよ。これはたてと横が両方とも80で同じ長さだよ。"
     },
     code: "c.fillRect(20, 20, 80, 80);\n"
   },
@@ -122,7 +121,7 @@ var lessons =
     message: {
       en: "Hey, look, this does the same thing!",
       de: "Guck mal! Das hier macht das gleiche!",
-      jp: "ねえ,見て! これは同じことをしているよ!"
+      jp: "ねえ、見て！これは同じことをしているよ！"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\n",
     lessonSection: {
@@ -135,14 +134,14 @@ var lessons =
     message: {
       en: "Why does that do the same thing?  Any ideas?",
       de: "Warum macht das das gleiche? Hast du eine Idee?",
-      jp: "どうして同じことができると思う?わかるかな?"
+      jp: "どうして同じことができると思う？わかるかな？"
     }
   },
   {
     message: {
       en: "var means variable. What we did is create a variable, called it <span class=tutor-code>size</span>, set it equal to 80, and now we can use <span class=tutor-code>size</span> where we would have used 80. Do you know why we might want that?",
       de: "var bedeutet Variable. Was wir gemacht haben ist das wir eine Variable <span class=tutor-code>size</span> erzeugen, und lassen sie 80 sein, und jetzt können wir <span class=tutor-code>size</span> benutzen wo wir früher 80 hatten. Hast du vielleicht eine Idee warum wir das machen?",
-      jp: "varは変数という意味だよ.ここでは,<span class=tutor-code>size</span>=サイズ・大きさと呼ぶ変数を作って,そこに80を設定しているんだ.そうすると80を設定した<span class=tutor-code>size</span>が使えるようになるんだ. なんでそんなことが必要なんだと思う?"
+      jp: "「var」は変数（へんすう）という意味だよ。ここでは、「<span class=tutor-code>size</span>」（サイズ・大きさ）とよぶ変数（へんすう）を作って、それを80にしているんだ。そうすると80にした「<span class=tutor-code>size</span>」が使えるようになるんだ。なんでそんなことがひつようだと思う?"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\n"
   },
@@ -150,42 +149,42 @@ var lessons =
     message: {
       en: "What happens if you change 80 to 220?",
       de: "Was passiert wenn du die Zahl 80 in 220 änderst?",
-      jp: "もし80を220に変えたらどうなると思う?"
+      jp: "もし80を220にかえたらどうなると思う?"
     }
   },
   {
     message: {
       en: "And look!  Wider and taller box, both at the same time!",
       de: "Schau! Das Quadrat ist jetzt weiter und höher! Gleichzeitig!",
-      jp: "見て! 四角形の縦と横の長さを同時に変更できるんだ!"
+      jp: "見て！四角形のたてと横の長さを同時にかえられるんだ!"
     }
   },
   {
     message: {
       en: "Can you change the other numbers to move the box around?",
       de: "Kannst du die anderen Zahlen ändern um das Quadrat herumzubewegen?",
-      jp: "他の数字も変更して四角形を動かしてみよう."
+      jp: "他の数字もかえて四角形を動かしてみよう。"
     }
   },
   {
     message: {
       en: "Can you make the box very small?",
       de: "Kannst Du das Quadrat ganz klein machen?",
-      jp: "四角形をものすごく小さくしてみよう."
+      jp: "四角形をものすごく小さくしてみよう。"
     }
   },
   {
     message: {
       en: "What happens if you make <span class=tutor-code>size</span> equal to 0? Or to something really big like 5000?",
       de: "Was passiert wenn du <span class=tutor-code>size</span> zu 0 machst? Oder riesig, wie zum Beispiel 5000?",
-      jp: "<span class=tutor-code>size</span>を0にしたらどうなるかな?また,5000のようなものすごく大きい数字にしたらどうなるかな?"
+      jp: "「<span class=tutor-code>size</span>」を0にしたらどうなるかな？また、5000のようなものすごく大きい数字にしたらどうなるかな？"
     }
   },
   {
     message: {
       en: "Monster want two boxes.",
       de: "Monster mag 2 Quadrate.",
-      jp: "モンスターは四角形が2つ欲しいな."
+      jp: "モンスターは四角形が2つ欲しいな。"
     },
     code: "var size = 80;\nc.fillRect(20, 20, size, size);\nc.fillRect(90, 90, size, size);\n"
   },
@@ -193,14 +192,14 @@ var lessons =
     message: {
       en: "Both boxes have the same size.  That's a neat trick.",
       de: "Beide sind gleichgross. Das ist schlau.",
-      jp: "四角形は両方とも同じ大きさにしてね.ちょっと考えれば簡単だね!"
+      jp: "四角形は両方とも同じ大きさにしてね。ちょっと考えればかんたんだね！"
     }
   },
   {
     message: {
       en: "You can change what <span class=tutor-code>size</span> is equal to.  That will grow or shrink both boxes at once! Try changing 80 to 180!",
       de: "Du kannst <span class=tutor-code>size</span> ändern zu was du magst. Beide werden gleichzeitig grösser oder kleiner! Probiere die 80 in 180 zu ändern!",
-      jp: "<span class=tutor-code>size</span>の値を変えればいいね.そうすると一度に両方の四角形の大きさを大きくしたり,小さくしたりできるね! 80から180にしてみよう!"
+      jp: "「<span class=tutor-code>size</span>」の値をかえればいいね。そうするといちどに両方の四角形の大きさを大きくしたり、小さくしたりできるね！80から180にしてみよう！"
     },
     youGotItCheck: "180"
   },
