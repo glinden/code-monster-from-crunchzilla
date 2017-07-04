@@ -123,7 +123,6 @@ progress[value]::-moz-progress-bar {
 	float: left;
 	cursor: pointer;
 	font-size: 16px;
-	z-index: 10;
 }
 .tutor-code {
 	font-family: monospace;
@@ -197,7 +196,7 @@ progress[value]::-moz-progress-bar {
 }
 .us-flag-holder {
 	position: absolute;
-	right: 70px;
+	left: 20px;
 	width: 22px;
 	height: 13px;
 	border: 1px solid transparent;
@@ -218,7 +217,7 @@ progress[value]::-moz-progress-bar {
 }
 .de-flag-holder {
 	position: absolute;
-	right: 40px;
+	right: 50px;
 	width: 22px;
 	height: 13px;
 	border: 1px solid transparent;
@@ -233,7 +232,7 @@ progress[value]::-moz-progress-bar {
 
 .jp-flag-holder {
 	position: absolute;
-	right: 10px;
+	left: 80px;
 	width: 22px;
 	height: 13px;
 	border: 1px solid #ccc;
