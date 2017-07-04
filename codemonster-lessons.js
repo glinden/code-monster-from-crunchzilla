@@ -14,6 +14,8 @@
 // Of these, the message is always there and the code often there.  Others
 // are usually missing for most lessons.
 
+// Harald Kubota 2017-06
+// Adding language support (en, de, jp) for message and lessonSection
 
 var lessons =
 [
@@ -2998,7 +3000,8 @@ var lessons =
   {
     message: {
       en: "Wow, you did everything!  Congratulations, nice work!  A lot of these are really hard. I'm impressed you finished!  I hope you enjoyed it!",
-      de: "Wahnsinn! Du hast alles gemacht! Ich gratuliere dir! Viele waren wirklich schwer! Ich bin beeindruckt und hoffe es hat dir Spass gemacht!"
+      de: "Wahnsinn! Du hast alles gemacht! Ich gratuliere dir! Viele waren wirklich schwer! Ich bin beeindruckt und hoffe es hat dir Spass gemacht!",
+      jp: "わー,全部終わったんだね.おめでとう! ナイス! 難しいことばかりだったけど最後まで出来てすごいよ! ! 楽しんでくれたかな!"
     },
     code: "var pane = document.getElementById('pane');\nvar s = 3;\n\npane.onmousemove = function(evt) {\n  c.fillStyle = randomRGBA();\n  var x = evt.clientX;\n  var y = evt.clientY;\n  c.fillRect(x - s / 2, y - s / 2, s, s);};\n\nfunction randomRGBA() {\n  var r = randInt(255);\n  var g = randInt(255);\n  var b = randInt(255);\n  var a = Math.random();\n  var rgba = [r,g,b,a].join(\",\");\n  return \"rgba(\" + rgba + \")\";\n}\nfunction randInt(limit) {\n  var x = Math.random() * limit;\n  return Math.floor(x);\n}\n"
   }
