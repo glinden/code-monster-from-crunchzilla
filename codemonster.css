@@ -128,6 +128,9 @@ progress[value]::-moz-progress-bar {
 	font-family: monospace;
 	cursor: pointer;
 	font-size: 14px;
+	padding: 0 3px;
+	color: orangered;
+	font-weight: bold;
 }
 #code-errors {
 	display: none;
@@ -196,10 +199,11 @@ progress[value]::-moz-progress-bar {
 }
 .us-flag-holder {
 	position: absolute;
-	left: 20px;
+	right: 20px; /*2017/07/05 changed from "left" to "right"*/
 	width: 22px;
 	height: 13px;
 	border: 1px solid transparent;
+	cursor: pointer;
 }
 .us-flag {
 	display: block;
@@ -221,6 +225,7 @@ progress[value]::-moz-progress-bar {
 	width: 22px;
 	height: 13px;
 	border: 1px solid transparent;
+	cursor: pointer;
 }
 .de-flag {
 	display: block;
@@ -232,10 +237,11 @@ progress[value]::-moz-progress-bar {
 
 .jp-flag-holder {
 	position: absolute;
-	left: 80px;
+	right: 80px; /* 2017/07/05 changed from "left" to "right" */
 	width: 22px;
 	height: 13px;
 	border: 1px solid #ccc;
+	cursor: pointer;
 }
 .jp-flag {
 	display: block;
@@ -243,3 +249,4 @@ progress[value]::-moz-progress-bar {
 	height: 13px;
     background: radial-gradient(circle at 50% 50%, red 0%,  red 30%, white 30%, white 100%);
 }
+
