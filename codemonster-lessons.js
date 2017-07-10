@@ -3025,8 +3025,8 @@ var predefForJSHint = {c: true,
 // [ This is disabled.  It was too distracting in playtesting.
 // still could be used later to switch poses in Code Maven. ]
 var tutorImages = [
-  "http://macmac.local/000naoko/1706-06_codemonster/monster2.png",
-  "http://macmac.local/000naoko/1706-06_codemonster/tutor0.png"
+  "i/monster2.png",
+  "i/tutor0.png"
   ];
 
 
