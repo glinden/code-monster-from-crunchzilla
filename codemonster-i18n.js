@@ -5,7 +5,7 @@ var availableLanguages = [ "en", "de", "jp" ];
 var congratsMessage = {
   en: "Great, you did it!",
   de: "Klasse gemacht!",
-  jp: "Yatta!"
+  jp: "やった！"
 };
 
 var errorPromptMessages = {
@@ -18,13 +18,13 @@ var errorPromptMessages = {
     "Vielleicht hilft die Fehlermeldung:"
     ],
   jp: [
-    "nantoka mondai",
-    "tabun error wa:"
+    "おっと！　ちょっとまちがえたみたいだね。",
+    "ここをまちがえているよ:"
     ]
   };
 
 var percentCompletedMessage = {
   en: "% completed",
   de: "% fertig",
-  jp: "% owarimashita"
+  jp: "% かんせい"
 };
