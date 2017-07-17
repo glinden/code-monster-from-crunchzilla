@@ -12,6 +12,13 @@ iframe {
     border: 1px solid black;
     border-left: 0px;
 }
+i {
+	font-weight: bold;
+}
+i.jp {
+	color: navy;
+	font-weight: bold;
+}
 .CodeMirror {
     float: left;
     width: 400px;
@@ -127,8 +134,9 @@ progress[value]::-moz-progress-bar {
 .tutor-code {
 	font-family: monospace;
 	cursor: pointer;
-	font-size: 14px;
-	padding: 0 3px;
+	font-size: 18px;
+	margin: 0 2px;
+	padding: 0 2px;
 	color: orangered;
 	font-weight: bold;
 }
@@ -250,3 +258,8 @@ progress[value]::-moz-progress-bar {
     background: radial-gradient(circle at 50% 50%, red 0%,  red 30%, white 30%, white 100%);
 }
 
+.comment {
+	font-size: 14px;
+	line-height: 1.2;
+	color: brown;
+}
