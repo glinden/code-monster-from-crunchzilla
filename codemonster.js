@@ -1,5 +1,9 @@
 // Copyright 2012 Geeky Ventures
 
+// Language Setting. Default is English unless reading the browser default language gets implemented
+
+var language = availableLanguages[0] || "en";
+
 // Constants
 var previewUpdateDelay = 300; // In milliseconds
 
@@ -50,8 +54,7 @@ function updatePreview() {
 		// show the error.
 		var errorPrompts;
 		if (typeof jsHintErrorPrompts === "undefined") {
-			errorPrompts = [ "Oops! Looks like there is a problem where you typed",
-							 "If it helps, the error may be:" ];
+			errorPrompts = errorPromptMessages[language];
 		} else {
 			// For internationalization, this variable in the lessons JSON file can
 			// override the English version of the prompt
@@ -92,12 +95,7 @@ function updatePreview() {
 			// but only add the congrats if we haven't added it already
 			var message = $('#tutor-message').html();
 			var congrats;
-			if (typeof youDidItMessage === "undefined") {
-				congrats = "Great, you did it!";
-			} else {
-				// This is an override in the JSON config (for internationalization)
-				congrats = youDidItMessage;
-			}
+			congrats = congratsMessage[language];
 			if (message.lastIndexOf(congrats) < Math.max(0, message.length - congrats.length)) {
 				// This hack checks if the congrats message is already
 				// at the end of the string.  It's error prone and
@@ -360,7 +358,7 @@ function changeTutorImage(filename) {
 function initLesson() {
 	var lesson = lessons[currentLesson];
 
-	changeTutorMessage(lesson.message);
+	changeTutorMessage(lesson.message[language]);
 	if (lesson.lessonSection != null) {
 		changeLessonSection(lesson.lessonSection);
 	}
@@ -384,7 +382,7 @@ function initLesson() {
 	// Update progress bar display
 	var percent = Math.floor((currentLesson + 1) * 100 / lessons.length);
 	$('#lesson-progress').attr('value', percent);
-	$('#lesson-progress').attr('title', percent + "% completed");
+	$('#lesson-progress').attr('title', percent + percentCompletedMessage[language]);
 }
 
 // Clicking on the monster or his speech advances to the next lesson

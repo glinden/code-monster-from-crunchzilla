@@ -31,6 +31,19 @@
 	    <br><br><br>
 	  </h2>
 	</noscript>
+
+	<div class=not-selectable unselectable=on id=language-flags>
+	 <div class="us-flag-holder" onclick="language='en'; initLesson();">
+	  <div class="us-flag"></div>
+	 </div>
+	 <div class="de-flag-holder" onclick="language='de'; initLesson();">
+	  <div class="de-flag"></div>
+	 </div>
+	 <div class="jp-flag-holder" onclick="language='jp'; initLesson();">
+	  <div class="jp-flag"></div>
+	 </div>
+	</div>
+
 	<div class=not-selectable unselectable=on id=tutor>
 	  <div id=tutor-avatar unselectable=on><img id=tutor-img unselectable=on src=i/tutor0.png /></div>
 	  <div id=tutor-talk unselectable=on>
@@ -306,13 +319,14 @@
 	  <div class="simplemodal-close simplemodal-closex">X</div>
 	</div>
 
-    <script src=thirdparty/codemirror.js></script>
-    <script src=thirdparty/codemirror-javascript.js></script>
-    <script src=thirdparty/jshint.js></script>
-	<script src=thirdparty/jquery-1.7.2.min.js></script>
-	<script src=thirdparty/jquery.simplemodal.1.4.2.min.js></script>
-	<script src=codemonster-lessons.js></script>
-	<script src=codemonster.js></script>
+    <script type="text/javascript" src=thirdparty/codemirror.js></script>
+    <script type="text/javascript" src=thirdparty/codemirror-javascript.js></script>
+    <script type="text/javascript" src=thirdparty/jshint.js></script>
+	<script type="text/javascript" src=thirdparty/jquery-1.7.2.min.js></script>
+	<script type="text/javascript" src=thirdparty/jquery.simplemodal.1.4.2.min.js></script>
+	<script type="text/javascript" src=codemonster-lessons.js></script>
+	<script type="text/javascript" src="codemonster-i18n.js"></script>
+	<script type="text/javascript" src=codemonster.js></script>
 
   </body>
 </html>

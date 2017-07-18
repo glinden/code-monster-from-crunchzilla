@@ -4,7 +4,7 @@
 			<blockquote class="speech-bubble">
 				<p>It is not what you look at that matters, it is what you see.</p>
 			</blockquote>
-*/
+			*/
 
 .speech-bubble-green {
 	position:relative;
@@ -13,7 +13,7 @@
 	color:#000;
 	background:#11cc33; /* default background for browsers without gradient support */
 	/* css3 */
-    background:-webkit-gradient(linear, 0 0, 0 100%, from(#aaffee), to(#11cc33));
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#aaffee), to(#11cc33));
 	background:-moz-linear-gradient(#aaffee, #11cc33);
 	background:-o-linear-gradient(#aaffee, #11cc33);
 	background:linear-gradient(#aaffee, #11cc33);
@@ -24,6 +24,7 @@
 	-webkit-border-bottom-left-radius:25px 50px;
 	-moz-border-radius:25px / 50px;
 	border-radius:25px / 50px;
+	border-radius: 18px;
 }
 
 /* creates the larger triangle */
@@ -35,9 +36,9 @@
 	border-width:0 0 30px 50px;
 	border-style:solid;
 	border-color:transparent #11cc33;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
 }
 
 /* creates the smaller triangle */
@@ -49,9 +50,9 @@
 	border-width:0 0 30px 20px;
 	border-style:solid;
 	border-color:transparent #fff;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
 }
 
 
@@ -63,7 +64,7 @@
 	color:#000;
 	background:#ff5599; /* default background for browsers without gradient support */
 	/* css3 */
-    background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffdddd), to(#ff5599));
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffdddd), to(#ff5599));
 	background:-moz-linear-gradient(#ffdddd, #ff5599);
 	background:-o-linear-gradient(#ffdddd, #ff5599);
 	background:linear-gradient(#ffdddd, #ff5599);
@@ -74,6 +75,7 @@
 	-webkit-border-bottom-left-radius:25px 50px;
 	-moz-border-radius:25px / 50px;
 	border-radius:25px / 50px;
+
 }
 
 /* creates the larger triangle */
@@ -85,9 +87,9 @@
 	border-width:0 0 30px 50px;
 	border-style:solid;
 	border-color:transparent #ff5599;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
 }
 
 /* creates the smaller triangle */
@@ -99,7 +101,8 @@
 	border-width:0 0 30px 20px;
 	border-style:solid;
 	border-color:transparent #fff;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
 }
+
