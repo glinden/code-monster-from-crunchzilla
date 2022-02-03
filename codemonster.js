@@ -258,7 +258,7 @@ for (var i = 0; i < lessons.length; i++) {
 			console.log("Warning: Some lesson sections have the same name, that's a problem.");
 		} else {
 			var jsLambda = "$.modal.close(); jumpToLesson(" + i + "); return false;";
-			data += '<li><a href="#' + section + '" onclick="' + jsLambda + '">' + section + '</a>'
+			data += '<li><a href="#' + section[language] + '" onclick="' + jsLambda + '">' + section[language] + '</a>'
 			nameUsed[section] = 1;
 		}
 	}
